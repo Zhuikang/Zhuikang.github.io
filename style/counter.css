@@ -1,0 +1,53 @@
+main, article {
+counter-reset: section;
+counter-reset: table;
+counter-reset: figure;
+}
+main > section, article > section {
+counter-increment: section;
+counter-reset: subsection;
+}
+main > section > section, article > section > section {
+counter-increment: subsection;
+counter-reset: subsubsection;
+}
+main > section > section > section, article > section > section > section {
+counter-increment: subsubsection;
+counter-reset: paragraph;
+}
+main > section > section > section > section, article > section > section > section > section {
+counter-increment: paragraph;
+}
+table {
+counter-increment: table;
+}
+figure {
+counter-increment: figure;
+}
+h2::before {
+content: counter(section)" ";
+}
+h3::before {
+content: counter(section)"."counter(subsection)" ";
+}
+h4::before {
+content: counter(section)"."counter(subsection)"."counter(subsubsection)" ";
+}
+h5::before {
+content: counter(section)"."counter(subsection)"."counter(subsubsection)"."counter(paragraph)" ";
+}
+caption:lang(zh)::before {
+content: "表"counter(table)" ";
+}
+caption:lang(en)::before {
+content: "Table "counter(table)" ";
+}
+figcaption:lang(zh)::before {
+content: "图"counter(figure)" ";
+}
+figcaption:lang(zh-Hant)::before {
+content: "圖"counter(figure)" ";
+}
+figcaption:lang(en)::before {
+content: "Figure "counter(figure)" ";
+}
