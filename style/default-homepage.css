@@ -6,7 +6,7 @@ padding: 1em 0;
 text-align: center;
 border: none;
 }
-header h1#masthead {
+header h1.masthead {
 font-size: 14.7mm;
 font-weight: inherit;
 margin: inherit;
