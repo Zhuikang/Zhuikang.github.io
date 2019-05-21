@@ -7,7 +7,7 @@ text-align: center;
 border: none;
 }
 header h1.masthead {
-font-size: 14.7mm;
+font-size: 14.7mm/*初号*/;
 font-weight: inherit;
 margin: inherit;
 }

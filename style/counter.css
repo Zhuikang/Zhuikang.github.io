@@ -1,7 +1,5 @@
 main, article {
-counter-reset: section;
-counter-reset: table;
-counter-reset: figure;
+counter-reset: section table figure;
 }
 main > section, article > section {
 counter-increment: section;
@@ -25,29 +23,29 @@ figure {
 counter-increment: figure;
 }
 h2::before {
-content: counter(section)" ";
+content: counter(section)"\00A0"/*"&nbsp;"*/;
 }
 h3::before {
-content: counter(section)"."counter(subsection)" ";
+content: counter(section)"."counter(subsection)"\00A0";
 }
 h4::before {
-content: counter(section)"."counter(subsection)"."counter(subsubsection)" ";
+content: counter(section)"."counter(subsection)"."counter(subsubsection)"\00A0";
 }
 h5::before {
-content: counter(section)"."counter(subsection)"."counter(subsubsection)"."counter(paragraph)" ";
+content: counter(section)"."counter(subsection)"."counter(subsubsection)"."counter(paragraph)"\00A0";
 }
 caption:lang(zh)::before {
-content: "表"counter(table)" ";
+content: "表"counter(table)"　";
 }
 caption:lang(en)::before {
-content: "Table "counter(table)" ";
+content: "Table "counter(table)"\2003"/*"&emsp;"*/;
 }
 figcaption:lang(zh)::before {
-content: "图"counter(figure)" ";
+content: "图"counter(figure)"　";
 }
 figcaption:lang(zh-Hant)::before {
-content: "圖"counter(figure)" ";
+content: "圖"counter(figure)"　";
 }
 figcaption:lang(en)::before {
-content: "Figure "counter(figure)" ";
+content: "Figure "counter(figure)"\2003";
 }
