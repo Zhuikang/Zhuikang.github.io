@@ -112,6 +112,15 @@ header > nav {
 position: absolute;
 float: left;
 }
+.back > nav {
+margin: 0.5em auto;
+padding: 0.75em 0;
+background-color: #dcdcdc/*gainsboro*/;
+}
+.two-columns {
+columns: 2;
+column-gap: 2em;
+}
 p.author {
 /*font-family: "楷体";*/
 text-indent: 0;
@@ -149,11 +158,8 @@ list-style-type: circled-decimal;
 ol.ref {
 list-style-type: bracketed-decimal;
 }
-a.note-mark:target, a.ref-mark:target, .note li:target, .ref li:target {
+.note li:target, .ref li:target, a.note-mark:target, a.ref-mark:target {
 animation: highlight 2s;
-}
-a.note-back::after, a.ref-back::after {
-content: "⤴";
 }
 dt {
 display: run-in;
@@ -204,6 +210,9 @@ color: inherit;
 text-decoration: inherit;
 border-bottom: 1px solid silver;
 }
+a:focus, a:hover {
+border-bottom-color: #6699ff;
+}
 header a {
 border-bottom: inherit;
 }
@@ -212,8 +221,12 @@ counter-increment: note;
 border: inherit;
 }
 a.note-mark::after {
-/*content: counter(note, circled-decimal);*/
 content: counter(note);
+}
+@supports (content: counter(note, circled-decimal)) {
+a.note-mark::after {
+content: counter(note, circled-decimal);
+}
 }
 a.ref-mark {
 counter-increment: ref;
@@ -222,8 +235,8 @@ border: inherit;
 a.ref-mark::after {
 content: "["counter(ref)"]";
 }
-a:focus, a:hover {
-border-bottom-color: #6699ff;
+a.note-back::after, a.ref-back::after {
+content: "⤴";
 }
 em:lang(zh) {
 font-style: inherit;

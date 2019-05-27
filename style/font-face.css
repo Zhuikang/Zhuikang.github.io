@@ -1,0 +1,10 @@
+@font-face {
+font-family: "songti";
+src: local("Source Han Serif CN");
+font-style: normal;
+}
+@font-face {
+font-family: "songti";
+src: local("SourceSerifPro-It");
+font-style: italic;
+}
