@@ -1,0 +1,17 @@
+@charset "utf-8";
+@namespace url("http://www.w3.org/1999/xhtml");
+main {
+width: 72.5%;
+float: left;
+}
+aside {
+width: 22.5%;
+float: right;
+font-size: 3.675mm/*五号*/;
+}
+aside *:first-child {
+margin-top: 6.5625mm;
+}
+footer {
+clear: both;
+}

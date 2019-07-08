@@ -1,3 +1,5 @@
+@charset "utf-8";
+@namespace url("http://www.w3.org/1999/xhtml");
 main, article {
 counter-reset: section table figure;
 }
