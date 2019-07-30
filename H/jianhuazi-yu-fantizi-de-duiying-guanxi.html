@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>简化字与繁体字的对应关系</title>
+<!--<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />-->
+<link rel="stylesheet" href="../style/default.css" />
+<style>
+@namespace url(http://www.w3.org/1999/xhtml);
+@font-face {
+font-family: "通用规范汉字";
+src: local("FZGFShuSong");
+unicode-range: U+3007, U+3400-4DBF, U+4E00-9FFF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF;
+}
+@font-face {
+font-family: "通用规范汉字";
+src: local("BabelStone Han");
+unicode-range: U+9FCD-9FCF;
+}
+@font-face {
+font-family: "繁体字、异体字";
+src: local("FZShuSong-Z01");
+unicode-range: U+4E00-9FFF;
+}
+@font-face {
+font-family: "繁体字、异体字";
+src: local("BabelStone Han");
+unicode-range: U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF, U+2CEB0-2EBEF, U+58D3/*壓*/;
+}
+@font-face {
+font-family: "繁体字、异体字";
+src: local("SimSun");
+unicode-range: U+3BED/*㯭*/;
+}
+@font-face {
+font-family: "繁体字、异体字";
+src: local("SimSun-ExtB");
+unicode-range: U+21681/*𡚁*/;
+}
+@font-face {
+font-family: "繁体字、异体字";
+src: local("ZhongHuaSongPlane02");
+unicode-range: U+23E8C/*𣺌*/, U+2591A/*𥤚*/, U+26548/*𦕈*/;
+}
+@font-face {
+font-family: "标点符号";
+src: local("BabelStone Han");
+unicode-range: U+002F, U+00B7, U+2022, U+FF3F, U+FE4F, U+FF5E;
+}
+@font-face {
+font-family: "汉语拼音";
+src: local("Doulos SIL");
+unicode-range: U+0041, U+0042, U+0043, U+0044, U+0045, U+0046, U+0047, U+0048, U+0049, U+004A, U+004B, U+004C, U+004D, U+004E, U+004F, U+0050, U+0051, U+0052, U+0053, U+0054, U+0055, U+0056, U+0057, U+0058, U+0059, U+005A, U+0061, U+0062, U+0063, U+0064, U+0065, U+0066, U+0067, U+0068, U+0069, U+006A, U+006B, U+006C, U+006D, U+006E, U+006F, U+0070, U+0071, U+0072, U+0073, U+0074, U+0075, U+0076, U+0077, U+0078, U+0079, U+007A, U+00C0, U+00C1, U+00C8, U+00C9, U+00CA, U+00CC, U+00CD, U+00D2, U+00D3, U+00D9, U+00DA, U+00DC, U+00E0, U+00E1, U+00E8, U+00E9, U+00EA, U+00EC, U+00ED, U+00F2, U+00F3, U+00F9, U+00FA, U+00FC, U+0100, U+0101, U+0108, U+0109, U+0112, U+0113, U+011A, U+011B, U+012A, U+012B, U+0143, U+0144, U+0147, U+0148, U+014A, U+014B, U+014C, U+014D, U+015C, U+015D, U+016A, U+016B, U+01CD, U+01CE, U+01CF, U+01D0, U+01D1, U+01D2, U+01D3, U+01D4, U+01D5, U+01D6, U+01D7, U+01D8, U+01D9, U+01DA, U+01DB, U+01DC, U+01F8, U+01F9, U+02C7, U+02C9, U+02CA, U+02CB, U+0300, U+0301, U+0304, U+030C, U+1E3E, U+1E3F, U+1E90, U+1E91, U+1EBE, U+1EBF, U+1EC0, U+1EC1, U+2019;
+}
+main {
+font-family: "通用规范汉字", "繁体字、异体字", "标点符号", "汉语拼音", "FZGFShuSong";
+-moz-font-feature-settings: "Engs" 1;
+}
+
+.jiu-zixing {
+font-family: "BabelStone Han";
+font-feature-settings: "cv01";
+}
+table {
+border-collapse : collapse;
+}
+table {
+font-size: inherit;
+border: 0.05em solid;
+}
+th, td {
+border: 0.03em solid;
+}
+tbody > tr:first-child > td {
+padding-top: inherit;
+}
+tbody > tr:last-child > td {
+padding-bottom: inherit;
+}
+table {
+counter-reset: no;
+}
+td.no::before {
+counter-increment: no;
+content: counter(no);
+}
+</style>
+</head>
+<body>
+<header>
+<nav><p><a href="index.html">H</a></p></nav>
+<p class="website-title"><a href="index.html">𦴶</a></p>
+</header>
+<main>
+<h1>简化字与繁体字的对应关系</h1>
+<div class="front">
+<div class="abstract">
+<p>编者按：本篇摘自《〈通用规范汉字表〉解读》（王宁主编，商务印书馆2013年版，第29—45页），原标题为《〈通用规范汉字表〉对简繁对应关系的处理》。</p>
+</div>
+</div>
+<p>简繁对应关系是指简化字对应一个或多个繁体字（或传承字）。其中，比较复杂的对应关系是“一简对多繁”，即一个简化字对应多个繁体字（或传承字）的现象。这种现象主要是字用合并造成的。</p>
+<p>字用合并对减少社会用字的字数，减轻使用者记忆和分辨的负担有积极作用。但其中也存在一些问题，如因合并而引起歧义，如“干”对应“<span lang="zh-Latn-CN-pinyin">干、乾、幹</span>”等；同时在计算机简繁自动转换和文言文印刷等应用领域，由于简繁关系不能一一对应而常常产生错误，如把“头发（<span lang="zh-Latn-CN-pinyin">頭髮</span>）”错转为“<span lang="zh-Latn-CN-pinyin">頭發</span>”、把“干净（<span lang="zh-Latn-CN-pinyin">乾净</span>）”错转为“<span lang="zh-Latn-CN-pinyin">幹净</span>”等。</p>
+<p>在坚持简化政策，不恢复繁体字的前提下，为了准确和更为明晰地反映简化字与繁体字记词职能上的不对等关系，方便字表使用者了解“一简对多繁”的对应关系，明确字用分工职能，在此对这些字组进行了分解说明。具体处理方法是：简繁字的对应以字为单位，凡一个简化字对应多个繁体字的，分解为多项，音不同的分别列出各项的拼音，标音一律采用拼音方案，只标注主要读音和以音别义的音。词例以双音词和短语为主；虚词或难以找到相应短语的单音词先出词性或义项，后面在括弧中举例。只列现代汉语义项和个别有特殊读音的文言义项。不同义项用“；”隔开。“<span lang="zh-Latn-CN-pinyin">～</span>”用以替代与简化字相同的字，这些字在繁体字系统中仍然使用，与同一字头下对应的其他繁体字在职能上有分工。具体分解如下：</p>
+<table>
+<thead>
+<tr><th>序&NoBreak;号</th><th>简&NoBreak;化&NoBreak;字</th><th>对&NoBreak;应&NoBreak;的繁&NoBreak;体&NoBreak;字</th><th>标音</th><th>词例或义项</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">坝</td><td lang="zh-Hant-CN">垻</td><td lang="zh-Latn-CN-pinyin">bà</td><td>平地（沙坪坝）</td><td lang="zh-Latn-CN-pinyin"></td></tr>
+<tr><td lang="zh-Hant-CN">壩</td><td lang="zh-Latn-CN-pinyin">bà</td><td>水坝，堤坝，河坝</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">摆</td><td lang="zh-Hant-CN">擺</td><td lang="zh-Latn-CN-pinyin">bǎi</td><td>摆放，摆开；摆阔，摆威风；摇摆，摆手，摆动；钟摆；摆事实</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">襬</td><td lang="zh-Latn-CN-pinyin">bǎi</td><td>下摆，衣摆</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">板</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">bǎn</td><td>木板，钢板；板报，板书；走板，快板；呆板，死板；板正</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">闆</td><td lang="zh-Latn-CN-pinyin">bǎn</td><td>老板</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">辟</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">bì</td><td>复辟；辟恶，辟邪</td><td></td></tr>
+<tr><td>pì</td><td>大辟</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">闢</td><td lang="zh-Latn-CN-pinyin">pì</td><td>开辟；精辟，透辟；辟谣</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">表</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">biǎo</td><td>外表，表面；表哥，表叔；表示，发表，表达；表率；表格，表册；电表，水表；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">錶</td><td lang="zh-Latn-CN-pinyin">biǎo</td><td>钟表，怀表，手表</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">别</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">bié</td><td>分别，告别；别人，别称；区别，辨别；差别，天渊之别；类别，性别，职别；别针；别上门；副词（别走了，别是他来了）；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">彆</td><td lang="zh-Latn-CN-pinyin">biè</td><td>别不过，别扭</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">卜</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">bǔ</td><td>占卡，卜卦；预卜，生死未卜；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">蔔</td><td lang="zh-Latn-CN-pinyin">bo</td><td>萝卜</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">才</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">cái</td><td>才能，多才多艺；干才，奇才；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">纔</td><td lang="zh-Latn-CN-pinyin">cái</td><td>副词（才来就要走；现在才明白；才有几个人）</td><td lang="zh-Latn-CN-pinyin"></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">冲</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">chōng</td><td>冲洗；冲茶；冲账；冲田</td><td></td></tr>
+<tr><td lang="zh-Hant-CN" rowspan="2">衝</td><td lang="zh-Latn-CN-pinyin">chōng</td><td>要冲，首当其冲；横冲直撞；冲突，冲撞，冲犯</td><td></td></tr>
+<tr><td>chòng</td><td>这小伙子干活儿真冲；酒味儿很冲</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">丑</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">chǒu</td><td>子丑；丑角，小丑；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">醜</td><td lang="zh-Latn-CN-pinyin">chǒu</td><td>丑陋；丑态，出丑</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">出</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">chū</td><td>出来，出去；出席，出场；出轨，出界；出布告，出题目；出产，出煤，出活儿；出问题；发出，出芽儿，出汗；出名，出面；出纳，量入为出；看得出</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">齣</td><td lang="zh-Latn-CN-pinyin">chū</td><td>三出戏</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">当</td><td lang="zh-Hant-CN" rowspan="2">當</td><td lang="zh-Latn-CN-pinyin">dāng</td><td>相当；应当；当面；当今，当场；充当；承当；当家，当权；锐不可当；瓦当；姓</td><td></td></tr>
+<tr><td>dàng</td><td>恰当，得当；一个人当两个人用；当作；当真；典当，赎当；当天，当年</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">噹</td><td lang="zh-Latn-CN-pinyin">dāng</td><td>拟声词，撞击金属器物的声音</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">党</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">dǎng</td><td>党项；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">黨</td><td lang="zh-Latn-CN-pinyin">dǎng</td><td>党章，党校；死党，结党营私；党同伐异；父党，母党</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">淀</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">diàn</td><td>白洋淀</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">澱</td><td lang="zh-Latn-CN-pinyin">diàn</td><td>沉淀，淀粉</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">冬</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">dōng</td><td>冬季，隆冬；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">鼕</td><td lang="zh-Latn-CN-pinyin">dōng</td><td>拟声词，敲鼓或敲门声</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">斗</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">dǒu</td><td>升斗；熨斗，漏斗，烟斗；北斗星，斗柄；圆形的指纹；斗胆，斗室；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">鬥</td><td lang="zh-Latn-CN-pinyin">dòu</td><td>械斗，拳斗；斗争；斗蛐蛐儿；斗智，斗嘴；斗眼</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">恶</td><td lang="zh-Hant-CN" rowspan="2">惡</td><td lang="zh-Latn-CN-pinyin">è</td><td>无恶不作，罪大恶极；凶恶，恶毒；恶劣，恶习，恶感</td><td></td></tr>
+<tr><td>wù</td><td>好恶，深恶痛绝</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">噁</td><td lang="zh-Latn-CN-pinyin">ě</td><td>恶心</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">发</td><td lang="zh-Hant-CN">發</td><td lang="zh-Latn-CN-pinyin">fā</td><td>发货，分发；发射，发炮；发生；发言，发表；发扬，发育；发家，暴发户；发酵，面发了；发散，挥发；发现，揭发；发黄，发潮；发怒，发笑；发麻，发痒；出发；发起，奋发；发人深省；一发子弹</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">髮</td><td lang="zh-Latn-CN-pinyin">fà</td><td>头发，毛发，理发，发型</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">范</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">fàn</td><td>姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">範</td><td lang="zh-Latn-CN-pinyin">fàn</td><td>钱范，铁范；典范，规范，模范，师范；范围，就范；防范</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">丰</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">fēng</td><td>丰采，丰姿，丰韵</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">豐</td><td lang="zh-Latn-CN-pinyin">fēng</td><td>丰富，丰满，丰收，丰盛；丰碑，丰功伟绩；姓</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">复</td><td lang="zh-Hant-CN">復</td><td lang="zh-Latn-CN-pinyin">fù</td><td>反复无常，循环往复；答复，复信，敬复；恢复，光复，收复，复原；报复，复仇；复发，死灰复燃，无以复加，一去不复返，复苏；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">複</td><td lang="zh-Latn-CN-pinyin">fù</td><td>重复，复写，山重水复；复合，繁复，复姓</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">干</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">gān</td><td>干戈；干犯；干连，干涉；干禄；天干，干支；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">乾</td><td lang="zh-Latn-CN-pinyin">gān</td><td>干燥，干柴；干洗；饼干，葡萄干儿；外强中干；干笑，干号；干亲，干妈；干瞪眼，干打雷不下雨</td><td>注：“乾”读<span lang="zh-Latn-CN-pinyin">qián</span>时不简化作“干”，如“乾隆”“乾坤”。</td></tr>
+<tr><td lang="zh-Hant-CN">幹</td><td lang="zh-Latn-CN-pinyin">gān</td><td>树干，骨干，干细胞；干部；埋头苦干；能干，干练，干才；他干过队长</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">谷</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">gǔ</td><td>山谷，谷地，万丈深谷，谷底；姓</td><td></td></tr>
+<tr><td>yù</td><td>吐谷浑</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">穀</td><td lang="zh-Latn-CN-pinyin">gǔ</td><td>五谷杂粮；谷草，谷穗儿</td><td>注：不穀、穀旦的“穀”不简化。</td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">刮</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">guā</td><td>刮胡子，搜刮</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">颳</td><td lang="zh-Latn-CN-pinyin">guā</td><td>刮风</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">合</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">gě</td><td>市制容量单位</td><td></td></tr>
+<tr><td>hé</td><td>合上眼，合抱；合办，同心合力；符合，合情合理；折合，合计；理合声明；回合；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">閤</td><td lang="zh-Latn-CN-pinyin">hé</td><td>合家团聚</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">后</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">hòu</td><td>皇后，后妃；皇天后土；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">後</td><td lang="zh-Latn-CN-pinyin">hòu</td><td>后门，后院；后天，日后，后辈；后排，后半夜；后代；落后</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">胡</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">hú</td><td>胡人；胡琴，胡桃，胡萝卜；胡闹，胡说，胡搞，胡作非为；胡同；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">鬍</td><td lang="zh-Latn-CN-pinyin">hú</td><td>胡子，胡须，络腮胡</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">划</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">huá</td><td>划船，划桨，划艇；划得来，划算</td><td></td></tr>
+<tr><td lang="zh-Hant-CN" rowspan="2">劃</td><td lang="zh-Latn-CN-pinyin">huá</td><td>划玻璃，划根火柴，划了个口子</td><td></td></tr>
+<tr><td>huà</td><td>划分，划界，划清；划拨，划转，划付；计划，筹划，策划</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">回</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">huí</td><td>回家，回乡，回程；回头，回身；回拜，回报；回绝；一回，回合；回族，回民，回历；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">迴</td><td lang="zh-Latn-CN-pinyin">huí</td><td>回旋，迂回；回避</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">汇</td><td lang="zh-Hant-CN">匯</td><td lang="zh-Latn-CN-pinyin">huì</td><td>汇合，汇流；汇款，汇票；外汇，换汇，汇率；汇报，汇编，汇展，汇集；词汇，总汇</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">彙</td><td lang="zh-Latn-CN-pinyin">huì</td><td>汇报，汇编，汇展，汇集；词汇，总汇</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">伙</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">huǒ</td><td>伙食，伙房，开伙，搭伙</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">夥</td><td lang="zh-Latn-CN-pinyin">huǒ</td><td>同伙，伙计，伙伴；合伙，入伙；伙同，团伙；一伙人</td><td>注：作“多”解的“夥”不简化作“伙”。</td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">获</td><td lang="zh-Hant-CN">獲</td><td lang="zh-Latn-CN-pinyin">huò</td><td>捕获，俘获，获取；获得，获胜，获利，不劳而获</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">穫</td><td lang="zh-Latn-CN-pinyin">huò</td><td>收获</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">几</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">jī</td><td>茶几，几案；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN" rowspan="2">幾</td><td lang="zh-Latn-CN-pinyin">jī</td><td>几乎</td><td></td></tr>
+<tr><td>jǐ</td><td>几多，几时，几许，几曾；几本书，几次</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">饥</td><td lang="zh-Hant-CN">飢</td><td lang="zh-Latn-CN-pinyin">jī</td><td>饥饿，如饥似渴，饥不择食，饥寒交迫</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">饑</td><td lang="zh-Latn-CN-pinyin">jī</td><td>饥荒，连年大饥，饥馑</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">家</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">jiā</td><td>家庭，家常，家财；人家，农家，渔家；专家，画家，政治家；儒家，法家，百家争鸣；上家，下家，公家；家禽，家畜，家蚕；家兄，家父；量词（一家）</td><td lang="zh-Latn-CN-pinyin"></td></tr>
+<tr><td>jia</td><td>姑娘家，学生家；老三家</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">傢</td><td lang="zh-Latn-CN-pinyin">jiā</td><td>家伙；家具；家什</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">姜</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">jiāng</td><td>姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">薑</td><td lang="zh-Latn-CN-pinyin">jiāng</td><td>生姜，姜黄</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">借</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">jiè</td><td>借用，借债，借条，借贷，借宿</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">藉</td><td lang="zh-Latn-CN-pinyin">jiè</td><td>借故，借端；凭借，借口，借题发挥</td><td>注：“藉”读<span lang="zh-Latn-CN-pinyin">jí</span>或用于慰藉、衬垫义时不简化作“借”，如“狼藉（<span lang="zh-Latn-CN-pinyin">jí</span>）”“枕藉（<span lang="zh-Latn-CN-pinyin">jiè</span>）”。</td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">尽</td><td lang="zh-Hant-CN">儘</td><td lang="zh-Latn-CN-pinyin">jǐn</td><td>尽下雨，尽自；尽早，尽快，尽先</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">盡</td><td lang="zh-Latn-CN-pinyin">jìn</td><td>取之不尽；自尽，同归于尽；尽头，尽善尽美，山穷水尽；尽情，尽力；尽职，尽责，尽忠，尽孝；前功尽弃；尽数收回，尽人皆知</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">据</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">jū</td><td>拮据</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">據</td><td lang="zh-Latn-CN-pinyin">jù</td><td>占据，据为己有；据点，据说；依据，据理相争；凭据，证据，字据，论据；姓</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">卷</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">juàn</td><td>读书破万卷，手不释卷，卷帙；画卷，卷轴，卷轴装；卷子，答卷，交卷；卷宗</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">捲</td><td lang="zh-Latn-CN-pinyin">juǎn</td><td>卷尺，卷心菜，卷烟；铺盖卷，胶卷儿；席卷；量词（一卷纸）</td><td lang="zh-Latn-CN-pinyin"></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">克</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">kè</td><td>克勤克俭；克己，以柔克刚；量词（千克）</td><td lang="zh-Latn-CN-pinyin"></td></tr>
+<tr><td lang="zh-Hant-CN">剋</td><td lang="zh-Latn-CN-pinyin">kè</td><td>攻克，克复，克敌制胜；克化、克制，克期；克扣，克减</td><td>注：表示训斥、打人的“剋”读<span lang="zh-Latn-CN-pinyin">kēi</span>，不简化作“克”。</td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">夸</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">kuā</td><td>夸父追日</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">誇</td><td lang="zh-Latn-CN-pinyin">kuā</td><td>夸口，夸大；夸奖</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">困</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">kùn</td><td>为病所困，因局，因窘；围困，困守；困难，困厄，困苦；困乏，困顿</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">睏</td><td lang="zh-Latn-CN-pinyin">kùn</td><td>困倦；因觉</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">了</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">le</td><td>助词（吃了饭，睡着了）</td><td lang="zh-Latn-CN-pinyin"></td></tr>
+<tr><td>liǎo</td><td>了账，没完没了，不了了之，了断，了局；了不相涉，了无；办得了；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">瞭</td><td lang="zh-Latn-CN-pinyin">liǎo</td><td>了解，一目了然，不甚了了，了如指掌</td><td>注：“瞭”读<span lang="zh-Latn-CN-pinyin">liào</span>时不简化作“了”，如“瞭望”“瞭哨”。</td></tr>
+<tr><td rowspan="4" class="no"></td><td rowspan="4">累</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">lěi</td><td>连累，牵累，累及</td><td></td></tr>
+<tr><td>lèi</td><td>劳累，累人，累了一天</td><td></td></tr>
+<tr><td lang="zh-Hant-CN" rowspan="2">纍</td><td lang="zh-Latn-CN-pinyin">léi</td><td>累赘，果实累累</td><td></td></tr>
+<tr><td>lěi</td><td>积累，日积月累，成千累万，罪行累累；累次，累年，连篇累牍</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">漓</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">lí</td><td>淋漓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">灕</td><td lang="zh-Latn-CN-pinyin">lí</td><td>漓江</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">篱</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">lí</td><td>笊篱</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">籬</td><td lang="zh-Latn-CN-pinyin">lí</td><td>篱笆，樊篱</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">里</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">lǐ</td><td>邻里；故里；里程；长度单位（千里）；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">裏</td><td lang="zh-Latn-CN-pinyin">lǐ</td><td>衬里，衣服里；里面，这里，里屋，往里走</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">历</td><td lang="zh-Hant-CN">歷</td><td lang="zh-Latn-CN-pinyin">lì</td><td>经历，来历，历练；历届，历代，历史；历陈，历数，历历在目；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">曆</td><td lang="zh-Latn-CN-pinyin">lì</td><td>历法，阳历，农历；日历，挂历</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">帘</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">lián</td><td>酒帘</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">簾</td><td lang="zh-Latn-CN-pinyin">lián</td><td>窗帘，垂帘昕政，门帘；水帘洞</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">卤</td><td lang="zh-Hant-CN">鹵</td><td lang="zh-Latn-CN-pinyin">lǔ</td><td>卤素；卤族</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">滷</td><td lang="zh-Latn-CN-pinyin">lǔ</td><td>盐卤，卤水；卤昧，卤制，卤鸡；打卤面；茶卤</td><td></td></tr>
+<tr><td rowspan="7" class="no"></td><td rowspan="7">蒙</td><td lang="zh-Hant-CN" rowspan="3">～</td><td lang="zh-Latn-CN-pinyin">mēng</td><td>发蒙，蒙头转向</td><td></td></tr>
+<tr><td>méng</td><td>蒙头盖脑，蒙上一张纸；蒙受，蒙冤，蒙难；蒙昧，启蒙；姓</td><td></td></tr>
+<tr><td>měng</td><td>蒙古，蒙古包，蒙古族</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">濛</td><td lang="zh-Latn-CN-pinyin">méng</td><td>细雨蒙蒙</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">懞</td><td lang="zh-Latn-CN-pinyin">méng</td><td>朴实敦厚</td><td></td></tr>
+<tr><td lang="zh-Hant-CN" rowspan="2">矇</td><td lang="zh-Latn-CN-pinyin">mēng</td><td>欺上蒙下，蒙人；瞎蒙</td><td></td></tr>
+<tr><td>méng</td><td>眼睛失明</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">弥</td><td lang="zh-Hant-CN">彌</td><td lang="zh-Latn-CN-pinyin">mí</td><td>弥补，弥缝；欲盖弥彰，弥足珍贵；弥漫，弥天大谎；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">瀰</td><td lang="zh-Latn-CN-pinyin">mí</td><td>弥漫，弥天大谎</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">面</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">miàn</td><td>脸面，面孔；面向，背山面水；表面，水面，地面；当面，面谈；鞋面儿，布面儿；平面；正面，片面，全面，面面俱到；上面，前面，外面；一面镜子，两面旗子，见过一面；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">麵</td><td lang="zh-Latn-CN-pinyin">miàn</td><td>面粉，白面，豆面；药面儿，胡椒面儿；面条，挂面</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">蔑</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">miè</td><td>轻蔑，蔑视</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">衊</td><td lang="zh-Latn-CN-pinyin">miè</td><td>污蔑</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">仆</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">pū</td><td>前仆后继</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">僕</td><td lang="zh-Latn-CN-pinyin">pú</td><td>仆人，奴仆；姓</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">朴</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">piáo</td><td>姓</td><td></td></tr>
+<tr><td>pò</td><td>厚朴，朴树</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">樸</td><td lang="zh-Latn-CN-pinyin">pǔ</td><td>俭朴，诚朴，朴素</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">千</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">qiān</td><td>千斤，千万；千方百计，千军万马，千虑一得，千姿百态；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">韆</td><td lang="zh-Latn-CN-pinyin">qiān</td><td>秋千</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">签</td><td lang="zh-Hant-CN">簽</td><td lang="zh-Latn-CN-pinyin">qiān</td><td>签发，签押，签字；签呈，签注意见；抽签儿，秋千；牙签儿；标签儿，书签；浮签儿</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">籤</td><td lang="zh-Latn-CN-pinyin">qiān</td><td>抽签儿，求签；牙签儿；标签儿，书签儿</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">纤</td><td lang="zh-Hant-CN">縴</td><td lang="zh-Latn-CN-pinyin">qiàn</td><td>纤绳，拉纤，纤夫</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">纖</td><td lang="zh-Latn-CN-pinyin">xiān</td><td>纤细，纤微，纤维，纤小</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">秋</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">qiū</td><td>秋季，深秋，秋高气爽，秋毫；麦秋；千秋，一日不见，如隔三秋；多事之秋；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">鞦</td><td lang="zh-Latn-CN-pinyin">qiū</td><td>秋千</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">曲</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">qū</td><td>弯曲，曲线，曲径通幽，河曲；是非曲直；姓</td><td></td></tr>
+<tr><td>qǔ</td><td>曲调，戏曲，高歌一曲；作曲</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">麯</td><td lang="zh-Latn-CN-pinyin">qū</td><td>大曲，麦曲</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">舍</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">shè</td><td>屋舍，宿舍，寒舍；猪舍；退避二舍；舍侄，舍妹；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">捨</td><td lang="zh-Latn-CN-pinyin">shě</td><td>舍弃，四舍五人，舍近求远；施舍，舍粥，舍药</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">沈</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">shěn</td><td>姓</td><td>注：“沈”读<span lang="zh-Latn-CN-pinyin">chén</span>时应写作“沉”。</td></tr>
+<tr><td lang="zh-Hant-CN">瀋</td><td lang="zh-Latn-CN-pinyin">shěn</td><td>沈阳；墨沈未干</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">术</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">zhú</td><td>白术，苍术</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">術</td><td lang="zh-Latn-CN-pinyin">shù</td><td>技术，学术，美术，术语；战术，权术；姓</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">松</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">sōng</td><td>松树，松鼠；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">鬆</td><td lang="zh-Latn-CN-pinyin">sōng</td><td>松散；松腰带；松口气，松劲；松脆；松绑，松手；肉松，鱼松</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">苏</td><td lang="zh-Hant-CN">蘇</td><td lang="zh-Latn-CN-pinyin">sū</td><td>紫苏，白苏；流苏；苏醒，死而复苏；苏州，江苏，苏绣；苏联；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">囌</td><td lang="zh-Latn-CN-pinyin">sū</td><td>噜苏</td><td></td></tr>
+<tr><td rowspan="5" class="no"></td><td rowspan="5">台</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">tāi</td><td>台州，天台</td><td></td></tr>
+<tr><td>tái</td><td>兄台，台鉴；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">臺</td><td lang="zh-Latn-CN-pinyin">tái</td><td>瞭望台，塔台，亭台；讲台，舞台，主席台；锅台，磨台，灯台，蜡台；井台，窗台；写字台，梳妆台；台湾，台胞，台币；一台戏，一台机器</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">颱</td><td lang="zh-Latn-CN-pinyin">tái</td><td>台风</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">檯</td><td lang="zh-Latn-CN-pinyin">tái</td><td>写字台，梳妆台</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">坛</td><td lang="zh-Hant-CN">壇</td><td lang="zh-Latn-CN-pinyin">tán</td><td>天坛，登坛拜将；讲坛，论坛；花坛；文坛，诗坛，影坛，球坛</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">罎</td><td lang="zh-Latn-CN-pinyin">tán</td><td>坛子，酒坛，一坛醋</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">涂</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">tú</td><td>姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">塗</td><td lang="zh-Latn-CN-pinyin">tú</td><td>涂抹，涂染；涂画，涂写；涂改，涂掉；泥涂，生灵涂炭；涂田，滩涂</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">团</td><td lang="zh-Hant-CN">團</td><td lang="zh-Latn-CN-pinyin">tuán</td><td>圆团，团形；纸团，线团；团聚，团圆，团结；团长；团员，入团，共青团；代表团，访问团，刷团，团队；一团乱麻</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">糰</td><td lang="zh-Latn-CN-pinyin">tuán</td><td>麻团，菜团子</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">万</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">mò</td><td>万俟</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">萬</td><td lang="zh-Latn-CN-pinyin">wàn</td><td>万千，万一；万全，万不得已，万不能行；姓</td><td></td></tr>
+<tr><td rowspan="4" class="no"></td><td rowspan="4">系</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">xì</td><td>系统，系别；院系，中文系；侏罗系</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">係</td><td lang="zh-Latn-CN-pinyin">xì</td><td>关系，干系；确系实情</td><td></td></tr>
+<tr><td lang="zh-Hant-CN" rowspan="2">繫</td><td lang="zh-Latn-CN-pinyin">jì</td><td>系鞋带，系纽扣</td><td></td></tr>
+<tr><td>xì</td><td>关系，联系，维系；系马，系缚；系恋，系念</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">咸</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">xián</td><td>咸同，威亨，老少咸宜；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">鹹</td><td lang="zh-Latn-CN-pinyin">xián</td><td>威昧，苦威，威水，咸菜，咸津津</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">向</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">xiàng</td><td>介词（向东走）；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">嚮</td><td lang="zh-Latn-CN-pinyin">xiàng</td><td>方向，志向，风向；偏向；趋向，面向；向晓，向晚；向来</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">吁</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">xū</td><td>长吁短叹；气喘吁吁</td><td></td></tr>
+<tr><td>yū</td><td>喝止牲口的声音</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">籲</td><td lang="zh-Latn-CN-pinyin">yù</td><td>呼吁，吁请，吁求</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">须</td><td lang="zh-Hant-CN">須</td><td lang="zh-Latn-CN-pinyin">xū</td><td>须臾；必须，须要，须知</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">鬚</td><td lang="zh-Latn-CN-pinyin">xū</td><td>胡须，须眉，须发；触须，须根</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">旋</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">xuán</td><td>盘旋，旋转，螺旋，回旋；凯旋；旋即；旋律；姓</td><td></td></tr>
+<tr><td>xuàn</td><td>旋风</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">鏇</td><td lang="zh-Latn-CN-pinyin">xuàn</td><td>旋床，旋零件；酒旋</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">叶</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">xié</td><td>叶韵</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">葉</td><td lang="zh-Latn-CN-pinyin">yè</td><td>树叶，枝叶，叶落归根；百叶窗，肺叶；二十世纪中叶；姓</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">余</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">yú</td><td>姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">餘</td><td lang="zh-Latn-CN-pinyin">yú</td><td>剩余，多余，余力，余音绕梁，不遗余力；兴奋之余，业余；二十余人，四百余斤</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">郁</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">yù</td><td>郁金香，馥郁，郁烈；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">鬱</td><td lang="zh-Latn-CN-pinyin">yù</td><td>郁郁葱葱；郁闷，抑郁，忧郁</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">御</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">yù</td><td>御人之术；御花园，御史，御用</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">禦</td><td lang="zh-Latn-CN-pinyin">yù</td><td>抵御，防御，御寒</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">云</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">yún</td><td>人云亦云，不知所云</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">雲</td><td lang="zh-Latn-CN-pinyin">yún</td><td>云彩，云朵，云雨，云游；云南；姓</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">芸</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">yún</td><td>芸香，芸草；芸芸众生；芸豆；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">蕓</td><td lang="zh-Latn-CN-pinyin">yún</td><td>芸薹</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">脏</td><td lang="zh-Hant-CN">臟</td><td lang="zh-Latn-CN-pinyin">zàng</td><td>内脏，心脏，肝脏，五脏六腑</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">髒</td><td lang="zh-Latn-CN-pinyin">zāng</td><td>肮脏，脏乱</td><td></td></tr>
+<tr><td rowspan="4" class="no"></td><td rowspan="4">折</td><td lang="zh-Hant-CN" rowspan="3">～</td><td lang="zh-Latn-CN-pinyin">shé</td><td>树枝折了，桌子腿撞折了；折本，折耗；姓</td><td></td></tr>
+<tr><td>zhē</td><td>折跟头；折腾</td><td></td></tr>
+<tr><td>zhé</td><td>骨折；损兵折将；曲折，百折不挠；转折；折服，心折；折扣，折价；七折；不折不扣；一折戏</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">摺</td><td lang="zh-Latn-CN-pinyin">zhé</td><td>折叠，折纸；奏折</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">征</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">zhēng</td><td>出征，征讨，征伐；征途，长征</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">徵</td><td lang="zh-Latn-CN-pinyin">zhēng</td><td>征兆，象征；信而有征，征引；征税，征兵，征地；征稿</td><td>注：“宫商角徵羽”的“徵”读<span lang="zh-Latn-CN-pinyin">zhǐ</span>，不简化作“征”。</td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">症</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">zhèng</td><td>症状，急症，对症下药</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">癥</td><td lang="zh-Latn-CN-pinyin">zhēng</td><td>症结，症痼</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">只</td><td lang="zh-Hant-CN">衹</td><td lang="zh-Latn-CN-pinyin">zhǐ</td><td>只是，只要，只好，只有</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">隻</td><td lang="zh-Latn-CN-pinyin">zhī</td><td>只身，只字不提；一只鸟</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">制</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">zhì</td><td>因地制宜，制定；限制，管制，节制；制度；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">製</td><td lang="zh-Latn-CN-pinyin">zhì</td><td>制造，制革，缝制，炼制</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">致</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">zhì</td><td>致敬，致谢，致电；致力，专心致志；致富，学以致用；招致，致癌，致残；以致，致使；兴致，景致，毫无二致；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">緻</td><td lang="zh-Latn-CN-pinyin">zhì</td><td>细致，精致，工致</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">钟</td><td lang="zh-Hant-CN">鍾</td><td lang="zh-Latn-CN-pinyin">zhōng</td><td>古代盛酒器；钟爱，钟情</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">鐘</td><td lang="zh-Latn-CN-pinyin">zhōng</td><td>钟楼，钟鼓；时钟，鸣钟，警钟；钟表，钟摆，钟点</td><td></td></tr>
+<tr><td rowspan="3" class="no"></td><td rowspan="3">种</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">zhǒng</td><td>姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN" rowspan="2">種</td><td lang="zh-Latn-CN-pinyin">zhǒng</td><td>物种；人种，种族；语种，工种；麦种，种禽；种类</td><td></td></tr>
+<tr><td>zhòng</td><td>种植，种田，种牛痘</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">朱</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">zhū</td><td>朱笔，朱红；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">硃</td><td lang="zh-Latn-CN-pinyin">zhū</td><td>朱砂</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">筑</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">zhù</td><td>击筑；贵阳的别称；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">築</td><td lang="zh-Latn-CN-pinyin">zhù</td><td>建筑，修筑，构筑</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">准</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">zhǔn</td><td>准许，批准，准予，准考证</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">準</td><td lang="zh-Latn-CN-pinyin">zhǔn</td><td>水准，准绳，标准，准则；准此办理；瞄准；准科学，准将，准平原；准保</td><td></td></tr>
+</tbody>
+</table>
+<div class="back">
+<p class="edition">（编辑：<img src="../img/Zhou-Ruikang-logo.svg" alt="周睿康" class="symbol" />）</p>
+<h2>参　　见</h2>
+<ul class="see-also">
+<li>《<a href="tongyong-guifan-hanzi-biao.html">通用规范汉字表</a>》及其附件1《<a href="guifanzi-yu-fantizi-yitizi-duizhaobiao.html">规范字与繁体字、异体字对照表</a>》。</li>
+<li lang="zh-Hant">BYVoid：《現代漢語常用簡繁一對多字義辨析表》，韻典網，<span class="url">https://ytenx.org/byohlyuk/Kienx<wbr />Pyan</span>。</li>
+</ul>
+<nav>
+<p>话题：<a href="index.html#zibiao">字表</a></p>
+<p>分类：<a href="index.html">H</a>124.1</p>
+</nav>
+</div>
+</main>
+<footer>
+<p><img src="../img/Zhou-Ruikang-logo.svg" alt="周睿康" class="symbol" />　2019年</p>
+</footer>
+</body>
+</html>
+
+<hr />
+
+</body>
+</html>
