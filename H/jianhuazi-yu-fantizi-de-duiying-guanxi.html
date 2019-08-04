@@ -86,6 +86,9 @@ td.no::before {
 counter-increment: no;
 content: counter(no);
 }
+td:nth-last-child(-n+3) {
+text-align: justify;
+}
 </style>
 </head>
 <body>
@@ -104,6 +107,7 @@ content: counter(no);
 <p>字用合并对减少社会用字的字数，减轻使用者记忆和分辨的负担有积极作用。但其中也存在一些问题，如因合并而引起歧义，如“干”对应“<span lang="zh-Latn-CN-pinyin">干、乾、幹</span>”等；同时在计算机简繁自动转换和文言文印刷等应用领域，由于简繁关系不能一一对应而常常产生错误，如把“头发（<span lang="zh-Latn-CN-pinyin">頭髮</span>）”错转为“<span lang="zh-Latn-CN-pinyin">頭發</span>”、把“干净（<span lang="zh-Latn-CN-pinyin">乾净</span>）”错转为“<span lang="zh-Latn-CN-pinyin">幹净</span>”等。</p>
 <p>在坚持简化政策，不恢复繁体字的前提下，为了准确和更为明晰地反映简化字与繁体字记词职能上的不对等关系，方便字表使用者了解“一简对多繁”的对应关系，明确字用分工职能，在此对这些字组进行了分解说明。具体处理方法是：简繁字的对应以字为单位，凡一个简化字对应多个繁体字的，分解为多项，音不同的分别列出各项的拼音，标音一律采用拼音方案，只标注主要读音和以音别义的音。词例以双音词和短语为主；虚词或难以找到相应短语的单音词先出词性或义项，后面在括弧中举例。只列现代汉语义项和个别有特殊读音的文言义项。不同义项用“；”隔开。“<span lang="zh-Latn-CN-pinyin">～</span>”用以替代与简化字相同的字，这些字在繁体字系统中仍然使用，与同一字头下对应的其他繁体字在职能上有分工。具体分解如下：</p>
 <table>
+<colgroup><col id="xuhao" /><col id="jianhuazi" /><col id="duiying-de-fantizi" /><col id="biaoyin" /><col id="cili-huo-yixiang" /><col id="shuoming" /></colgroup>
 <thead>
 <tr><th>序&NoBreak;号</th><th>简&NoBreak;化&NoBreak;字</th><th>对&NoBreak;应&NoBreak;的繁&NoBreak;体&NoBreak;字</th><th>标音</th><th>词例或义项</th><th>说明</th></tr>
 </thead>
@@ -156,7 +160,7 @@ content: counter(no);
 <tr><td lang="zh-Hant-CN">複</td><td lang="zh-Latn-CN-pinyin">fù</td><td>重复，复写，山重水复；复合，繁复，复姓</td><td></td></tr>
 <tr><td rowspan="3" class="no"></td><td rowspan="3">干</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">gān</td><td>干戈；干犯；干连，干涉；干禄；天干，干支；姓</td><td></td></tr>
 <tr><td lang="zh-Hant-CN">乾</td><td lang="zh-Latn-CN-pinyin">gān</td><td>干燥，干柴；干洗；饼干，葡萄干儿；外强中干；干笑，干号；干亲，干妈；干瞪眼，干打雷不下雨</td><td>注：“乾”读<span lang="zh-Latn-CN-pinyin">qián</span>时不简化作“干”，如“乾隆”“乾坤”。</td></tr>
-<tr><td lang="zh-Hant-CN">幹</td><td lang="zh-Latn-CN-pinyin">gān</td><td>树干，骨干，干细胞；干部；埋头苦干；能干，干练，干才；他干过队长</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">幹</td><td lang="zh-Latn-CN-pinyin">gàn</td><td>树干，骨干，干细胞；干部；埋头苦干；能干，干练，干才；他干过队长</td><td></td></tr>
 <tr><td rowspan="3" class="no"></td><td rowspan="3">谷</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">gǔ</td><td>山谷，谷地，万丈深谷，谷底；姓</td><td></td></tr>
 <tr><td>yù</td><td>吐谷浑</td><td></td></tr>
 <tr><td lang="zh-Hant-CN">穀</td><td lang="zh-Latn-CN-pinyin">gǔ</td><td>五谷杂粮；谷草，谷穗儿</td><td>注：不穀、穀旦的“穀”不简化。</td></tr>
@@ -279,8 +283,8 @@ content: counter(no);
 <tr><td lang="zh-Hant-CN">係</td><td lang="zh-Latn-CN-pinyin">xì</td><td>关系，干系；确系实情</td><td></td></tr>
 <tr><td lang="zh-Hant-CN" rowspan="2">繫</td><td lang="zh-Latn-CN-pinyin">jì</td><td>系鞋带，系纽扣</td><td></td></tr>
 <tr><td>xì</td><td>关系，联系，维系；系马，系缚；系恋，系念</td><td></td></tr>
-<tr><td rowspan="2" class="no"></td><td rowspan="2">咸</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">xián</td><td>咸同，威亨，老少咸宜；姓</td><td></td></tr>
-<tr><td lang="zh-Hant-CN">鹹</td><td lang="zh-Latn-CN-pinyin">xián</td><td>威昧，苦威，威水，咸菜，咸津津</td><td></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">咸</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">xián</td><td>咸同，咸亨，老少咸宜；姓</td><td></td></tr>
+<tr><td lang="zh-Hant-CN">鹹</td><td lang="zh-Latn-CN-pinyin">xián</td><td>咸味，苦咸，咸水，咸菜，咸津津</td><td></td></tr>
 <tr><td rowspan="2" class="no"></td><td rowspan="2">向</td><td lang="zh-Hant-CN">～</td><td lang="zh-Latn-CN-pinyin">xiàng</td><td>介词（向东走）；姓</td><td></td></tr>
 <tr><td lang="zh-Hant-CN">嚮</td><td lang="zh-Latn-CN-pinyin">xiàng</td><td>方向，志向，风向；偏向；趋向，面向；向晓，向晚；向来</td><td></td></tr>
 <tr><td rowspan="3" class="no"></td><td rowspan="3">吁</td><td lang="zh-Hant-CN" rowspan="2">～</td><td lang="zh-Latn-CN-pinyin">xū</td><td>长吁短叹；气喘吁吁</td><td></td></tr>
