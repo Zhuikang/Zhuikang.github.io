@@ -10,16 +10,16 @@ emboldenable: all except cjkv.*/
 
 @font-face {
 font-family: "songti";
-src: local("Source Han Serif CN"), local("SourceHanSerifCN-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular");
 }
 @font-face {
 font-family: "songti";
-src: local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Source Serif Pro"), local("SourceSerifPro-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular"), local("Source Serif Pro"), local("SourceSerifPro-Regular");
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*western*/
 }
 @font-face {
 font-family: "songti";
-src: local("Source Han Serif CN"), local("SourceHanSerifCN-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular");
 font-style: italic;
 }
 @font-face {
@@ -30,37 +30,37 @@ unicode-range: U+2EA-2EB, U+1100-11FF, U+2E80-2E99, U+2E9B-2EF3, U+2F00-2FD5, U+
 }
 @font-face {
 font-family: "songti";
-src: local("SourceSerifPro-It");
+src: local("Source Serif Pro Italic"), local("SourceSerifPro-It");
 font-style: italic;
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*italicizable*/
 }
 @font-face {
 font-family: "songti";
-src: local("SourceHanSansCN-Medium");
+src: local("Source Han Sans SC Medium"), local("SourceHanSansSC-Medium"), local("Source Han Sans CN Medium"), local("SourceHanSansCN-Medium"), local("Noto Sans CJK SC Medium"), local("NotoSansCJKsc-Medium"), local("Noto Sans SC Medium"), local("NotoSansSC-Medium");
 font-weight: bold;
 }
 @font-face {
 font-family: "songti";
-src: local("SourceHanSerifCN-Bold");
-font-weight: bold;
-unicode-range: U+0-2E9, U+2EC-10FF, U+1200-2E7F, U+2E9A, U+2EF4-2EFF, U+2FD6-3000, U+3004, U+3012, U+3020, U+3036, U+3040, U+3097-3098, U+3100-3104, U+3130, U+318F, U+31BB-31BF, U+31E4-31EF, U+321F, U+3248-325F, U+327F, U+32B1-32BF, U+32CC-32CF, U+3371-337A, U+3380-33DF, U+33FF, U+4DB6-4DFF, U+9FF0-A95F, U+A97D-ABFF, U+D7A4-D7AF, U+D7C7-D7CA, U+D7FC-F8FF, U+FA6E-FA6F, U+FADA-FE44, U+FE47-FF60, U+FFBF-FFC1, U+FFC8-FFC9, U+FFD0-FFD1, U+FFD8-FFD9, U+FFDD-1AFFF, U+1B11F-1B14F, U+1B153-1B163, U+1B168-1D35F, U+1D372-1F1FF, U+1F201-1F24F, U+1F252-1FFFF, U+2A6D7-2A6FF, U+2B735-2B73F, U+2B81E-2B81F, U+2CEA2-2CEAF, U+2EBE1-2F7FF, U+2FA1E-10FFFF;/*emboldenable*/
-}
-@font-face {
-font-family: "songti";
-src: local("SourceHanSansCN-Medium");
-font-style: italic;
-font-weight: bold;
-}
-@font-face {
-font-family: "songti";
-src: local("SourceHanSerifCN-Bold");
-font-style: italic;
+src: local("Source Han Serif SC Bold"), local("SourceHanSerifSC-Bold"), local("Source Han Serif CN Bold"), local("SourceHanSerifCN-Bold"), local("Noto Serif CJK SC Bold"), local("NotoSerifCJKsc-Bold"), local("Noto Serif SC Bold"), local("NotoSerifSC-Bold");
 font-weight: bold;
 unicode-range: U+0-2E9, U+2EC-10FF, U+1200-2E7F, U+2E9A, U+2EF4-2EFF, U+2FD6-3000, U+3004, U+3012, U+3020, U+3036, U+3040, U+3097-3098, U+3100-3104, U+3130, U+318F, U+31BB-31BF, U+31E4-31EF, U+321F, U+3248-325F, U+327F, U+32B1-32BF, U+32CC-32CF, U+3371-337A, U+3380-33DF, U+33FF, U+4DB6-4DFF, U+9FF0-A95F, U+A97D-ABFF, U+D7A4-D7AF, U+D7C7-D7CA, U+D7FC-F8FF, U+FA6E-FA6F, U+FADA-FE44, U+FE47-FF60, U+FFBF-FFC1, U+FFC8-FFC9, U+FFD0-FFD1, U+FFD8-FFD9, U+FFDD-1AFFF, U+1B11F-1B14F, U+1B153-1B163, U+1B168-1D35F, U+1D372-1F1FF, U+1F201-1F24F, U+1F252-1FFFF, U+2A6D7-2A6FF, U+2B735-2B73F, U+2B81E-2B81F, U+2CEA2-2CEAF, U+2EBE1-2F7FF, U+2FA1E-10FFFF;/*emboldenable*/
 }
 @font-face {
 font-family: "songti";
-src: local("SourceSerifPro-BoldIt");
+src: local("Source Han Sans SC Medium"), local("SourceHanSansSC-Medium"), local("Source Han Sans CN Medium"), local("SourceHanSansCN-Medium"), local("Noto Sans CJK SC Medium"), local("NotoSansCJKsc-Medium"), local("Noto Sans SC Medium"), local("NotoSansSC-Medium");
+font-style: italic;
+font-weight: bold;
+}
+@font-face {
+font-family: "songti";
+src: local("Source Han Serif SC Bold"), local("SourceHanSerifSC-Bold"), local("Source Han Serif CN Bold"), local("SourceHanSerifCN-Bold"), local("Noto Serif CJK SC Bold"), local("NotoSerifCJKsc-Bold"), local("Noto Serif SC Bold"), local("NotoSerifSC-Bold");
+font-style: italic;
+font-weight: bold;
+unicode-range: U+0-2E9, U+2EC-10FF, U+1200-2E7F, U+2E9A, U+2EF4-2EFF, U+2FD6-3000, U+3004, U+3012, U+3020, U+3036, U+3040, U+3097-3098, U+3100-3104, U+3130, U+318F, U+31BB-31BF, U+31E4-31EF, U+321F, U+3248-325F, U+327F, U+32B1-32BF, U+32CC-32CF, U+3371-337A, U+3380-33DF, U+33FF, U+4DB6-4DFF, U+9FF0-A95F, U+A97D-ABFF, U+D7A4-D7AF, U+D7C7-D7CA, U+D7FC-F8FF, U+FA6E-FA6F, U+FADA-FE44, U+FE47-FF60, U+FFBF-FFC1, U+FFC8-FFC9, U+FFD0-FFD1, U+FFD8-FFD9, U+FFDD-1AFFF, U+1B11F-1B14F, U+1B153-1B163, U+1B168-1D35F, U+1D372-1F1FF, U+1F201-1F24F, U+1F252-1FFFF, U+2A6D7-2A6FF, U+2B735-2B73F, U+2B81E-2B81F, U+2CEA2-2CEAF, U+2EBE1-2F7FF, U+2FA1E-10FFFF;/*emboldenable*/
+}
+@font-face {
+font-family: "songti";
+src: local("Source Serif Pro Bold Italic"), local("SourceSerifPro-BoldIt");
 font-style: italic;
 font-weight: bold;
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*italicizable*/
@@ -70,11 +70,11 @@ unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2
 
 @font-face {
 font-family: "kaiti";
-src: local("Source Han Serif CN"), local("SourceHanSerifCN-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular");
 }
 @font-face {
 font-family: "kaiti";
-src: local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Source Sans Pro"), local("SourceSerifPro-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular"), local("Source Sans Pro"), local("SourceSerifPro-Regular");
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*western*/
 }
 @font-face {
@@ -84,7 +84,7 @@ unicode-range: U+2EA-2EB, U+1100-11FF, U+2E80-2E99, U+2E9B-2EF3, U+2F00-2FD5, U+
 }
 @font-face {
 font-family: "kaiti";
-src: local("Source Han Serif CN"), local("SourceHanSerifCN-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular");
 font-style: italic;
 }
 @font-face {
@@ -95,37 +95,37 @@ unicode-range: U+2EA-2EB, U+1100-11FF, U+2E80-2E99, U+2E9B-2EF3, U+2F00-2FD5, U+
 }
 @font-face {
 font-family: "kaiti";
-src: local("SourceSerifPro-It");
+src: local("Source Serif Pro Italic"), local("SourceSerifPro-It");
 font-style: italic;
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*italicizable*/
 }
 @font-face {
 font-family: "kaiti";
-src: local("SourceHanSansCN-Medium");
+src: local("Source Han Sans SC Medium"), local("SourceHanSansSC-Medium"), local("Source Han Sans CN Medium"), local("SourceHanSansCN-Medium"), local("Noto Sans CJK SC Medium"), local("NotoSansCJKsc-Medium"), local("Noto Sans SC Medium"), local("NotoSansSC-Medium");
 font-weight: bold;
 }
 @font-face {
 font-family: "kaiti";
-src: local("SourceHanSerifCN-Bold");
-font-weight: bold;
-unicode-range: U+0-2E9, U+2EC-10FF, U+1200-2E7F, U+2E9A, U+2EF4-2EFF, U+2FD6-3000, U+3004, U+3012, U+3020, U+3036, U+3040, U+3097-3098, U+3100-3104, U+3130, U+318F, U+31BB-31BF, U+31E4-31EF, U+321F, U+3248-325F, U+327F, U+32B1-32BF, U+32CC-32CF, U+3371-337A, U+3380-33DF, U+33FF, U+4DB6-4DFF, U+9FF0-A95F, U+A97D-ABFF, U+D7A4-D7AF, U+D7C7-D7CA, U+D7FC-F8FF, U+FA6E-FA6F, U+FADA-FE44, U+FE47-FF60, U+FFBF-FFC1, U+FFC8-FFC9, U+FFD0-FFD1, U+FFD8-FFD9, U+FFDD-1AFFF, U+1B11F-1B14F, U+1B153-1B163, U+1B168-1D35F, U+1D372-1F1FF, U+1F201-1F24F, U+1F252-1FFFF, U+2A6D7-2A6FF, U+2B735-2B73F, U+2B81E-2B81F, U+2CEA2-2CEAF, U+2EBE1-2F7FF, U+2FA1E-10FFFF;/*emboldenable*/
-}
-@font-face {
-font-family: "kaiti";
-src: local("SourceHanSansCN-Medium");
-font-style: italic;
-font-weight: bold;
-}
-@font-face {
-font-family: "kaiti";
-src: local("SourceHanSerifCN-Bold");
-font-style: italic;
+src: local("Source Han Serif SC Bold"), local("SourceHanSerifSC-Bold"), local("Source Han Serif CN Bold"), local("SourceHanSerifCN-Bold"), local("Noto Serif CJK SC Bold"), local("NotoSerifCJKsc-Bold"), local("Noto Serif SC Bold"), local("NotoSerifSC-Bold");
 font-weight: bold;
 unicode-range: U+0-2E9, U+2EC-10FF, U+1200-2E7F, U+2E9A, U+2EF4-2EFF, U+2FD6-3000, U+3004, U+3012, U+3020, U+3036, U+3040, U+3097-3098, U+3100-3104, U+3130, U+318F, U+31BB-31BF, U+31E4-31EF, U+321F, U+3248-325F, U+327F, U+32B1-32BF, U+32CC-32CF, U+3371-337A, U+3380-33DF, U+33FF, U+4DB6-4DFF, U+9FF0-A95F, U+A97D-ABFF, U+D7A4-D7AF, U+D7C7-D7CA, U+D7FC-F8FF, U+FA6E-FA6F, U+FADA-FE44, U+FE47-FF60, U+FFBF-FFC1, U+FFC8-FFC9, U+FFD0-FFD1, U+FFD8-FFD9, U+FFDD-1AFFF, U+1B11F-1B14F, U+1B153-1B163, U+1B168-1D35F, U+1D372-1F1FF, U+1F201-1F24F, U+1F252-1FFFF, U+2A6D7-2A6FF, U+2B735-2B73F, U+2B81E-2B81F, U+2CEA2-2CEAF, U+2EBE1-2F7FF, U+2FA1E-10FFFF;/*emboldenable*/
 }
 @font-face {
 font-family: "kaiti";
-src: local("SourceSerifPro-BoldIt");
+src: local("Source Han Sans SC Medium"), local("SourceHanSansSC-Medium"), local("Source Han Sans CN Medium"), local("SourceHanSansCN-Medium"), local("Noto Sans CJK SC Medium"), local("NotoSansCJKsc-Medium"), local("Noto Sans SC Medium"), local("NotoSansSC-Medium");
+font-style: italic;
+font-weight: bold;
+}
+@font-face {
+font-family: "kaiti";
+src: local("Source Han Serif SC Bold"), local("SourceHanSerifSC-Bold"), local("Source Han Serif CN Bold"), local("SourceHanSerifCN-Bold"), local("Noto Serif CJK SC Bold"), local("NotoSerifCJKsc-Bold"), local("Noto Serif SC Bold"), local("NotoSerifSC-Bold");
+font-style: italic;
+font-weight: bold;
+unicode-range: U+0-2E9, U+2EC-10FF, U+1200-2E7F, U+2E9A, U+2EF4-2EFF, U+2FD6-3000, U+3004, U+3012, U+3020, U+3036, U+3040, U+3097-3098, U+3100-3104, U+3130, U+318F, U+31BB-31BF, U+31E4-31EF, U+321F, U+3248-325F, U+327F, U+32B1-32BF, U+32CC-32CF, U+3371-337A, U+3380-33DF, U+33FF, U+4DB6-4DFF, U+9FF0-A95F, U+A97D-ABFF, U+D7A4-D7AF, U+D7C7-D7CA, U+D7FC-F8FF, U+FA6E-FA6F, U+FADA-FE44, U+FE47-FF60, U+FFBF-FFC1, U+FFC8-FFC9, U+FFD0-FFD1, U+FFD8-FFD9, U+FFDD-1AFFF, U+1B11F-1B14F, U+1B153-1B163, U+1B168-1D35F, U+1D372-1F1FF, U+1F201-1F24F, U+1F252-1FFFF, U+2A6D7-2A6FF, U+2B735-2B73F, U+2B81E-2B81F, U+2CEA2-2CEAF, U+2EBE1-2F7FF, U+2FA1E-10FFFF;/*emboldenable*/
+}
+@font-face {
+font-family: "kaiti";
+src: local("Source Serif Pro Bold Italic"), local("SourceSerifPro-BoldIt");
 font-style: italic;
 font-weight: bold;
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*italicizable*/
@@ -135,21 +135,21 @@ unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2
 
 @font-face {
 font-family: "fangsongti";
-src: local("Source Han Serif CN"), local("SourceHanSerifCN-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular");
 }
 @font-face {
 font-family: "fangsongti";
-src: local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Source Serif Pro"), local("SourceSerifPro-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular"), local("Source Serif Pro"), local("SourceSerifPro-Regular");
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*western*/
 }
 @font-face {
 font-family: "fangsongti";
-src: local("FandolFang"), local("FandolFang-Regular");
+src: local("FandolFang R"), local("FandolFang-Regular");
 unicode-range: U+2EA-2EB, U+1100-11FF, U+2E80-2E99, U+2E9B-2EF3, U+2F00-2FD5, U+3001-3003, U+3005-3011, U+3013-301F, U+3021-3035, U+3037-303F, U+3041-3096, U+3099-30FF, U+3105-312F, U+3131-318E, U+3190-31BA, U+31C0-31E3, U+31F0-321E, U+3220-3247, U+3260-327E, U+3280-32B0, U+32C0-32CB, U+32D0-3370, U+337B-337F, U+33E0-33FE, U+3400-4DB5, U+4E00-9FEF, U+A960-A97C, U+AC00-D7A3, U+D7B0-D7C6, U+D7CB-D7FB, U+F900-FA6D, U+FA70-FAD9, U+FE45-FE46, U+FF61-FFBE, U+FFC2-FFC7, U+FFCA-FFCF, U+FFD2-FFD7, U+FFDA-FFDC, U+1B000-1B11E, U+1B150-1B152, U+1B164-1B167, U+1D360-1D371, U+1F200, U+1F250-1F251, U+20000-2A6D6, U+2A700-2B734, U+2B740-2B81D, U+2B820-2CEA1, U+2CEB0-2EBE0, U+2F800-2FA1D;/*cjkv*/
 }
 @font-face {
 font-family: "fangsongti";
-src: local("Source Han Serif CN"), local("SourceHanSerifCN-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular");
 font-style: italic;
 }
 @font-face {
@@ -160,37 +160,37 @@ unicode-range: U+2EA-2EB, U+1100-11FF, U+2E80-2E99, U+2E9B-2EF3, U+2F00-2FD5, U+
 }
 @font-face {
 font-family: "fangsongti";
-src: local("SourceSerifPro-It");
+src: local("Source Serif Pro Italic"), local("SourceSerifPro-It");
 font-style: italic;
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*italicizable*/
 }
 @font-face {
 font-family: "fangsongti";
-src: local("SourceHanSansCN-Medium");
+src: local("Source Han Sans SC Medium"), local("SourceHanSansSC-Medium"), local("Source Han Sans CN Medium"), local("SourceHanSansCN-Medium"), local("Noto Sans CJK SC Medium"), local("NotoSansCJKsc-Medium"), local("Noto Sans SC Medium"), local("NotoSansSC-Medium");
 font-weight: bold;
 }
 @font-face {
 font-family: "fangsongti";
-src: local("SourceHanSerifCN-Bold");
-font-weight: bold;
-unicode-range: U+0-2E9, U+2EC-10FF, U+1200-2E7F, U+2E9A, U+2EF4-2EFF, U+2FD6-3000, U+3004, U+3012, U+3020, U+3036, U+3040, U+3097-3098, U+3100-3104, U+3130, U+318F, U+31BB-31BF, U+31E4-31EF, U+321F, U+3248-325F, U+327F, U+32B1-32BF, U+32CC-32CF, U+3371-337A, U+3380-33DF, U+33FF, U+4DB6-4DFF, U+9FF0-A95F, U+A97D-ABFF, U+D7A4-D7AF, U+D7C7-D7CA, U+D7FC-F8FF, U+FA6E-FA6F, U+FADA-FE44, U+FE47-FF60, U+FFBF-FFC1, U+FFC8-FFC9, U+FFD0-FFD1, U+FFD8-FFD9, U+FFDD-1AFFF, U+1B11F-1B14F, U+1B153-1B163, U+1B168-1D35F, U+1D372-1F1FF, U+1F201-1F24F, U+1F252-1FFFF, U+2A6D7-2A6FF, U+2B735-2B73F, U+2B81E-2B81F, U+2CEA2-2CEAF, U+2EBE1-2F7FF, U+2FA1E-10FFFF;/*emboldenable*/
-}
-@font-face {
-font-family: "fangsongti";
-src: local("SourceHanSansCN-Medium");
-font-style: italic;
-font-weight: bold;
-}
-@font-face {
-font-family: "fangsongti";
-src: local("SourceHanSerifCN-Bold");
-font-style: italic;
+src: local("Source Han Serif SC Bold"), local("SourceHanSerifSC-Bold"), local("Source Han Serif CN Bold"), local("SourceHanSerifCN-Bold"), local("Noto Serif CJK SC Bold"), local("NotoSerifCJKsc-Bold"), local("Noto Serif SC Bold"), local("NotoSerifSC-Bold");
 font-weight: bold;
 unicode-range: U+0-2E9, U+2EC-10FF, U+1200-2E7F, U+2E9A, U+2EF4-2EFF, U+2FD6-3000, U+3004, U+3012, U+3020, U+3036, U+3040, U+3097-3098, U+3100-3104, U+3130, U+318F, U+31BB-31BF, U+31E4-31EF, U+321F, U+3248-325F, U+327F, U+32B1-32BF, U+32CC-32CF, U+3371-337A, U+3380-33DF, U+33FF, U+4DB6-4DFF, U+9FF0-A95F, U+A97D-ABFF, U+D7A4-D7AF, U+D7C7-D7CA, U+D7FC-F8FF, U+FA6E-FA6F, U+FADA-FE44, U+FE47-FF60, U+FFBF-FFC1, U+FFC8-FFC9, U+FFD0-FFD1, U+FFD8-FFD9, U+FFDD-1AFFF, U+1B11F-1B14F, U+1B153-1B163, U+1B168-1D35F, U+1D372-1F1FF, U+1F201-1F24F, U+1F252-1FFFF, U+2A6D7-2A6FF, U+2B735-2B73F, U+2B81E-2B81F, U+2CEA2-2CEAF, U+2EBE1-2F7FF, U+2FA1E-10FFFF;/*emboldenable*/
 }
 @font-face {
 font-family: "fangsongti";
-src: local("SourceSerifPro-BoldIt");
+src: local("Source Han Sans SC Medium"), local("SourceHanSansSC-Medium"), local("Source Han Sans CN Medium"), local("SourceHanSansCN-Medium"), local("Noto Sans CJK SC Medium"), local("NotoSansCJKsc-Medium"), local("Noto Sans SC Medium"), local("NotoSansSC-Medium");
+font-style: italic;
+font-weight: bold;
+}
+@font-face {
+font-family: "fangsongti";
+src: local("Source Han Serif SC Bold"), local("SourceHanSerifSC-Bold"), local("Source Han Serif CN Bold"), local("SourceHanSerifCN-Bold"), local("Noto Serif CJK SC Bold"), local("NotoSerifCJKsc-Bold"), local("Noto Serif SC Bold"), local("NotoSerifSC-Bold");
+font-style: italic;
+font-weight: bold;
+unicode-range: U+0-2E9, U+2EC-10FF, U+1200-2E7F, U+2E9A, U+2EF4-2EFF, U+2FD6-3000, U+3004, U+3012, U+3020, U+3036, U+3040, U+3097-3098, U+3100-3104, U+3130, U+318F, U+31BB-31BF, U+31E4-31EF, U+321F, U+3248-325F, U+327F, U+32B1-32BF, U+32CC-32CF, U+3371-337A, U+3380-33DF, U+33FF, U+4DB6-4DFF, U+9FF0-A95F, U+A97D-ABFF, U+D7A4-D7AF, U+D7C7-D7CA, U+D7FC-F8FF, U+FA6E-FA6F, U+FADA-FE44, U+FE47-FF60, U+FFBF-FFC1, U+FFC8-FFC9, U+FFD0-FFD1, U+FFD8-FFD9, U+FFDD-1AFFF, U+1B11F-1B14F, U+1B153-1B163, U+1B168-1D35F, U+1D372-1F1FF, U+1F201-1F24F, U+1F252-1FFFF, U+2A6D7-2A6FF, U+2B735-2B73F, U+2B81E-2B81F, U+2CEA2-2CEAF, U+2EBE1-2F7FF, U+2FA1E-10FFFF;/*emboldenable*/
+}
+@font-face {
+font-family: "fangsongti";
+src: local("Source Serif Pro Bold Italic"), local("SourceSerifPro-BoldIt");
 font-style: italic;
 font-weight: bold;
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*italicizable*/
@@ -200,16 +200,16 @@ unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2
 
 @font-face {
 font-family: "dengxianti";
-src: local("Source Han Sans CN"), local("SourceHanSansCN-Regular");/*"Source Han Sans SC", "Noto Sans CJK SC", "Noto Sans SC"*/
+src: local("Source Han Sans SC"), local("SourceHanSansSC-Regular"), local("Source Han Sans CN"), local("SourceHanSansCN-Regular"), local("Noto Sans CJK SC"), local("NotoSansCJKsc-Regular"), local("Noto Sans SC"), local("NotoSansSC-Regular");
 }
 @font-face {
 font-family: "dengxianti";
-src: local("Source Han Sans CN"), local("SourceHanSansCN-Regular"), local("Source Sans Pro"), local("SourceSansPro-Regular");
+src: local("Source Han Sans SC"), local("SourceHanSansSC-Regular"), local("Source Han Sans CN"), local("SourceHanSansCN-Regular"), local("Noto Sans CJK SC"), local("NotoSansCJKsc-Regular"), local("Noto Sans SC"), local("NotoSansSC-Regular"), local("Source Sans Pro"), local("SourceSansPro-Regular");
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*western*/
 }
 @font-face {
 font-family: "dengxianti";
-src: local("Source Han Sans CN"), local("SourceHanSansCN-Regular");
+src: local("Source Han Sans SC"), local("SourceHanSansSC-Regular"), local("Source Han Sans CN"), local("SourceHanSansCN-Regular"), local("Noto Sans CJK SC"), local("NotoSansCJKsc-Regular"), local("Noto Sans SC"), local("NotoSansSC-Regular");
 font-style: italic;
 }
 @font-face {
@@ -220,24 +220,24 @@ unicode-range: U+2EA-2EB, U+1100-11FF, U+2E80-2E99, U+2E9B-2EF3, U+2F00-2FD5, U+
 }
 @font-face {
 font-family: "dengxianti";
-src: local("SourceSansPro-It");
+src: local("Source Sans Pro Italic"), local("SourceSansPro-It");
 font-style: italic;
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*italicizable*/
 }
 @font-face {
 font-family: "dengxianti";
-src: local("SourceHanSansCN-Bold");
+src: local("Source Han Sans SC Bold"), local("SourceHanSansSC-Bold"), local("Source Han Sans CN Bold"), local("SourceHanSansCN-Bold"), local("Noto Sans CJK SC Bold"), local("NotoSansCJKsc-Bold"), local("Noto Sans SC Bold"), local("NotoSansSC-Bold");
 font-weight: bold;
 }
 @font-face {
 font-family: "dengxianti";
-src: local("SourceHanSansCN-Bold");
+src: local("Source Han Sans SC Bold"), local("SourceHanSansSC-Bold"), local("Source Han Sans CN Bold"), local("SourceHanSansCN-Bold"), local("Noto Sans CJK SC Bold"), local("NotoSansCJKsc-Bold"), local("Noto Sans SC Bold"), local("NotoSansSC-Bold");
 font-style: italic;
 font-weight: bold;
 }
 @font-face {
 font-family: "dengxianti";
-src: local("SourceSansPro-BoldIt");
+src: local("Source Sans Pro Bold Italic"), local("SourceSansPro-BoldIt");
 font-style: italic;
 font-weight: bold;
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*italicizable*/
@@ -249,16 +249,16 @@ unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2
 
 @font-face {
 font-family: "biaoti-songti";
-src: local("Source Han Serif CN"), local("SourceHanSerifCN-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular");
 }
 @font-face {
 font-family: "biaoti-songti";
-src: local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Source Serif Pro"), local("SourceSerifPro-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular"), local("Source Serif Pro"), local("SourceSerifPro-Regular");
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*western*/
 }
 @font-face {
 font-family: "biaoti-songti";
-src: local("Source Han Serif CN"), local("SourceHanSerifCN-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular");
 font-style: italic;
 }
 @font-face {
@@ -269,30 +269,30 @@ unicode-range: U+2EA-2EB, U+1100-11FF, U+2E80-2E99, U+2E9B-2EF3, U+2F00-2FD5, U+
 }
 @font-face {
 font-family: "biaoti-songti";
-src: local("SourceSerifPro-It");
+src: local("Source Serif Pro Italic"), local("SourceSerifPro-It");
 font-style: italic;
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*italicizable*/
 }
 @font-face {
 font-family: "biaoti-songti";
-src: local("SourceHanSerifCN-Bold");
+src: local("Source Han Serif SC Bold"), local("SourceHanSerifSC-Bold"), local("Source Han Serif CN Bold"), local("SourceHanSerifCN-Bold"), local("Noto Serif CJK SC Bold"), local("NotoSerifCJKsc-Bold"), local("Noto Serif SC Bold"), local("NotoSerifSC-Bold");
 font-weight: bold;
 }
 @font-face {
 font-family: "biaoti-songti";
-src: local("SourceHanSerifCN-Bold");
+src: local("Source Han Serif SC Bold"), local("SourceHanSerifSC-Bold"), local("Source Han Serif CN Bold"), local("SourceHanSerifCN-Bold"), local("Noto Serif CJK SC Bold"), local("NotoSerifCJKsc-Bold"), local("Noto Serif SC Bold"), local("NotoSerifSC-Bold");
 font-weight: bold;
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*western*/
 }
 @font-face {
 font-family: "biaoti-songti";
-src: local("SourceHanSerifCN-Bold");
+src: local("Source Han Serif SC Bold"), local("SourceHanSerifSC-Bold"), local("Source Han Serif CN Bold"), local("SourceHanSerifCN-Bold"), local("Noto Serif CJK SC Bold"), local("NotoSerifCJKsc-Bold"), local("Noto Serif SC Bold"), local("NotoSerifSC-Bold");
 font-style: italic;
 font-weight: bold;
 }
 @font-face {
 font-family: "biaoti-songti";
-src: local("SourceSerifPro-BoldIt");
+src: local("Source Serif Pro Bold Italic"), local("SourceSerifPro-BoldIt");
 font-style: italic;
 font-weight: bold;
 unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2E4, U+342, U+345, U+363-373, U+375-377, U+37A-37D, U+37F, U+384, U+386, U+388-38A, U+38C, U+38E-3A1, U+3A3-3E1, U+3F0-52F, U+531-556, U+559-58A, U+58D-58F, U+951-952, U+10A0-10C5, U+10C7, U+10CD, U+10D0-10FF, U+1C80-1C88, U+1C90-1CBA, U+1CBD-1CBF, U+1D00-1DC1, U+1E00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+202F, U+2071, U+207F, U+2090-209C, U+20F0, U+2126, U+212A-212B, U+2132, U+214E, U+2160-2188, U+2C60-2C7F, U+2D00-2D25, U+2D27, U+2D2D, U+2DE0-2DFF, U+2E43, U+A640-A69F, U+A722-A787, U+A78B-A7BF, U+A7C2-A7C6, U+A7F7-A7FF, U+A92E, U+AB30-AB5A, U+AB5C-AB67, U+FB00-FB06, U+FB13-FB17, U+FE2E-FE2F, U+FF21-FF3A, U+FF41-FF5A, U+10140-1018E, U+101A0, U+1D200-1D245;/*italicizable*/
@@ -304,21 +304,21 @@ unicode-range: U+41-5A, U+61-7A, U+AA, U+BA, U+C0-D6, U+D8-F6, U+F8-2B8, U+2E0-2
 
 @font-face {
 font-family: "serif-western";
-src: local("Source Serif Pro"), local("SourceSerifPro-Regular");
+src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular"), local("Source Serif Pro"), local("SourceSerifPro-Regular");
 }
 @font-face {
 font-family: "serif-western";
-src: local("SourceSerifPro-It");
+src: local("Source Serif Pro Italic"), local("SourceSerifPro-It");
 font-style: italic;
 }
 @font-face {
 font-family: "serif-western";
-src: local("SourceSerifPro-Bold");
+src: local("Source Han Serif SC Bold"), local("SourceHanSerifSC-Bold"), local("Source Han Serif CN Bold"), local("SourceHanSerifCN-Bold"), local("Noto Serif CJK SC Bold"), local("NotoSerifCJKsc-Bold"), local("Noto Serif SC Bold"), local("NotoSerifSC-Bold"), local("SourceSerifPro-Bold");
 font-weight: bold;
 }
 @font-face {
 font-family: "serif-western";
-src: local("SourceSerifPro-BoldIt");
+src: local("Source Serif Pro Bold Italic"), local("SourceSerifPro-BoldIt");
 font-style: italic;
 font-weight: bold;
 }
@@ -327,21 +327,21 @@ font-weight: bold;
 
 @font-face {
 font-family: "sans-serif-western";
-src: local("Source Sans Pro"), local("SourceSansPro-Regular");
+src: local("Source Han Sans SC"), local("SourceHanSansSC-Regular"), local("Source Han Sans CN"), local("SourceHanSansCN-Regular"), local("Noto Sans CJK SC"), local("NotoSansCJKsc-Regular"), local("Noto Sans SC"), local("NotoSansSC-Regular"), local("Source Sans Pro"), local("SourceSansPro-Regular");
 }
 @font-face {
 font-family: "sans-serif-western";
-src: local("SourceSansPro-It");
+src: local("Source Sans Pro Italic"), local("SourceSansPro-It");
 font-style: italic;
 }
 @font-face {
 font-family: "sans-serif-western";
-src: local("SourceSansPro-Bold");
+src: local("Source Han Sans SC Bold"), local("SourceHanSansSC-Bold"), local("Source Han Sans CN Bold"), local("SourceHanSansCN-Bold"), local("Noto Sans CJK SC Bold"), local("NotoSansCJKsc-Bold"), local("Noto Sans SC Bold"), local("NotoSansSC-Bold"), local("SourceSansPro-Bold");
 font-weight: bold;
 }
 @font-face {
 font-family: "sans-serif-western";
-src: local("SourceSansPro-BoldIt");
+src: local("Source Sans Pro Bold Italic"), local("SourceSansPro-BoldIt");
 font-style: italic;
 font-weight: bold;
 }

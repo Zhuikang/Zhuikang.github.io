@@ -32,6 +32,10 @@ font-size: 4.2mm/*小四号*/;
 text-align: justify;
 hyphens: auto;
 }
+:lang(zh-pinyin), :lang(zh-Latn), :lang(en), :lang(fr), :lang(de), :lang(es), :lang(ru), :lang(ar) {
+font-family: "serif-western", serif;
+font-feature-settings: "pwid" on;
+}
 body {
 margin: 0 auto;
 max-width: 40rem;
@@ -116,13 +120,13 @@ columns: 2;
 column-gap: 2em;
 }
 p.author {
-font-family: "kaiti";
+font-family: "kaiti", "fangsongti", "songti", serif;
 text-indent: 0;
 text-align: center;
 margin: 1em auto;
 }
 p.date, p.author-date {
-font-family: "kaiti";
+font-family: "kaiti", "fangsongti", "songti", serif;
 font-size: 3.675mm/*五号*/;
 text-indent: 0;
 text-align: center;
@@ -132,12 +136,12 @@ p.author-date {
 text-align: right;
 }
 .abstract {
-font-family: "kaiti";
+font-family: "kaiti", "fangsongti", "songti", serif;
 padding-left: 2rem;
 padding-right: 2rem;
 }
 p.edition {
-font-family: "kaiti";
+font-family: "kaiti", "fangsongti", "songti", serif;
 text-align: right;
 margin-top: 1em;
 }
