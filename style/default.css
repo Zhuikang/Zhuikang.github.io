@@ -27,14 +27,17 @@ html {
 background-color: #f5f5f5/*whitesmoke*/;
 color: black;
 font-family: "songti", serif;
-font-feature-settings: "hist" on;
+font-feature-settings: "tnum", "afrc";
 font-size: 4.2mm/*小四号*/;
 text-align: justify;
 hyphens: auto;
 }
-:lang(zh-pinyin), :lang(zh-Latn), :lang(en), :lang(fr), :lang(de), :lang(es), :lang(ru), :lang(ar) {
+:lang(zh-Bopo) {
+font-feature-settings: "hist";/*for Source Han fonts*/
+}
+:lang(zh-pinyin), :lang(zh-Latn), :lang(en), :lang(fr), :lang(de), :lang(es), :lang(ru) {
 font-family: "serif-western", serif;
-font-feature-settings: "pwid" on;
+font-feature-settings: "pwid";/*for Source Han fonts*/
 }
 body {
 margin: 0 auto;
@@ -252,7 +255,8 @@ font-style: inherit;
 }
 code, samp, kbd {
 font-family: "dengxianti", monospace;
-font-feature-settings: "hwid" on;
+font-feature-settings: "hwid", "kern" 0;
+font-variant-ligatures: none;
 }
 u:lang(zh) {
 text-decoration-skip: edges;
