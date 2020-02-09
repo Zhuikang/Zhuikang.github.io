@@ -16,8 +16,8 @@ unicode-range: U+3007, U+3400-4DBF, U+4E00-9FFF, U+20000-2A6DF, U+2A700-2B73F, U
 }
 @font-face {
 font-family: "通用规范汉字";
-src: local("BabelStone Han");
-unicode-range: U+9FCD-9FCF;
+src: local("BabelStone Han"), local("BabelStoneHan"), local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), local("Source Han Serif CN"), local("SourceHanSerifCN-Regular"), local("Noto Serif CJK SC"), local("NotoSerifCJKsc-Regular"), local("Noto Serif SC"), local("NotoSerifSC-Regular");
+unicode-range: U+9FCD-9FCF, U+2B8B8, U+2BAC7, U+2BB5F, U+2BB62, U+2BB7C, U+2BB83, U+2BC1B;
 }
 @font-face {
 font-family: "繁体字、异体字";
@@ -44,21 +44,9 @@ font-family: "繁体字、异体字";
 src: local("ZhongHuaSongPlane02");
 unicode-range: U+23E8C/*𣺌*/, U+2591A/*𥤚*/, U+26548/*𦕈*/;
 }
-@font-face {
-font-family: "标点符号";
-src: local("BabelStone Han");
-unicode-range: U+002F, U+00B7, U+2022, U+FF3F, U+FE4F, U+FF5E;
-}
-@font-face {
-font-family: "汉语拼音";
-src: local("Doulos SIL");
-unicode-range: U+0041, U+0042, U+0043, U+0044, U+0045, U+0046, U+0047, U+0048, U+0049, U+004A, U+004B, U+004C, U+004D, U+004E, U+004F, U+0050, U+0051, U+0052, U+0053, U+0054, U+0055, U+0056, U+0057, U+0058, U+0059, U+005A, U+0061, U+0062, U+0063, U+0064, U+0065, U+0066, U+0067, U+0068, U+0069, U+006A, U+006B, U+006C, U+006D, U+006E, U+006F, U+0070, U+0071, U+0072, U+0073, U+0074, U+0075, U+0076, U+0077, U+0078, U+0079, U+007A, U+00C0, U+00C1, U+00C8, U+00C9, U+00CA, U+00CC, U+00CD, U+00D2, U+00D3, U+00D9, U+00DA, U+00DC, U+00E0, U+00E1, U+00E8, U+00E9, U+00EA, U+00EC, U+00ED, U+00F2, U+00F3, U+00F9, U+00FA, U+00FC, U+0100, U+0101, U+0108, U+0109, U+0112, U+0113, U+011A, U+011B, U+012A, U+012B, U+0143, U+0144, U+0147, U+0148, U+014A, U+014B, U+014C, U+014D, U+015C, U+015D, U+016A, U+016B, U+01CD, U+01CE, U+01CF, U+01D0, U+01D1, U+01D2, U+01D3, U+01D4, U+01D5, U+01D6, U+01D7, U+01D8, U+01D9, U+01DA, U+01DB, U+01DC, U+01F8, U+01F9, U+02C7, U+02C9, U+02CA, U+02CB, U+0300, U+0301, U+0304, U+030C, U+1E3E, U+1E3F, U+1E90, U+1E91, U+1EBE, U+1EBF, U+1EC0, U+1EC1, U+2019;
-}
 main {
-font-family: "通用规范汉字", "繁体字、异体字", "标点符号", "汉语拼音", "FZGFShuSong";
--moz-font-feature-settings: "Engs" 1;
+font-family: "通用规范汉字", "繁体字、异体字", "FZGFShuSong", "FZShuSong-Z01", "FZSSK--GBK1-0";
 }
-
 .jiu-zixing {
 font-family: "BabelStone Han";
 font-feature-settings: "cv01";
@@ -100,19 +88,19 @@ text-align: justify;
 <h1>简化字与繁体字的对应关系</h1>
 <div class="front">
 <div class="abstract">
-<p>编者按：本篇摘自《〈通用规范汉字表〉解读》（王宁主编，商务印书馆2013年版，第29—45页），原标题为《〈通用规范汉字表〉对简繁对应关系的处理》。</p>
+<p>编者按：本篇摘自王宁主编，李宇明、王铁琨审订：《〈通用规范汉字表〉解读》，北京：商务印书馆，2013年，第29—45页。原标题为《〈通用规范汉字表〉对简繁对应关系的处理》。</p>
 </div>
 </div>
 <p>简繁对应关系是指简化字对应一个或多个繁体字（或传承字）。其中，比较复杂的对应关系是“一简对多繁”，即一个简化字对应多个繁体字（或传承字）的现象。这种现象主要是字用合并造成的。</p>
-<p>字用合并对减少社会用字的字数，减轻使用者记忆和分辨的负担有积极作用。但其中也存在一些问题，如因合并而引起歧义，如“干”对应“<span lang="zh-Latn-CN-pinyin">干、乾、幹</span>”等；同时在计算机简繁自动转换和文言文印刷等应用领域，由于简繁关系不能一一对应而常常产生错误，如把“头发（<span lang="zh-Latn-CN-pinyin">頭髮</span>）”错转为“<span lang="zh-Latn-CN-pinyin">頭發</span>”、把“干净（<span lang="zh-Latn-CN-pinyin">乾净</span>）”错转为“<span lang="zh-Latn-CN-pinyin">幹净</span>”等。</p>
-<p>在坚持简化政策，不恢复繁体字的前提下，为了准确和更为明晰地反映简化字与繁体字记词职能上的不对等关系，方便字表使用者了解“一简对多繁”的对应关系，明确字用分工职能，在此对这些字组进行了分解说明。具体处理方法是：简繁字的对应以字为单位，凡一个简化字对应多个繁体字的，分解为多项，音不同的分别列出各项的拼音，标音一律采用拼音方案，只标注主要读音和以音别义的音。词例以双音词和短语为主；虚词或难以找到相应短语的单音词先出词性或义项，后面在括弧中举例。只列现代汉语义项和个别有特殊读音的文言义项。不同义项用“；”隔开。“<span lang="zh-Latn-CN-pinyin">～</span>”用以替代与简化字相同的字，这些字在繁体字系统中仍然使用，与同一字头下对应的其他繁体字在职能上有分工。具体分解如下：</p>
+<p>字用合并对减少社会用字的字数，减轻使用者记忆和分辨的负担有积极作用。但其中也存在一些问题，如因合并而引起歧义，如“干”对应“<span lang="zh-Hant-CN">干、乾、幹</span>”等；同时在计算机简繁自动转换和文言文印刷等应用领域，由于简繁关系不能一一对应而常常产生错误，如把“头发（<span lang="zh-Hant-CN">頭髮</span>）”错转为“<span lang="zh-Hant-CN">頭發</span>”、把“干净（<span lang="zh-Hant-CN">乾净</span>）”错转为“<span lang="zh-Hant-CN">幹净</span>”等。</p>
+<p>在坚持简化政策，不恢复繁体字的前提下，为了准确和更为明晰地反映简化字与繁体字记词职能上的不对等关系，方便字表使用者了解“一简对多繁”的对应关系，明确字用分工职能，在此对这些字组进行了分解说明。具体处理方法是：简繁字的对应以字为单位，凡一个简化字对应多个繁体字的，分解为多项，音不同的分别列出各项的拼音，标音一律采用拼音方案，只标注主要读音和以音别义的音。词例以双音词和短语为主；虚词或难以找到相应短语的单音词先出词性或义项，后面在括弧中举例。只列现代汉语义项和个别有特殊读音的文言义项。不同义项用“；”隔开。“<span lang="zh-Hant-CN">～</span>”用以替代与简化字相同的字，这些字在繁体字系统中仍然使用，与同一字头下对应的其他繁体字在职能上有分工。具体分解如下：</p>
 <table>
 <colgroup><col id="xuhao" /><col id="jianhuazi" /><col id="duiying-de-fantizi" /><col id="biaoyin" /><col id="cili-huo-yixiang" /><col id="shuoming" /></colgroup>
 <thead>
 <tr><th>序&NoBreak;号</th><th>简&NoBreak;化&NoBreak;字</th><th>对&NoBreak;应&NoBreak;的繁&NoBreak;体&NoBreak;字</th><th>标音</th><th>词例或义项</th><th>说明</th></tr>
 </thead>
 <tbody>
-<tr><td rowspan="2" class="no"></td><td rowspan="2">坝</td><td lang="zh-Hant-CN">垻</td><td lang="zh-Latn-CN-pinyin">bà</td><td>平地（沙坪坝）</td><td lang="zh-Latn-CN-pinyin"></td></tr>
+<tr><td rowspan="2" class="no"></td><td rowspan="2">坝</td><td lang="zh-Hant-CN">垻</td><td lang="zh-Latn-CN-pinyin">bà</td><td>平地（沙坪坝）</td><td></td></tr>
 <tr><td lang="zh-Hant-CN">壩</td><td lang="zh-Latn-CN-pinyin">bà</td><td>水坝，堤坝，河坝</td><td></td></tr>
 <tr><td rowspan="2" class="no"></td><td rowspan="2">摆</td><td lang="zh-Hant-CN">擺</td><td lang="zh-Latn-CN-pinyin">bǎi</td><td>摆放，摆开；摆阔，摆威风；摇摆，摆手，摆动；钟摆；摆事实</td><td></td></tr>
 <tr><td lang="zh-Hant-CN">襬</td><td lang="zh-Latn-CN-pinyin">bǎi</td><td>下摆，衣摆</td><td></td></tr>
@@ -341,7 +329,7 @@ text-align: justify;
 <h2>参　　见</h2>
 <ul class="see-also">
 <li>《<a href="tongyong-guifan-hanzi-biao.html">通用规范汉字表</a>》及其附件1《<a href="guifanzi-yu-fantizi-yitizi-duizhaobiao.html">规范字与繁体字、异体字对照表</a>》。</li>
-<li lang="zh-Hant">BYVoid：《現代漢語常用簡繁一對多字義辨析表》，韻典網，<code class="url">https://ytenx.org/byohlyuk/Kienx<wbr />Pyan</code>。</li>
+<li lang="zh-Hant">BYVoid：《現代漢語常用簡繁一對多字義辨析表》，韻典網，<a href="https://ytenx.org/byohlyuk/KienxPyan" class="url">https://ytenx.org/byohlyuk/Kienx<wbr />Pyan</a>。（该表系民间制订的规则，与各地现行规范均不同，其原则是“辨义字组能分则不合”。）</li>
 </ul>
 <nav>
 <p>话题：<a href="index.html#zibiao">字表</a></p>
@@ -350,12 +338,7 @@ text-align: justify;
 </div>
 </main>
 <footer>
-<p><img src="../img/Zhou-Ruikang-logo.svg" alt="周睿康" class="symbol" />　2019年</p>
+<p><img src="../img/Zhou-Ruikang-logo.svg" alt="周睿康" class="symbol" />　2019—2020年</p>
 </footer>
-</body>
-</html>
-
-<hr />
-
 </body>
 </html>

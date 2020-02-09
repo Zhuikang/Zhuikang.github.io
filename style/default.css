@@ -253,7 +253,7 @@ text-emphasis: dot;
 cite:lang(zh) {
 font-style: inherit;
 }
-code, samp, kbd {
+code, samp, kbd, .url {
 font-family: "dengxianti", monospace;
 font-feature-settings: "hwid", "kern" 0;
 font-variant-ligatures: none;
