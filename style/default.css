@@ -142,11 +142,17 @@ text-align: right;
 font-family: "kaiti", "fangsongti", "songti", serif;
 padding-left: 2rem;
 padding-right: 2rem;
+margin-bottom: 0.5rem;
 }
 p.edition {
 font-family: "kaiti", "fangsongti", "songti", serif;
 text-align: right;
 margin-top: 1em;
+}
+.verse {
+text-align: center;
+text-indent: 0;
+white-space: pre;
 }
 address {
 font-style: inherit;
