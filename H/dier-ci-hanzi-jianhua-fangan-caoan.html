@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>第二次汉字简化方案（草案）</title>
+<meta name="author" content="中国文字改革委员会" />
+<!--<meta name="description" content="" />
+<meta name="keywords" content="" />-->
+<link rel="stylesheet" href="../style/default.css" />
+<style>
+@namespace url(http://www.w3.org/1999/xhtml);
+@font-face {
+font-family: "erjianzi-1";
+src: local("BabelStone Erjian 1"), local("BabelStoneErjian1"), url("../font/BabelStoneErjian1.woff2") format("woff2"), url("../font/BabelStoneErjian1.woff") format("woff"), url("../font/BabelStoneErjian1.ttf") format("truetype")/*, url("https://www.babelstone.co.uk/Fonts/WOFF/BabelStoneErjian1.woff2") format("woff2"), url("https://www.babelstone.co.uk/Fonts/WOFF/BabelStoneErjian1.woff") format("woff"), url("https://www.babelstone.co.uk/Fonts/Download/BabelStoneErjian1.ttf") format("truetype")*/;
+}
+@font-face {
+font-family: "erjianzi-2";
+src: local("BabelStone Erjian 2"), local("BabelStoneErjian2"), url("../font/BabelStoneErjian2.woff2") format("woff2"), url("../font/BabelStoneErjian2.woff") format("woff"), url("../font/BabelStoneErjian2.ttf") format("truetype")/*, url("https://www.babelstone.co.uk/Fonts/WOFF/BabelStoneErjian2.woff2") format("woff2"), url("https://www.babelstone.co.uk/Fonts/WOFF/BabelStoneErjian2.woff") format("woff"), url("https://www.babelstone.co.uk/Fonts/Download/BabelStoneErjian2.ttf") format("truetype")*/;
+}
+@font-face {
+font-family: "waizi";
+src: local("BabelStone Han PUA"), local("BabelStoneHanPUA"), 
+url("dier-ci-hanzi-jianhua-fangan-caoan_font/BabelStoneHanPUA.subset.woff2") format("woff2"), url("dier-ci-hanzi-jianhua-fangan-caoan_font/BabelStoneHanPUA.subset.woff") format("woff"), url("dier-ci-hanzi-jianhua-fangan-caoan_font/BabelStoneHanPUA.subset.ttf") format("truetype")/*, url("https://www.babelstone.co.uk/Fonts/WOFF/BabelStoneHanPUA.woff2") format("woff2"), url("https://www.babelstone.co.uk/Fonts/WOFF/BabelStoneHanPUA.woff") format("woff"), url("https://www.babelstone.co.uk/Fonts/Download/BabelStoneHanPUA.ttf") format("truetype")*/;
+}
+:lang(zh-Hans-CN-x-erjian1) {
+font-family: "erjianzi-1", "BabelStone Erjian 1", "BabelStoneErjian1";
+}
+:lang(zh-Hans-CN-x-erjian2) {
+font-family: "erjianzi-2", "BabelStone Erjian 2", "BabelStoneErjian2", "erjianzi-1", "BabelStone Erjian 1", "BabelStoneErjian1";
+}
+:lang(zh-Hant) {
+font-feature-settings: "locl" off;/*for Source Han fonts*/
+}
+.waizi {
+font-family: "waizi", "BabelStone Han PUA", "BabelStoneHanPUA";
+}
+table {
+font-size: inherit;
+border: none;
+text-align: justify;
+}
+thead {
+border-bottom: none;
+}
+th {
+font-weight: bold;
+padding-top: 0;
+padding-bottom: 0;
+border-bottom: none;
+}
+tbody > tr:first-child > td {
+padding-top: 0;
+}
+td, th {
+vertical-align: top;
+}
+</style>
+</head>
+<body>
+<header>
+<nav><p><a href="index.html">H</a></p></nav>
+<p class="website-title"><a href="index.html">𦴶</a></p>
+</header>
+<main>
+<h1>第二次汉字简化方案（草案）</h1>
+<p class="author">中国文字改革委员会</p>
+<div class="front">
+<div class="abstract">
+<p>编者按：《第二次汉字简化方案（草案）》发表于1977年12月20日，刊载于《人民日报》1977年12月20日，第4版。1977—1978年间，第一表的简化字在出版物上试用。1986年6月24日，国务院发出通知，停止使用《第二次汉字简化方案（草案）》。</p>
+<p>本网页使用了<a lang="en" href="https://www.babelstone.co.uk/Fonts/Erjian.html">BabelStone Erjian</a>字体，二简字借用现行简化字的码位。</p>
+</div>
+<h2>目　　录</h2>
+<ol class="table-of-contents">
+<li><a href="#shuoming">说明</a></li>
+<li><a href="#diyi-biao">第一表</a></li>
+<li><a href="#dier-biao">第二表</a></li>
+<ul class="table-of-contents">
+<li><a href="#zhushi">注释</a></li>
+<li><a href="#canjian">参见</a></li>
+</ul>
+</ol>
+</div>
+<section id="shuoming">
+<h2>说明</h2>
+<h3>一、草案为什么分两个表？</h3>
+<p>这是因为两个表所收简化字的流行情况不同。</p>
+<p>第一表所收的简化字已在全国流行，可在出版物上先行试用。</p>
+<p>第二表所收的简化字有三种情况：（一）已在部分地区或某个行业中流行。这类字占大多数。（二）有些字是从社会上流行的几种不同简体中选用的，选用得是否合适，还需要讨论。这类字占一小部分。（三）还有少数字，原字笔画较繁而又比较常用，是我们根据群众简化汉字的方法拟订的。因此，第二表的简化字，需要经过群众广泛讨论，提出修改、增补或者删除的意见。</p>
+<h3>二、草案一共收了多少简化字？</h3>
+<p>第一表收简化字193个（其中不作简化偏旁的简化字172个，可作简化偏旁的简化字21个）；类推出来的简化字55个。以上两项合计，共248个。</p>
+<p>第二表收简化字269个（其中不作简化偏旁的简化字245个，可作简化偏旁的简化字24个）；此外，不能单独成字的简化偏旁16个。根据24个可作简化偏旁的简化字和16个不能单独成字的简化偏旁，类推出来的简化字336个。以上两项合计，共605个。</p>
+<p>整个草案，共收简化字853个，简化偏旁61个。</p>
+<p>在精简汉字数量方面，草案精简了263个字。</p>
+<h3>三、草案中的类推字是在什么范围内类推简化的？</h3>
+<p>按说，一个偏旁简化了，所有包含这个偏旁的字都应该同样简化。但是，考虑到汉字总数很多，其中有很大一部分是死字、古字，现代汉语中已经不用，没有必要把所有可以类推的字全部类推简化。因此，草案中的类推简化字，暂在4500个较常用字范围内类推简化。</p>
+<h3>四、还有哪些字急需简化？</h3>
+<p>这次简化以后，在4500个较常用字中，超过十笔的还有1300字。其中使用频率较高而急需简化的字举例如下：</p>
+<blockquote class="verse">衡　醒　酷　增　横　题　篇　端　缩　豪　群　溪　御　融
+蹄　赠　薪　操　额　醋　嫩　嗽　辣　撇　誓　舅　嗅　赖
+罩　缴　慧　隔　谨　捷　滞　骡　纂　攥　撑　鳞　蹦　髓</blockquote>
+<p>此外，还有一些笔画不算多，但是难写难读或容易写错读错的字，也需要在简化过程中求得解决。</p>
+<p>这些字怎样简化，希望大家研究讨论。</p>
+</section>
+<section id="diyi-biao">
+<h2>第一表</h2>
+<h3>（1）不作简化偏旁用的简化字（172个）</h3>
+<table>
+<thead>
+<tr><th>原字</th><th>简作</th></tr>
+</thead>
+<tbody>
+<tr><td>懊</td><td lang="zh-Hans-CN-x-erjian1">懊</td></tr>
+<tr><td>芭 笆 粑</td><td lang="zh-Hans-CN-x-erjian1">巴</td></tr>
+<tr><td>帮</td><td lang="zh-Hans-CN-x-erjian1">帮</td></tr>
+<tr><td>爆</td><td lang="zh-Hans-CN-x-erjian1">爆</td></tr>
+<tr><td>蓖 篦 蔽</td><td lang="zh-Hans-CN-x-erjian1">蓖</td></tr>
+<tr><td>弊</td><td lang="zh-Hans-CN-x-erjian1">弊</td></tr>
+<tr><td>壁</td><td lang="zh-Hans-CN-x-erjian1">壁</td></tr>
+<tr><td>哔叽</td><td lang="zh-Hans-CN-x-erjian1">毕几</td></tr>
+<tr><td>萹 藊 稨</td><td lang="zh-Hans-CN-x-erjian1">扁</td></tr>
+<tr><td>摒</td><td lang="zh-Hans-CN-x-erjian1">摒</td></tr>
+<tr><td>病</td><td lang="zh-Hans-CN-x-erjian1">病</td></tr>
+<tr><td>播</td><td lang="zh-Hans-CN-x-erjian1">播</td></tr>
+<tr><td>部</td><td lang="zh-Hans-CN-x-erjian1">部</td></tr>
+<tr><td>彩</td><td lang="zh-Hans-CN-x-erjian1">彩</td></tr>
+<tr><td>菜 蔡</td><td lang="zh-Hans-CN-x-erjian1">菜</td></tr>
+<tr><td>餐</td><td lang="zh-Hans-CN-x-erjian1">餐</td></tr>
+<tr><td>舱</td><td lang="zh-Hans-CN-x-erjian1">舱</td></tr>
+<tr><td>藏</td><td lang="zh-Hans-CN-x-erjian1">藏</td></tr>
+<tr><td>衩 扠 杈 汊</td><td lang="zh-Hans-CN-x-erjian1">叉</td></tr>
+<tr><td>撤</td><td lang="zh-Hans-CN-x-erjian1">撤</td></tr>
+<tr><td>瞅</td><td lang="zh-Hans-CN-x-erjian1">瞅</td></tr>
+<tr><td>矗</td><td lang="zh-Hans-CN-x-erjian1">矗</td></tr>
+<tr><td>葱</td><td lang="zh-Hans-CN-x-erjian1">葱</td></tr>
+<tr><td>答</td><td lang="zh-Hans-CN-x-erjian1">答</td></tr>
+<tr><td>蛋</td><td lang="zh-Hans-CN-x-erjian1">蛋</td></tr>
+<tr><td>弹</td><td lang="zh-Hans-CN-x-erjian1">弹</td></tr>
+<tr><td>蹈</td><td lang="zh-Hans-CN-x-erjian1">蹈</td></tr>
+<tr><td>稻</td><td lang="zh-Hans-CN-x-erjian1">稻</td></tr>
+<tr><td>道</td><td lang="zh-Hans-CN-x-erjian1">道</td></tr>
+<tr><td>殿</td><td lang="zh-Hans-CN-x-erjian1">殿</td></tr>
+<tr><td>叮 盯 钉 靪</td><td lang="zh-Hans-CN-x-erjian1">丁</td></tr>
+<tr><td>董</td><td lang="zh-Hans-CN-x-erjian1">董</td></tr>
+<tr><td>懂</td><td lang="zh-Hans-CN-x-erjian1">懂</td></tr>
+<tr><td>枓栱</td><td lang="zh-Hans-CN-x-erjian1">斗拱</td></tr>
+<tr><td>短</td><td lang="zh-Hans-CN-x-erjian1">短</td></tr>
+<tr><td>蹲</td><td lang="zh-Hans-CN-x-erjian1">蹲</td></tr>
+<tr><td>燉</td><td lang="zh-Hans-CN-x-erjian1">燉</td></tr>
+<tr><td>贰</td><td lang="zh-Hans-CN-x-erjian1">贰</td></tr>
+<tr><td>愤</td><td lang="zh-Hans-CN-x-erjian1">愤</td></tr>
+<tr><td>孵</td><td lang="zh-Hans-CN-x-erjian1">孵</td></tr>
+<tr><td>伕</td><td lang="zh-Hans-CN-x-erjian1">伕</td></tr>
+<tr><td>富</td><td lang="zh-Hans-CN-x-erjian1">富</td></tr>
+<tr><td>副</td><td lang="zh-Hans-CN-x-erjian1">副</td></tr>
+<tr><td>秆 竿</td><td lang="zh-Hans-CN-x-erjian1">杆</td></tr>
+<tr><td>钩</td><td lang="zh-Hans-CN-x-erjian1">钩</td></tr>
+<tr><td>罐</td><td lang="zh-Hans-CN-x-erjian1">罐</td></tr>
+<tr><td>灌 盥</td><td lang="zh-Hans-CN-x-erjian1">灌</td></tr>
+<tr><td>鳜</td><td lang="zh-Hans-CN-x-erjian1">鳜</td></tr>
+<tr><td>裹</td><td lang="zh-Hans-CN-x-erjian1">裹</td></tr>
+<tr><td>薅</td><td lang="zh-Hans-CN-x-erjian1">薅</td></tr>
+<tr><td>盒</td><td lang="zh-Hans-CN-x-erjian1">盒</td></tr>
+<tr><td>葫 猢 蝴 糊</td><td lang="zh-Hans-CN-x-erjian1">胡</td></tr>
+<tr><td>毁</td><td lang="zh-Hans-CN-x-erjian1">毁</td></tr>
+<tr><td>籍</td><td lang="zh-Hans-CN-x-erjian1">籍</td></tr>
+<tr><td>建</td><td lang="zh-Hans-CN-x-erjian1">建</td></tr>
+<tr><td>豇</td><td lang="zh-Hans-CN-x-erjian1">豇</td></tr>
+<tr><td>酱</td><td lang="zh-Hans-CN-x-erjian1">酱</td></tr>
+<tr><td>跤</td><td lang="zh-Hans-CN-x-erjian1">跤</td></tr>
+<tr><td>椒</td><td lang="zh-Hans-CN-x-erjian1">椒</td></tr>
+<tr><td>街</td><td lang="zh-Hans-CN-x-erjian1">街</td></tr>
+<tr><td>阱</td><td lang="zh-Hans-CN-x-erjian1">阱</td></tr>
+<tr><td>境</td><td lang="zh-Hans-CN-x-erjian1">境</td></tr>
+<tr><td>镜</td><td lang="zh-Hans-CN-x-erjian1">镜</td></tr>
+<tr><td>韭</td><td lang="zh-Hans-CN-x-erjian1">韭<sup lang="zh-Hans-CN"><a href="#note-韭" id="note-mark-韭" class="note-mark"></a></sup></td></tr>
+<tr><td>酒</td><td lang="zh-Hans-CN-x-erjian1">酒</td></tr>
+<tr><td>橘</td><td lang="zh-Hans-CN-x-erjian1">橘<sup lang="zh-Hans-CN"><a href="#note-橘" id="note-mark-橘" class="note-mark"></a></sup></td></tr>
+<tr><td>镢 䦆</td><td lang="zh-Hans-CN-x-erjian1">镢</td></tr>
+<tr><td>咔叽</td><td lang="zh-Hans-CN-x-erjian1">卡几</td></tr>
+<tr><td>慷</td><td lang="zh-Hans-CN-x-erjian1">慷</td></tr>
+<tr><td>糠</td><td lang="zh-Hans-CN-x-erjian1">糠</td></tr>
+<tr><td>靠</td><td lang="zh-Hans-CN-x-erjian1">靠</td></tr>
+<tr><td>蝌蚪</td><td lang="zh-Hans-CN-x-erjian1">科斗</td></tr>
+<tr><td>款</td><td lang="zh-Hans-CN-x-erjian1">款</td></tr>
+<tr><td>蓝 篮</td><td lang="zh-Hans-CN-x-erjian1">兰</td></tr>
+<tr><td>澜 滥</td><td lang="zh-Hans-CN-x-erjian1">澜</td></tr>
+<tr><td>谰</td><td lang="zh-Hans-CN-x-erjian1">谰</td></tr>
+<tr><td>懒</td><td lang="zh-Hans-CN-x-erjian1">懒</td></tr>
+<tr><td>缆</td><td lang="zh-Hans-CN-x-erjian1">缆</td></tr>
+<tr><td>磊</td><td lang="zh-Hans-CN-x-erjian1">磊</td></tr>
+<tr><td>荔</td><td lang="zh-Hans-CN-x-erjian1">荔</td></tr>
+<tr><td>璃</td><td lang="zh-Hans-CN-x-erjian1">璃</td></tr>
+<tr><td>量</td><td lang="zh-Hans-CN-x-erjian1">量</td></tr>
+<tr><td>潦</td><td lang="zh-Hans-CN-x-erjian1">潦<sup lang="zh-Hans-CN"><a href="#note-潦" id="note-mark-潦" class="note-mark"></a></sup></td></tr>
+<tr><td>僚</td><td lang="zh-Hans-CN-x-erjian1">僚</td></tr>
+<tr><td>燎</td><td lang="zh-Hans-CN-x-erjian1">燎</td></tr>
+<tr><td>寮 寥</td><td lang="zh-Hans-CN-x-erjian1">寮</td></tr>
+<tr><td>廖</td><td lang="zh-Hans-CN-x-erjian1">廖</td></tr>
+<tr><td>磷</td><td lang="zh-Hans-CN-x-erjian1">磷</td></tr>
+<tr><td>龄</td><td lang="zh-Hans-CN-x-erjian1">龄</td></tr>
+<tr><td>溜 遛 熘 馏</td><td lang="zh-Hans-CN-x-erjian1">溜</td></tr>
+<tr><td>掳</td><td lang="zh-Hans-CN-x-erjian1">掳</td></tr>
+<tr><td>慢</td><td lang="zh-Hans-CN-x-erjian1">慢</td></tr>
+<tr><td>帽</td><td lang="zh-Hans-CN-x-erjian1">帽</td></tr>
+<tr><td>貌</td><td lang="zh-Hans-CN-x-erjian1">貌</td></tr>
+<tr><td>煤</td><td lang="zh-Hans-CN-x-erjian1">煤</td></tr>
+<tr><td>曚昽 朦胧 蒙眬</td><td lang="zh-Hans-CN-x-erjian1">蒙龙</td></tr>
+<tr><td>幕</td><td lang="zh-Hans-CN-x-erjian1">幕</td></tr>
+<tr><td>酿</td><td lang="zh-Hans-CN-x-erjian1">酿</td></tr>
+<tr><td>虐</td><td lang="zh-Hans-CN-x-erjian1">虐</td></tr>
+<tr><td>霹雳</td><td lang="zh-Hans-CN-x-erjian1">辟历</td></tr>
+<tr><td>漆</td><td lang="zh-Hans-CN-x-erjian1">漆</td></tr>
+<tr><td>歧</td><td lang="zh-Hans-CN-x-erjian1">歧</td></tr>
+<tr><td>器</td><td lang="zh-Hans-CN-x-erjian1">器</td></tr>
+<tr><td>谦</td><td lang="zh-Hans-CN-x-erjian1">谦</td></tr>
+<tr><td>潜</td><td lang="zh-Hans-CN-x-erjian1">潜</td></tr>
+<tr><td>歉</td><td lang="zh-Hans-CN-x-erjian1">歉</td></tr>
+<tr><td>墙</td><td lang="zh-Hans-CN-x-erjian1">墙</td></tr>
+<tr><td>勤</td><td lang="zh-Hans-CN-x-erjian1">勤</td></tr>
+<tr><td>蚯蚓</td><td lang="zh-Hans-CN-x-erjian1">丘引</td></tr>
+<tr><td>渠</td><td lang="zh-Hans-CN-x-erjian1">渠</td></tr>
+<tr><td>嚷</td><td lang="zh-Hans-CN-x-erjian1">嚷</td></tr>
+<tr><td>壤</td><td lang="zh-Hans-CN-x-erjian1">壤</td></tr>
+<tr><td>儒</td><td lang="zh-Hans-CN-x-erjian1">儒</td></tr>
+<tr><td>赛</td><td lang="zh-Hans-CN-x-erjian1">赛</td></tr>
+<tr><td>煽 搧</td><td lang="zh-Hans-CN-x-erjian1">扇</td></tr>
+<tr><td>绱 鞝</td><td lang="zh-Hans-CN-x-erjian1">上</td></tr>
+<tr><td>杓</td><td lang="zh-Hans-CN-x-erjian1">杓</td></tr>
+<tr><td>输</td><td lang="zh-Hans-CN-x-erjian1">输</td></tr>
+<tr><td>爽</td><td lang="zh-Hans-CN-x-erjian1">爽</td></tr>
+<tr><td>私</td><td lang="zh-Hans-CN-x-erjian1">私</td></tr>
+<tr><td>算</td><td lang="zh-Hans-CN-x-erjian1">算</td></tr>
+<tr><td>泰</td><td lang="zh-Hans-CN-x-erjian1">泰</td></tr>
+<tr><td>檀</td><td lang="zh-Hans-CN-x-erjian1">檀</td></tr>
+<tr><td>糖</td><td lang="zh-Hans-CN-x-erjian1">糖</td></tr>
+<tr><td>套</td><td lang="zh-Hans-CN-x-erjian1">套</td></tr>
+<tr><td>腾</td><td lang="zh-Hans-CN-x-erjian1">腾</td></tr>
+<tr><td>停</td><td lang="zh-Hans-CN-x-erjian1">停<sup lang="zh-Hans-CN"><a href="#note-停" id="note-mark-停" class="note-mark"></a></sup></td></tr>
+<tr><td>稳</td><td lang="zh-Hans-CN-x-erjian1">稳</td></tr>
+<tr><td>舞</td><td lang="zh-Hans-CN-x-erjian1">舞</td></tr>
+<tr><td>稀</td><td lang="zh-Hans-CN-x-erjian1">稀</td></tr>
+<tr><td>熄</td><td lang="zh-Hans-CN-x-erjian1">熄</td></tr>
+<tr><td>瞎</td><td lang="zh-Hans-CN-x-erjian1">瞎</td></tr>
+<tr><td>镶</td><td lang="zh-Hans-CN-x-erjian1">镶</td></tr>
+<tr><td>橡</td><td lang="zh-Hans-CN-x-erjian1">橡</td></tr>
+<tr><td>萧</td><td lang="zh-Hans-CN-x-erjian1">萧</td></tr>
+<tr><td>鞋</td><td lang="zh-Hans-CN-x-erjian1">鞋</td></tr>
+<tr><td>信</td><td lang="zh-Hans-CN-x-erjian1">信</td></tr>
+<tr><td>雄</td><td lang="zh-Hans-CN-x-erjian1">雄</td></tr>
+<tr><td>修</td><td lang="zh-Hans-CN-x-erjian1">修</td></tr>
+<tr><td>宣</td><td lang="zh-Hans-CN-x-erjian1">宣</td></tr>
+<tr><td>癣</td><td lang="zh-Hans-CN-x-erjian1">癣</td></tr>
+<tr><td>靴</td><td lang="zh-Hans-CN-x-erjian1">靴</td></tr>
+<tr><td>雪</td><td lang="zh-Hans-CN-x-erjian1">雪</td></tr>
+<tr><td>阎</td><td lang="zh-Hans-CN-x-erjian1">阎</td></tr>
+<tr><td>演</td><td lang="zh-Hans-CN-x-erjian1">演</td></tr>
+<tr><td>耀 曜</td><td lang="zh-Hans-CN-x-erjian1">耀</td></tr>
+<tr><td>意</td><td lang="zh-Hans-CN-x-erjian1">意</td></tr>
+<tr><td>臆</td><td lang="zh-Hans-CN-x-erjian1">臆</td></tr>
+<tr><td>翼</td><td lang="zh-Hans-CN-x-erjian1">翼</td></tr>
+<tr><td>迎</td><td lang="zh-Hans-CN-x-erjian1">迎</td></tr>
+<tr><td>影</td><td lang="zh-Hans-CN-x-erjian1">影</td></tr>
+<tr><td>臃</td><td lang="zh-Hans-CN-x-erjian1">臃</td></tr>
+<tr><td>游</td><td lang="zh-Hans-CN-x-erjian1">游</td></tr>
+<tr><td>愉</td><td lang="zh-Hans-CN-x-erjian1">愉</td></tr>
+<tr><td>遇</td><td lang="zh-Hans-CN-x-erjian1">遇<sup lang="zh-Hans-CN"><a href="#note-遇" id="note-mark-遇" class="note-mark"></a></sup></td></tr>
+<tr><td>预 豫</td><td lang="zh-Hans-CN-x-erjian1">予</td></tr>
+<tr><td>圆</td><td lang="zh-Hans-CN-x-erjian1">圆</td></tr>
+<tr><td>原</td><td lang="zh-Hans-CN-x-erjian1">原</td></tr>
+<tr><td>源</td><td lang="zh-Hans-CN-x-erjian1">源</td></tr>
+<tr><td>缘</td><td lang="zh-Hans-CN-x-erjian1">缘</td></tr>
+<tr><td>赞</td><td lang="zh-Hans-CN-x-erjian1">赞</td></tr>
+<tr><td>寨</td><td lang="zh-Hans-CN-x-erjian1">寨</td></tr>
+<tr><td>账</td><td lang="zh-Hans-CN-x-erjian1">账</td></tr>
+<tr><td>辙</td><td lang="zh-Hans-CN-x-erjian1">辙</td></tr>
+<tr><td>整</td><td lang="zh-Hans-CN-x-erjian1">整</td></tr>
+<tr><td>籽</td><td lang="zh-Hans-CN-x-erjian1">籽</td></tr>
+<tr><td>嘴</td><td lang="zh-Hans-CN-x-erjian1">嘴<sup lang="zh-Hans-CN"><a href="#note-嘴" id="note-mark-嘴" class="note-mark"></a></sup></td></tr>
+<tr><td>座</td><td lang="zh-Hans-CN-x-erjian1">座</td></tr>
+</tbody>
+</table>
+<h3>（2）可作简化偏旁用的简化字（21个）</h3>
+<table>
+<thead>
+<tr><th>原&NoBreak;字</th><th>简&NoBreak;作</th><th>类推出来的简化字</th></tr>
+</thead>
+<tbody>
+<tr><td>鼻</td><td lang="zh-Hans-CN-x-erjian1">鼻</td><td><span>鼾</span>—<span lang="zh-Hans-CN-x-erjian1">鼾</span></td></tr>
+<tr><td>察 嚓</td><td lang="zh-Hans-CN-x-erjian1">察</td><td><span>擦</span>—<span lang="zh-Hans-CN-x-erjian1">擦</span></td></tr>
+<tr><td>感</td><td lang="zh-Hans-CN-x-erjian1">感</td><td><span>撼</span>—<span lang="zh-Hans-CN-x-erjian1">撼</span>，<span>憾</span>—<span lang="zh-Hans-CN-x-erjian1">憾</span></td></tr>
+<tr><td>冀</td><td lang="zh-Hans-CN-x-erjian1">冀</td><td><span>骥</span>—<span lang="zh-Hans-CN-x-erjian1">骥</span></td></tr>
+<tr><td>具</td><td lang="zh-Hans-CN-x-erjian1">具</td><td><span>俱</span>—<span lang="zh-Hans-CN-x-erjian1">俱</span>，<span>惧</span>—<span lang="zh-Hans-CN-x-erjian1">惧</span>，<span>犋</span>—<span lang="zh-Hans-CN-x-erjian1">犋</span></td></tr>
+<tr><td>留</td><td lang="zh-Hans-CN-x-erjian1">留</td><td><span>榴</span>—<span lang="zh-Hans-CN-x-erjian1">榴</span>，<span>瘤</span>—<span lang="zh-Hans-CN-x-erjian1">瘤</span></td></tr>
+<tr><td>眉 嵋</td><td lang="zh-Hans-CN-x-erjian1">眉</td><td><span>媚</span>—<span lang="zh-Hans-CN-x-erjian1">媚</span></td></tr>
+<tr><td>蒙</td><td lang="zh-Hans-CN-x-erjian1">蒙</td><td><span>蠓</span>—<span lang="zh-Hans-CN-x-erjian1">蠓</span></td></tr>
+<tr><td>面</td><td lang="zh-Hans-CN-x-erjian1">面</td><td><span>缅</span>—<span lang="zh-Hans-CN-x-erjian1">缅</span></td></tr>
+<tr><td>囊 囔</td><td lang="zh-Hans-CN-x-erjian1">囊</td><td><span>攮</span>—<span lang="zh-Hans-CN-x-erjian1">攮</span></td></tr>
+<tr><td>青</td><td lang="zh-Hans-CN-x-erjian1">青</td><td><span>静</span>—<span lang="zh-Hans-CN-x-erjian1">静</span>，<span>靛</span>—<span lang="zh-Hans-CN-x-erjian1">靛</span>，<span>请</span>—<span lang="zh-Hans-CN-x-erjian1">请</span>，<span>猜</span>—<span lang="zh-Hans-CN-x-erjian1">猜</span>，<span>情</span>—<span lang="zh-Hans-CN-x-erjian1">情</span>，<span>清</span>—<span lang="zh-Hans-CN-x-erjian1">清</span>，<span>晴</span>—<span lang="zh-Hans-CN-x-erjian1">晴</span>，<span>睛</span>—<span lang="zh-Hans-CN-x-erjian1">睛</span>，<span>靖</span>—<span lang="zh-Hans-CN-x-erjian1">靖</span>，<span>精</span>—<span lang="zh-Hans-CN-x-erjian1">精</span>，<span>菁</span>—<span lang="zh-Hans-CN-x-erjian1">菁</span></td></tr>
+<tr><td>桑</td><td lang="zh-Hans-CN-x-erjian1">桑</td><td><span>搡</span>—<span lang="zh-Hans-CN-x-erjian1">搡</span>，<span>嗓</span>—<span lang="zh-Hans-CN-x-erjian1">嗓</span></td></tr>
+<tr><td>属</td><td lang="zh-Hans-CN-x-erjian1">属</td><td><span>嘱</span>—<span lang="zh-Hans-CN-x-erjian1">嘱</span>，<span>瞩</span>—<span lang="zh-Hans-CN-x-erjian1">瞩</span></td></tr>
+<tr><td>堂</td><td lang="zh-Hans-CN-x-erjian1">堂</td><td><span>螳</span>—<span lang="zh-Hans-CN-x-erjian1">螳</span></td></tr>
+<tr><td>易</td><td lang="zh-Hans-CN-x-erjian1">易</td><td><span>剔</span>—<span lang="zh-Hans-CN-x-erjian1">剔</span>，<span>惕</span>—<span lang="zh-Hans-CN-x-erjian1">惕</span>，<span>赐</span>—<span lang="zh-Hans-CN-x-erjian1">赐</span>，<span>锡</span>—<span lang="zh-Hans-CN-x-erjian1">锡</span>，<span>踢</span>—<span lang="zh-Hans-CN-x-erjian1">踢</span></td></tr>
+<tr><td>婴</td><td lang="zh-Hans-CN-x-erjian1">婴</td><td><span>缨</span>—<span lang="zh-Hans-CN-x-erjian1">缨</span>，<span>樱</span>—<span lang="zh-Hans-CN-x-erjian1">樱</span></td></tr>
+<tr><td>展 辗</td><td lang="zh-Hans-CN-x-erjian1">展</td><td><span>碾</span>—<span lang="zh-Hans-CN-x-erjian1">碾</span></td></tr>
+<tr><td>真</td><td lang="zh-Hans-CN-x-erjian1">真</td><td><span>颠</span>—<span lang="zh-Hans-CN-x-erjian1">颠</span>，<span>填</span>—<span lang="zh-Hans-CN-x-erjian1">填</span>，<span>慎</span>—<span lang="zh-Hans-CN-x-erjian1">慎</span>，<span>滇</span>—<span lang="zh-Hans-CN-x-erjian1">滇</span>，<span>镇</span>—<span lang="zh-Hans-CN-x-erjian1">镇</span></td></tr>
+<tr><td>直</td><td lang="zh-Hans-CN-x-erjian1">直</td><td><span>值</span>—<span lang="zh-Hans-CN-x-erjian1">值</span>，<span>植</span>—<span lang="zh-Hans-CN-x-erjian1">植</span>，<span>殖</span>—<span lang="zh-Hans-CN-x-erjian1">殖</span>，<span>置</span>—<span lang="zh-Hans-CN-x-erjian1">置</span></td></tr>
+<tr><td>卒</td><td lang="zh-Hans-CN-x-erjian1">卒</td><td><span>悴</span>—<span lang="zh-Hans-CN-x-erjian1">悴</span>，<span>啐</span>—<span lang="zh-Hans-CN-x-erjian1">啐</span>，<span>碎</span>—<span lang="zh-Hans-CN-x-erjian1">碎</span>，<span>粹</span>—<span lang="zh-Hans-CN-x-erjian1">粹</span>，<span>醉</span>—<span lang="zh-Hans-CN-x-erjian1">醉</span>，<span>翠</span>—<span lang="zh-Hans-CN-x-erjian1">翠</span>，<span>瘁</span>—<span lang="zh-Hans-CN-x-erjian1">瘁</span></td></tr>
+<tr><td>尊</td><td lang="zh-Hans-CN-x-erjian1">尊</td><td><span>撙</span>—<span lang="zh-Hans-CN-x-erjian1">撙</span></td></tr>
+</tbody>
+</table>
+</section>
+<section id="dier-biao">
+<h2>第二表</h2>
+<p>第二表的简化字，按不同的简化方法分为七类。第八类是简化偏旁及可类推简化的字。</p>
+<h3>1.&nbsp;同音代替字（72个）</h3>
+<p>在现代汉语中不引起意义混淆的条件下，用笔画简单的同音字，代替笔画较繁的字。例如，以“发”代“<span lang="zh-Hant">髮</span>”，以“范”代“<span lang="zh-Hant">範</span>”。也就是两个或两个以上的同音字，合并成一个字。这样，既简化了字形，又精简了字数。</p>
+<table>
+<thead>
+<tr><th>原字</th><th>简作</th></tr>
+</thead>
+<tbody>
+<tr><td>癍</td><td lang="zh-Hans-CN-x-erjian2">癍</td></tr>
+<tr><td>鞭</td><td lang="zh-Hans-CN-x-erjian2">鞭</td></tr>
+<tr><td>辨 辩 辫</td><td lang="zh-Hans-CN-x-erjian2">弁</td></tr>
+<tr><td>勃 渤 脖 饽</td><td lang="zh-Hans-CN-x-erjian2">孛</td></tr>
+<tr><td>簸</td><td lang="zh-Hans-CN-x-erjian2">簸</td></tr>
+<tr><td>澈</td><td lang="zh-Hans-CN-x-erjian2">澈</td></tr>
+<tr><td>蹙</td><td lang="zh-Hans-CN-x-erjian2">蹙</td></tr>
+<tr><td>戴</td><td lang="zh-Hans-CN-x-erjian2">戴</td></tr>
+<tr><td>巅 癫</td><td lang="zh-Hans-CN-x-erjian2">颠</td></tr>
+<tr><td>凋 碉 雕</td><td lang="zh-Hans-CN-x-erjian2">刁<sup lang="zh-Hans-CN"><a href="#note-刁" id="note-mark-刁" class="note-mark"></a></sup></td></tr>
+<tr><td>陡</td><td lang="zh-Hans-CN-x-erjian2">陡</td></tr>
+<tr><td>嘟</td><td lang="zh-Hans-CN-x-erjian2">嘟</td></tr>
+<tr><td>锻</td><td lang="zh-Hans-CN-x-erjian2">锻</td></tr>
+<tr><td>墩 礅 蹾 撉</td><td lang="zh-Hans-CN-x-erjian2">敦</td></tr>
+<tr><td>筏 阀 垡</td><td lang="zh-Hans-CN-x-erjian2">伐</td></tr>
+<tr><td>袱 匐</td><td lang="zh-Hans-CN-x-erjian2">伏</td></tr>
+<tr><td>傅</td><td lang="zh-Hans-CN-x-erjian2">傅</td></tr>
+<tr><td>擀</td><td lang="zh-Hans-CN-x-erjian2">擀</td></tr>
+<tr><td>赣</td><td lang="zh-Hans-CN-x-erjian2">赣</td></tr>
+<tr><td>捍</td><td lang="zh-Hans-CN-x-erjian2">捍</td></tr>
+<tr><td>寰</td><td lang="zh-Hans-CN-x-erjian2">寰</td></tr>
+<tr><td>徽</td><td lang="zh-Hans-CN-x-erjian2">徽</td></tr>
+<tr><td>嫉</td><td lang="zh-Hans-CN-x-erjian2">嫉</td></tr>
+<tr><td>捡</td><td lang="zh-Hans-CN-x-erjian2">捡</td></tr>
+<tr><td>嚼</td><td lang="zh-Hans-CN-x-erjian2">嚼</td></tr>
+<tr><td>诫</td><td lang="zh-Hans-CN-x-erjian2">诫</td></tr>
+<tr><td>襟</td><td lang="zh-Hans-CN-x-erjian2">襟</td></tr>
+<tr><td>飓</td><td lang="zh-Hans-CN-x-erjian2">飓</td></tr>
+<tr><td>筐 框 眶 诓 哐</td><td lang="zh-Hans-CN-x-erjian2">匡</td></tr>
+<tr><td>镰</td><td lang="zh-Hans-CN-x-erjian2">镰</td></tr>
+<tr><td>镣</td><td lang="zh-Hans-CN-x-erjian2">镣</td></tr>
+<tr><td>镏</td><td lang="zh-Hans-CN-x-erjian2">镏</td></tr>
+<tr><td>噜</td><td lang="zh-Hans-CN-x-erjian2">噜</td></tr>
+<tr><td>旅 膂</td><td lang="zh-Hans-CN-x-erjian2">吕<sup lang="zh-Hans-CN"><a href="#note-吕" id="note-mark-吕" class="note-mark"></a></sup></td></tr>
+<tr><td>湄 楣 鹛</td><td lang="zh-Hans-CN-x-erjian2">眉</td></tr>
+<tr><td>蜜 密</td><td lang="zh-Hans-CN-x-erjian2">宓</td></tr>
+<tr><td>藐</td><td lang="zh-Hans-CN-x-erjian2">藐</td></tr>
+<tr><td>凝</td><td lang="zh-Hans-CN-x-erjian2">凝</td></tr>
+<tr><td>襻</td><td lang="zh-Hans-CN-x-erjian2">襻</td></tr>
+<tr><td>僻</td><td lang="zh-Hans-CN-x-erjian2">僻</td></tr>
+<tr><td>拚</td><td lang="zh-Hans-CN-x-erjian2">拚</td></tr>
+<tr><td>柒</td><td lang="zh-Hans-CN-x-erjian2">柒</td></tr>
+<tr><td>签</td><td lang="zh-Hans-CN-x-erjian2">签</td></tr>
+<tr><td>砂</td><td lang="zh-Hans-CN-x-erjian2">砂</td></tr>
+<tr><td>墒</td><td lang="zh-Hans-CN-x-erjian2">墒</td></tr>
+<tr><td>蒜</td><td lang="zh-Hans-CN-x-erjian2">蒜</td></tr>
+<tr><td>镗 嘡 膛</td><td lang="zh-Hans-CN-x-erjian2">镗</td></tr>
+<tr><td>霆 庭</td><td lang="zh-Hans-CN-x-erjian2">霆</td></tr>
+<tr><td>童</td><td lang="zh-Hans-CN-x-erjian2">童</td></tr>
+<tr><td>豌</td><td lang="zh-Hans-CN-x-erjian2">豌</td></tr>
+<tr><td>诿 萎 痿</td><td lang="zh-Hans-CN-x-erjian2">委</td></tr>
+<tr><td>慰</td><td lang="zh-Hans-CN-x-erjian2">慰</td></tr>
+<tr><td>鑫</td><td lang="zh-Hans-CN-x-erjian2">鑫</td></tr>
+<tr><td>胸</td><td lang="zh-Hans-CN-x-erjian2">胸</td></tr>
+<tr><td>渲</td><td lang="zh-Hans-CN-x-erjian2">渲<sup lang="zh-Hans-CN"><a href="#note-渲" id="note-mark-渲" class="note-mark"></a></sup></td></tr>
+<tr><td>檐</td><td lang="zh-Hans-CN-x-erjian2">檐</td></tr>
+<tr><td>颜</td><td lang="zh-Hans-CN-x-erjian2">颜</td></tr>
+<tr><td>赢</td><td lang="zh-Hans-CN-x-erjian2">赢</td></tr>
+<tr><td>搾</td><td lang="zh-Hans-CN-x-erjian2">搾</td></tr>
+<tr><td>蘸</td><td lang="zh-Hans-CN-x-erjian2">蘸</td></tr>
+<tr><td>骤</td><td lang="zh-Hans-CN-x-erjian2">骤</td></tr>
+<tr><td>谘</td><td lang="zh-Hans-CN-x-erjian2">谘</td></tr>
+<tr><td>鬃</td><td lang="zh-Hans-CN-x-erjian2">鬃</td></tr>
+<tr><td>遵</td><td lang="zh-Hans-CN-x-erjian2">遵</td></tr>
+<tr><td>叮咛</td><td lang="zh-Hans-CN-x-erjian2">丁宁</td></tr>
+<tr><td>哆嗦</td><td lang="zh-Hans-CN-x-erjian2">多索</td></tr>
+<tr><td>吩咐</td><td lang="zh-Hans-CN-x-erjian2">分付</td></tr>
+<tr><td>疙瘩 圪垯 纥𫄤</td><td lang="zh-Hans-CN-x-erjian2">咯嗒</td></tr>
+<tr><td>鬎鬁</td><td lang="zh-Hans-CN-x-erjian2">瘌痢</td></tr>
+<tr><td>阑尾</td><td lang="zh-Hans-CN-x-erjian2">兰尾</td></tr>
+<tr><td>嘹喨</td><td lang="zh-Hans-CN-x-erjian2">辽亮</td></tr>
+<tr><td>蹓跶</td><td lang="zh-Hans-CN-x-erjian2">溜达</td></tr>
+<tr><td>罗嗦 噜苏</td><td lang="zh-Hans-CN-x-erjian2">罗索</td></tr>
+<tr><td>柠檬</td><td lang="zh-Hans-CN-x-erjian2">宁蒙</td></tr>
+<tr><td>磅礡</td><td lang="zh-Hans-CN-x-erjian2">旁薄</td></tr>
+<tr><td>徬徨 彷徨</td><td lang="zh-Hans-CN-x-erjian2">旁皇</td></tr>
+<tr><td>蜻蜓</td><td lang="zh-Hans-CN-x-erjian2">青廷</td></tr>
+<tr><td>舢舨</td><td lang="zh-Hans-CN-x-erjian2">舢板</td></tr>
+<tr><td>鹦鹉</td><td lang="zh-Hans-CN-x-erjian2">婴武</td></tr>
+</tbody>
+</table>
+<h3>2.&nbsp;形声字（115字）</h3>
+<p>汉字中绝大部分是形声字，例如：“忠”字的“心”称为“形旁”，是表示字义的；“中”称为“声旁”，是表示字音的。运用“形声”结构来简化，有下列几种情况：原字的形旁、声旁笔画太繁，改用笔画较简的形体；原字声旁表音不准，改用表音较准的常用字作声旁。原字本来不是形声字而笔画较繁，改用笔画较简的新形声字。</p>
+<table>
+<tbody>
+<tr><td>澳</td><td lang="zh-Hans-CN-x-erjian2">澳<sup lang="zh-Hans-CN"><a href="#note-澳" id="note-mark-澳" class="note-mark"></a></sup></td></tr>
+<tr><td>霸</td><td lang="zh-Hans-CN-x-erjian2">霸</td></tr>
+<tr><td>瓣</td><td lang="zh-Hans-CN-x-erjian2">瓣</td></tr>
+<tr><td>暴 曝</td><td lang="zh-Hans-CN-x-erjian2">暴</td></tr>
+<tr><td>瀑 浦</td><td lang="zh-Hans-CN-x-erjian2">瀑</td></tr>
+<tr><td>鄙</td><td lang="zh-Hans-CN-x-erjian2">鄙</td></tr>
+<tr><td>避</td><td lang="zh-Hans-CN-x-erjian2">避</td></tr>
+<tr><td>簿</td><td lang="zh-Hans-CN-x-erjian2">簿</td></tr>
+<tr><td>锄</td><td lang="zh-Hans-CN-x-erjian2">锄</td></tr>
+<tr><td>储 贮</td><td lang="zh-Hans-CN-x-erjian2">储<sup lang="zh-Hans-CN"><a href="#note-储" id="note-mark-储" class="note-mark"></a></sup></td></tr>
+<tr><td>戳</td><td lang="zh-Hans-CN-x-erjian2">戳</td></tr>
+<tr><td>诞</td><td lang="zh-Hans-CN-x-erjian2">诞</td></tr>
+<tr><td>捣</td><td lang="zh-Hans-CN-x-erjian2">捣</td></tr>
+<tr><td>雕</td><td lang="zh-Hans-CN-x-erjian2">雕</td></tr>
+<tr><td>蝶</td><td lang="zh-Hans-CN-x-erjian2">蝶<sup lang="zh-Hans-CN"><a href="#note-蝶" id="note-mark-蝶" class="note-mark"></a></sup></td></tr>
+<tr><td>蠹</td><td lang="zh-Hans-CN-x-erjian2">蠹</td></tr>
+<tr><td>翻</td><td lang="zh-Hans-CN-x-erjian2">翻</td></tr>
+<tr><td>繁</td><td lang="zh-Hans-CN-x-erjian2">繁</td></tr>
+<tr><td>逢</td><td lang="zh-Hans-CN-x-erjian2">逢</td></tr>
+<tr><td>缝</td><td lang="zh-Hans-CN-x-erjian2">缝</td></tr>
+<tr><td>敷</td><td lang="zh-Hans-CN-x-erjian2">敷</td></tr>
+<tr><td>敢</td><td lang="zh-Hans-CN-x-erjian2">敢</td></tr>
+<tr><td>焊</td><td lang="zh-Hans-CN-x-erjian2">焊</td></tr>
+<tr><td>壑</td><td lang="zh-Hans-CN-x-erjian2">壑</td></tr>
+<tr><td>激</td><td lang="zh-Hans-CN-x-erjian2">激</td></tr>
+<tr><td>稽 嵇</td><td lang="zh-Hans-CN-x-erjian2">稽</td></tr>
+<tr><td>假</td><td lang="zh-Hans-CN-x-erjian2">假</td></tr>
+<tr><td>简</td><td lang="zh-Hans-CN-x-erjian2">简</td></tr>
+<tr><td>健</td><td lang="zh-Hans-CN-x-erjian2">健</td></tr>
+<tr><td>键</td><td lang="zh-Hans-CN-x-erjian2">键</td></tr>
+<tr><td>耩</td><td lang="zh-Hans-CN-x-erjian2">耩</td></tr>
+<tr><td>剿</td><td lang="zh-Hans-CN-x-erjian2">剿</td></tr>
+<tr><td>警 儆</td><td lang="zh-Hans-CN-x-erjian2">警</td></tr>
+<tr><td>厩</td><td lang="zh-Hans-CN-x-erjian2">厩</td></tr>
+<tr><td>厥</td><td lang="zh-Hans-CN-x-erjian2">厥</td></tr>
+<tr><td>裤</td><td lang="zh-Hans-CN-x-erjian2">裤</td></tr>
+<tr><td>篱</td><td lang="zh-Hans-CN-x-erjian2">篱</td></tr>
+<tr><td>犁</td><td lang="zh-Hans-CN-x-erjian2">犁</td></tr>
+<tr><td>痢</td><td lang="zh-Hans-CN-x-erjian2">痢</td></tr>
+<tr><td>砾</td><td lang="zh-Hans-CN-x-erjian2">砾</td></tr>
+<tr><td>律</td><td lang="zh-Hans-CN-x-erjian2">律</td></tr>
+<tr><td>率</td><td lang="zh-Hans-CN-x-erjian2">率</td></tr>
+<tr><td>聊</td><td lang="zh-Hans-CN-x-erjian2">聊</td></tr>
+<tr><td>蔑 篾</td><td lang="zh-Hans-CN-x-erjian2">蔑</td></tr>
+<tr><td>螟</td><td lang="zh-Hans-CN-x-erjian2">螟</td></tr>
+<tr><td>蘑</td><td lang="zh-Hans-CN-x-erjian2">蘑</td></tr>
+<tr><td>腻</td><td lang="zh-Hans-CN-x-erjian2">腻</td></tr>
+<tr><td>蔫</td><td lang="zh-Hans-CN-x-erjian2">蔫</td></tr>
+<tr><td>蘖 孽</td><td lang="zh-Hans-CN-x-erjian2">孽</td></tr>
+<tr><td>藕</td><td lang="zh-Hans-CN-x-erjian2">藕<sup lang="zh-Hans-CN"><a href="#note-藕" id="note-mark-藕" class="note-mark"></a></sup></td></tr>
+<tr><td>遣</td><td lang="zh-Hans-CN-x-erjian2">遣</td></tr>
+<tr><td>谴</td><td lang="zh-Hans-CN-x-erjian2">谴</td></tr>
+<tr><td>锹</td><td lang="zh-Hans-CN-x-erjian2">锹</td></tr>
+<tr><td>瞧</td><td lang="zh-Hans-CN-x-erjian2">瞧</td></tr>
+<tr><td>瘸</td><td lang="zh-Hans-CN-x-erjian2">瘸</td></tr>
+<tr><td>瓤</td><td lang="zh-Hans-CN-x-erjian2">瓤</td></tr>
+<tr><td>攘</td><td lang="zh-Hans-CN-x-erjian2">攘</td></tr>
+<tr><td>孺</td><td lang="zh-Hans-CN-x-erjian2">孺</td></tr>
+<tr><td>蠕</td><td lang="zh-Hans-CN-x-erjian2">蠕</td></tr>
+<tr><td>辱</td><td lang="zh-Hans-CN-x-erjian2">辱</td></tr>
+<tr><td>襦</td><td lang="zh-Hans-CN-x-erjian2">襦</td></tr>
+<tr><td>撒</td><td lang="zh-Hans-CN-x-erjian2">撒</td></tr>
+<tr><td>膻</td><td lang="zh-Hans-CN-x-erjian2">膻</td></tr>
+<tr><td>擅</td><td lang="zh-Hans-CN-x-erjian2">擅</td></tr>
+<tr><td>剩</td><td lang="zh-Hans-CN-x-erjian2">剩</td></tr>
+<tr><td>薯 蔬</td><td lang="zh-Hans-CN-x-erjian2">薯</td></tr>
+<tr><td>霜</td><td lang="zh-Hans-CN-x-erjian2">霜</td></tr>
+<tr><td>肆</td><td lang="zh-Hans-CN-x-erjian2">肆</td></tr>
+<tr><td>穗 繐</td><td lang="zh-Hans-CN-x-erjian2">穗</td></tr>
+<tr><td>艇</td><td lang="zh-Hans-CN-x-erjian2">艇</td></tr>
+<tr><td>臀</td><td lang="zh-Hans-CN-x-erjian2">臀<sup lang="zh-Hans-CN"><a href="#note-臀" id="note-mark-臀" class="note-mark"></a></sup></td></tr>
+<tr><td>瘟</td><td lang="zh-Hans-CN-x-erjian2">瘟</td></tr>
+<tr><td>膝</td><td lang="zh-Hans-CN-x-erjian2">膝</td></tr>
+<tr><td>隙</td><td lang="zh-Hans-CN-x-erjian2">隙</td></tr>
+<tr><td>辖</td><td lang="zh-Hans-CN-x-erjian2">辖</td></tr>
+<tr><td>暇</td><td lang="zh-Hans-CN-x-erjian2">暇</td></tr>
+<tr><td>霞</td><td lang="zh-Hans-CN-x-erjian2">霞</td></tr>
+<tr><td>厦</td><td lang="zh-Hans-CN-x-erjian2">厦</td></tr>
+<tr><td>掀</td><td lang="zh-Hans-CN-x-erjian2">掀</td></tr>
+<tr><td>𣔙 锨</td><td lang="zh-Hans-CN-x-erjian2">𣔙</td></tr>
+<tr><td>嫌</td><td lang="zh-Hans-CN-x-erjian2">嫌<sup lang="zh-Hans-CN"><a href="#note-嫌" id="note-mark-嫌" class="note-mark"></a></sup></td></tr>
+<tr><td>像</td><td lang="zh-Hans-CN-x-erjian2">像</td></tr>
+<tr><td>携</td><td lang="zh-Hans-CN-x-erjian2">携</td></tr>
+<tr><td>堰</td><td lang="zh-Hans-CN-x-erjian2">堰</td></tr>
+<tr><td>摇</td><td lang="zh-Hans-CN-x-erjian2">摇</td></tr>
+<tr><td>谣</td><td lang="zh-Hans-CN-x-erjian2">谣</td></tr>
+<tr><td>遥</td><td lang="zh-Hans-CN-x-erjian2">遥</td></tr>
+<tr><td>遗</td><td lang="zh-Hans-CN-x-erjian2">遗</td></tr>
+<tr><td>姨</td><td lang="zh-Hans-CN-x-erjian2">姨</td></tr>
+<tr><td>椅</td><td lang="zh-Hans-CN-x-erjian2">椅</td></tr>
+<tr><td>屹</td><td lang="zh-Hans-CN-x-erjian2">屹</td></tr>
+<tr><td>癔</td><td lang="zh-Hans-CN-x-erjian2">癔</td></tr>
+<tr><td>毅</td><td lang="zh-Hans-CN-x-erjian2">毅</td></tr>
+<tr><td>疑</td><td lang="zh-Hans-CN-x-erjian2">疑</td></tr>
+<tr><td>鹰</td><td lang="zh-Hans-CN-x-erjian2">鹰</td></tr>
+<tr><td>庸</td><td lang="zh-Hans-CN-x-erjian2">庸</td></tr>
+<tr><td>幽</td><td lang="zh-Hans-CN-x-erjian2">幽</td></tr>
+<tr><td>舆</td><td lang="zh-Hans-CN-x-erjian2">舆</td></tr>
+<tr><td>愚</td><td lang="zh-Hans-CN-x-erjian2">愚</td></tr>
+<tr><td>隅</td><td lang="zh-Hans-CN-x-erjian2">隅</td></tr>
+<tr><td>辕</td><td lang="zh-Hans-CN-x-erjian2">辕</td></tr>
+<tr><td>猿</td><td lang="zh-Hans-CN-x-erjian2">猿</td></tr>
+<tr><td>愿</td><td lang="zh-Hans-CN-x-erjian2">愿</td></tr>
+<tr><td>越</td><td lang="zh-Hans-CN-x-erjian2">越</td></tr>
+<tr><td>熨</td><td lang="zh-Hans-CN-x-erjian2">熨</td></tr>
+<tr><td>遭</td><td lang="zh-Hans-CN-x-erjian2">遭</td></tr>
+<tr><td>糟</td><td lang="zh-Hans-CN-x-erjian2">糟</td></tr>
+<tr><td>澡</td><td lang="zh-Hans-CN-x-erjian2">澡</td></tr>
+<tr><td>渣</td><td lang="zh-Hans-CN-x-erjian2">渣</td></tr>
+<tr><td>铡</td><td lang="zh-Hans-CN-x-erjian2">铡<sup lang="zh-Hans-CN"><a href="#note-铡" id="note-mark-铡" class="note-mark"></a></sup></td></tr>
+<tr><td>绽</td><td lang="zh-Hans-CN-x-erjian2">绽</td></tr>
+<tr><td>涨 胀</td><td lang="zh-Hans-CN-x-erjian2">涨</td></tr>
+<tr><td>蒸</td><td lang="zh-Hans-CN-x-erjian2">蒸</td></tr>
+<tr><td>踵</td><td lang="zh-Hans-CN-x-erjian2">踵</td></tr>
+<tr><td>赚</td><td lang="zh-Hans-CN-x-erjian2">赚</td></tr>
+<tr><td>撞</td><td lang="zh-Hans-CN-x-erjian2">撞</td></tr>
+</tbody>
+</table>
+<h3>3.&nbsp;特征字（32个）</h3>
+<p>用原字的特征部分来代替原字，这样既减少了笔画，又容易辨认。有一部分汉字的结构，描写起来很费劲，不便称说，例如，“候”字简化为“<span lang="zh-Hans-CN-x-erjian2">侯</span>”，便于称说，易学易记。</p>
+<table>
+<tbody>
+<tr><td>插 锸 臿</td><td lang="zh-Hans-CN-x-erjian2">臿</td></tr>
+<tr><td>得</td><td lang="zh-Hans-CN-x-erjian2">得</td></tr>
+<tr><td>德</td><td lang="zh-Hans-CN-x-erjian2">德</td></tr>
+<tr><td>费</td><td lang="zh-Hans-CN-x-erjian2">费<sup lang="zh-Hans-CN"><a href="#note-费" id="note-mark-费" class="note-mark"></a></sup></td></tr>
+<tr><td>蜂 峰 烽 锋</td><td lang="zh-Hans-CN-x-erjian2">蜂</td></tr>
+<tr><td>鼓 臌</td><td lang="zh-Hans-CN-x-erjian2">鼓</td></tr>
+<tr><td>衮 滚 磙</td><td lang="zh-Hans-CN-x-erjian2">衮</td></tr>
+<tr><td>侯 候</td><td lang="zh-Hans-CN-x-erjian2">侯</td></tr>
+<tr><td>既</td><td lang="zh-Hans-CN-x-erjian2">既</td></tr>
+<tr><td>疆 缰</td><td lang="zh-Hans-CN-x-erjian2">疆</td></tr>
+<tr><td>解</td><td lang="zh-Hans-CN-x-erjian2">解</td></tr>
+<tr><td>浸</td><td lang="zh-Hans-CN-x-erjian2">浸</td></tr>
+<tr><td>侵</td><td lang="zh-Hans-CN-x-erjian2">侵</td></tr>
+<tr><td>鞠 掬</td><td lang="zh-Hans-CN-x-erjian2">鞠</td></tr>
+<tr><td>垒 儡</td><td lang="zh-Hans-CN-x-erjian2">垒</td></tr>
+<tr><td>漏</td><td lang="zh-Hans-CN-x-erjian2">漏</td></tr>
+<tr><td>没</td><td lang="zh-Hans-CN-x-erjian2">没<sup lang="zh-Hans-CN"><a href="#note-没" id="note-mark-没" class="note-mark"></a></sup></td></tr>
+<tr><td>墓</td><td lang="zh-Hans-CN-x-erjian2">墓</td></tr>
+<tr><td>脑 瑙 碯 堖</td><td lang="zh-Hans-CN-x-erjian2">脑</td></tr>
+<tr><td>能</td><td lang="zh-Hans-CN-x-erjian2">能</td></tr>
+<tr><td>攀</td><td lang="zh-Hans-CN-x-erjian2">攀</td></tr>
+<tr><td>缺</td><td lang="zh-Hans-CN-x-erjian2">缺</td></tr>
+<tr><td>然</td><td lang="zh-Hans-CN-x-erjian2">然</td></tr>
+<tr><td>弱</td><td lang="zh-Hans-CN-x-erjian2">弱</td></tr>
+<tr><td>熟</td><td lang="zh-Hans-CN-x-erjian2">熟</td></tr>
+<tr><td>数</td><td lang="zh-Hans-CN-x-erjian2">数</td></tr>
+<tr><td>酸 痠</td><td lang="zh-Hans-CN-x-erjian2">酸</td></tr>
+<tr><td>滕 藤</td><td lang="zh-Hans-CN-x-erjian2">滕</td></tr>
+<tr><td>微</td><td lang="zh-Hans-CN-x-erjian2">微</td></tr>
+<tr><td>涡 娲 窝 莴</td><td lang="zh-Hans-CN-x-erjian2">涡</td></tr>
+<tr><td>象</td><td lang="zh-Hans-CN-x-erjian2">象</td></tr>
+<tr><td>旋 漩</td><td lang="zh-Hans-CN-x-erjian2">旋</td></tr>
+</tbody>
+</table>
+<h3>4.&nbsp;轮廓字（23个）</h3>
+<p>保留原字的轮廓，省略其中部分笔画。用这个方法简化的字与原字形体相近。例如，“叟臾舀毁”分别简作“<span lang="zh-Hans-CN-x-erjian2">叟臾舀毁</span>”，“臼”改作“<span lang="zh-Hans-CN-x-erjian2">曰</span>”虽只减两笔，但好写多了。</p>
+<table>
+<tbody>
+<tr><td>蠢</td><td lang="zh-Hans-CN-x-erjian2">蠢</td></tr>
+<tr><td>篡</td><td lang="zh-Hans-CN-x-erjian2">篡</td></tr>
+<tr><td>等</td><td lang="zh-Hans-CN-x-erjian2">等</td></tr>
+<tr><td>鬼</td><td lang="zh-Hans-CN-x-erjian2">鬼</td></tr>
+<tr><td>魔</td><td lang="zh-Hans-CN-x-erjian2">魔</td></tr>
+<tr><td>磨</td><td lang="zh-Hans-CN-x-erjian2">磨</td></tr>
+<tr><td>摩</td><td lang="zh-Hans-CN-x-erjian2">摩</td></tr>
+<tr><td>阔</td><td lang="zh-Hans-CN-x-erjian2">阔</td></tr>
+<tr><td>旁</td><td lang="zh-Hans-CN-x-erjian2">旁</td></tr>
+<tr><td>鼠</td><td lang="zh-Hans-CN-x-erjian2">鼠</td></tr>
+<tr><td>叟 搜 嗖 飕</td><td lang="zh-Hans-CN-x-erjian2">叟</td></tr>
+<tr><td>臾</td><td lang="zh-Hans-CN-x-erjian2">臾</td></tr>
+<tr><td>舀</td><td lang="zh-Hans-CN-x-erjian2">舀</td></tr>
+<tr><td>隋 随</td><td lang="zh-Hans-CN-x-erjian2">隋</td></tr>
+<tr><td>犀</td><td lang="zh-Hans-CN-x-erjian2">犀</td></tr>
+<tr><td>喜</td><td lang="zh-Hans-CN-x-erjian2">喜</td></tr>
+<tr><td>雨</td><td lang="zh-Hans-CN-x-erjian2">雨</td></tr>
+<tr><td>舟</td><td lang="zh-Hans-CN-x-erjian2">舟</td></tr>
+<tr><td>角</td><td lang="zh-Hans-CN-x-erjian2">角</td></tr>
+<tr><td>耳</td><td lang="zh-Hans-CN-x-erjian2">耳</td></tr>
+<tr><td>南</td><td lang="zh-Hans-CN-x-erjian2">南</td></tr>
+<tr><td>商</td><td lang="zh-Hans-CN-x-erjian2">商</td></tr>
+<tr><td>皿</td><td lang="zh-Hans-CN-x-erjian2">皿</td></tr>
+<tr><td>血</td><td lang="zh-Hans-CN-x-erjian2">血</td></tr>
+</tbody>
+</table>
+<h3>5.&nbsp;草书楷化字（16个）</h3>
+<p>把行草书改成楷书的形式，可以减少较多笔画。</p>
+<table>
+<tbody>
+<tr><td>弟 第</td><td lang="zh-Hans-CN-x-erjian2">弟</td></tr>
+<tr><td>嚏 涕</td><td lang="zh-Hans-CN-x-erjian2">嚏</td></tr>
+<tr><td>亥</td><td lang="zh-Hans-CN-x-erjian2">亥</td></tr>
+<tr><td>柬</td><td lang="zh-Hans-CN-x-erjian2">柬</td></tr>
+<tr><td>阑 斓</td><td lang="zh-Hans-CN-x-erjian2">阑</td></tr>
+<tr><td>贸</td><td lang="zh-Hans-CN-x-erjian2">贸</td></tr>
+<tr><td>照</td><td lang="zh-Hans-CN-x-erjian2">照</td></tr>
+<tr><td>票</td><td lang="zh-Hans-CN-x-erjian2">票</td></tr>
+<tr><td>要</td><td lang="zh-Hans-CN-x-erjian2">要</td></tr>
+<tr><td>其</td><td lang="zh-Hans-CN-x-erjian2">其</td></tr>
+<tr><td>夏</td><td lang="zh-Hans-CN-x-erjian2">夏</td></tr>
+<tr><td>身</td><td lang="zh-Hans-CN-x-erjian2">身</td></tr>
+<tr><td>事</td><td lang="zh-Hans-CN-x-erjian2">事</td></tr>
+<tr><td>高</td><td lang="zh-Hans-CN-x-erjian2">高</td></tr>
+<tr><td>薛</td><td lang="zh-Hans-CN-x-erjian2">薛</td></tr>
+<tr><td>壹</td><td lang="zh-Hans-CN-x-erjian2">壹</td></tr>
+</tbody>
+</table>
+<h3>6.&nbsp;会意字（6个）</h3>
+<p>用几个常用字（或偏旁）构成一个字，表示一个意思。例如，<span lang="zh-Hans-CN-x-erjian2">寡</span>是寡的古体，“一人为寡”。</p>
+<table>
+<tbody>
+<tr><td>矮</td><td lang="zh-Hans-CN-x-erjian2">矮</td></tr>
+<tr><td>寡</td><td lang="zh-Hans-CN-x-erjian2">寡</td></tr>
+<tr><td>集</td><td lang="zh-Hans-CN-x-erjian2">集</td></tr>
+<tr><td>家</td><td lang="zh-Hans-CN-x-erjian2">家</td></tr>
+<tr><td>聚</td><td lang="zh-Hans-CN-x-erjian2">聚</td></tr>
+<tr><td>燃</td><td lang="zh-Hans-CN-x-erjian2">燃</td></tr>
+</tbody>
+</table>
+<h3>7.&nbsp;符号字（5个）</h3>
+<p>把原字笔画繁难的部分，用简单的笔画（或字）代替。这些笔画（或字）在这类简化字中仅仅作为符号，不起表音表意作用。</p>
+<table>
+<tbody>
+<tr><td>割</td><td lang="zh-Hans-CN-x-erjian2">割<sup lang="zh-Hans-CN"><a href="#note-割" id="note-mark-割" class="note-mark"></a></sup></td></tr>
+<tr><td>奥</td><td lang="zh-Hans-CN-x-erjian2">奥</td></tr>
+<tr><td>粤</td><td lang="zh-Hans-CN-x-erjian2">粤</td></tr>
+<tr><td>韩</td><td lang="zh-Hans-CN-x-erjian2">韩</td></tr>
+<tr><td>魏</td><td lang="zh-Hans-CN-x-erjian2">魏</td></tr>
+</tbody>
+</table>
+<h3>8.&nbsp;简化偏旁</h3>
+<h4>（1）可作简化偏旁用的简化字（24个）</h4>
+<p>24个可作简化偏旁用的简化字（均见第二表前七类），及可类推简化的字一并列表如下。</p>
+<table>
+<thead>
+<tr><th>原&NoBreak;字</th><th>简&NoBreak;作</th><th>可类推简化的字</th></tr>
+</thead>
+<tbody>
+<tr><td>敢</td><td lang="zh-Hans-CN-x-erjian2">敢</td><td>橄 瞰 憨</td></tr>
+<tr><td>既</td><td lang="zh-Hans-CN-x-erjian2">既</td><td>慨 溉 概</td></tr>
+<tr><td>鬼</td><td lang="zh-Hans-CN-x-erjian2">鬼</td><td>魁 魅 傀 愧 瑰 槐 魂 魄</td></tr>
+<tr><td>旁</td><td lang="zh-Hans-CN-x-erjian2">旁</td><td>傍 谤 榜 膀 磅 镑 耪 螃</td></tr>
+<tr><td>喜</td><td lang="zh-Hans-CN-x-erjian2">喜</td><td>嘻 嬉 禧 熹</td></tr>
+<tr><td>叟</td><td lang="zh-Hans-CN-x-erjian2">叟</td><td>馊 嫂 艘 瘦</td></tr>
+<tr><td>舀</td><td lang="zh-Hans-CN-x-erjian2">舀</td><td>滔 韬</td></tr>
+<tr><td>皿</td><td lang="zh-Hans-CN-x-erjian2">皿</td><td>盂 孟 猛 锰 蜢 盅 盆 盐 盏 监 槛 褴 益 谥 溢 缢 盔 盛 盖 盗 盘 盟 温 蕴 磕 瞌 阖</td></tr>
+<tr><td>血</td><td lang="zh-Hans-CN-x-erjian2">血</td><td>衅 恤</td></tr>
+<tr><td>商</td><td lang="zh-Hans-CN-x-erjian2">商</td><td>熵</td></tr>
+<tr><td>南</td><td lang="zh-Hans-CN-x-erjian2">南</td><td>献 喃 楠 蝻</td></tr>
+<tr><td>耳</td><td lang="zh-Hans-CN-x-erjian2">耳</td><td>耶 椰 取 娶 趣 最 撮 耻 耽 耿 聆 职 联 聘 聪 洱 饵 弭 聂 摄 镊 蹑 揖 缉 楫 辑 茸 耸 聋 闻</td></tr>
+<tr><td>角</td><td lang="zh-Hans-CN-x-erjian2">角</td><td>斛 触 桷 确 懈 蟹</td></tr>
+<tr><td>舟</td><td lang="zh-Hans-CN-x-erjian2">舟</td><td>舰 航 舷 舵 舸 舶 船 艄 艘 般 搬 瘢 磐 盘</td></tr>
+<tr><td>雨</td><td lang="zh-Hans-CN-x-erjian2">雨</td><td>雯 零 雾 雹 雷 擂 镭 需 懦 糯 震 霄 霉 霖 霎 霍 霓 露 酃</td></tr>
+<tr><td>弟</td><td lang="zh-Hans-CN-x-erjian2">弟</td><td>剃 梯 锑 递</td></tr>
+<tr><td>高</td><td lang="zh-Hans-CN-x-erjian2">高</td><td>敲 搞 槁 犒 稿 镐 蒿 篙</td></tr>
+<tr><td>亥</td><td lang="zh-Hans-CN-x-erjian2">亥</td><td>刻 该 咳 孩 骇 核 赅 骸 阂</td></tr>
+<tr><td>柬</td><td lang="zh-Hans-CN-x-erjian2">柬</td><td>谏 楝</td></tr>
+<tr><td>票</td><td lang="zh-Hans-CN-x-erjian2">票</td><td>飘 瓢 漂 膘 瞟 镖 鳔</td></tr>
+<tr><td>要</td><td lang="zh-Hans-CN-x-erjian2">要</td><td>腰</td></tr>
+<tr><td>其</td><td lang="zh-Hans-CN-x-erjian2">其</td><td>期 欺 斯 嘶 撕 厮 淇 祺 棋 琪 基 箕 旗</td></tr>
+<tr><td>身</td><td lang="zh-Hans-CN-x-erjian2">身</td><td>躬 躯 躲 躺 射 谢 榭</td></tr>
+<tr><td>家</td><td lang="zh-Hans-CN-x-erjian2">家</td><td>嫁 稼</td></tr>
+</tbody>
+</table>
+<h4>（2）不能单独成字的简化偏旁（16个）</h4>
+<p>16个不能单独成字的简化偏旁（其中爿〔<span lang="zh-Latn-CN-pinyin">pán</span>〕、豸〔<span lang="zh-Latn-CN-pinyin">zhì</span>〕单用时保持原字；“厥”作单字用时简作“<span lang="zh-Hans-CN-x-erjian2">厥</span>”；“阑”作单字用时简作“<span lang="zh-Hans-CN-x-erjian2">阑</span>”，“阑尾”简作“<span lang="zh-Hans-CN-x-erjian2">兰尾</span>”），及可类推简化的字一并列表如下。</p>
+<table>
+<tbody>
+<tr><td>爿</td><td lang="zh-Hans-CN-x-erjian2">丬</td><td>寐</td></tr>
+<tr><td>豸</td><td lang="zh-Hans-CN-x-erjian2">犭</td><td>豺 豹 貂 貉</td></tr>
+<tr><td>厥</td><td lang="zh-Hans-CN-x-erjian2">夬</td><td>撅 橛 獗 蹶</td></tr>
+<tr><td>阑</td><td lang="zh-Hans-CN-x-erjian2">兰</td><td>镧</td></tr>
+<tr><td>廴</td><td lang="zh-Hans-CN-x-erjian2">辶</td><td>廷 挺 延 涎 蜒 筵 犍 毽</td></tr>
+<tr><td>衤</td><td lang="zh-Hans-CN-x-erjian2">礻</td><td>补 初 衬 衫 袄 袜 袒 袖 袍 被 裆 裕 裙 裱 褂 裸 褪 褛 褶 褴</td></tr>
+<tr><td>龺</td><td lang="zh-Hans-CN-x-erjian2">龺</td><td>朝 嘲 潮 戟 翰</td></tr>
+<tr><td>尞</td><td lang="zh-Hans-CN-x-erjian2">了</td><td>撩 獠 缭</td></tr>
+<tr><td>尃</td><td lang="zh-Hans-CN-x-erjian2">尃</td><td>博 搏 膊 缚 薄</td></tr>
+<tr><td>啇</td><td lang="zh-Hans-CN-x-erjian2">啇</td><td>摘 嘀 滴 嫡 镝</td></tr>
+<tr><td>臽</td><td lang="zh-Hans-CN-x-erjian2">臽</td><td>谄 陷 掐 馅 焰</td></tr>
+<tr><td>隹</td><td lang="zh-Hans-CN-x-erjian2">隹</td><td>准 谁 难 傩 摊 滩 瘫 堆 推 唯 帷 惟 淮 维 潍 椎 雅 稚 雏 碓 睢 锥 雌 榫 售 雀 雇 翟 霍 瞿 崔 催 摧 焦 憔 樵 礁 蕉 鹤 截 蔺 躏 雁 雍 壅 攫 暹 鹳 颧 獾</td></tr>
+<tr><td>灬</td><td lang="zh-Hans-CN-x-erjian2">灬</td><td>杰 点 热 烈 羔 糕 羹 庶 鹧 蔗 遮 焘 烹 焉 煮 焦 憔 樵 礁 蕉 黑 默 黔 黝 黯 嘿 墨 熏 醺 煎 煦 煞 熬 熙 罴 熊 燕 熹</td></tr>
+<tr><td>𥝢</td><td lang="zh-Hans-CN-x-erjian2">利</td><td>黎 藜</td></tr>
+<tr><td><span class="waizi">&#xF101;</span></td><td lang="zh-Hans-CN-x-erjian2">癶</td><td>祭</td></tr>
+<tr><td>𠇍 <span class="waizi">&#xF102;</span></td><td lang="zh-Hans-CN-x-erjian2">尒</td><td>恭慕添舔黍傣黎藜</td></tr>
+</tbody>
+</table>
+</section>
+<div class="back">
+<section id="zhushi">
+<h2>注　　释</h2>
+<ol class="note">
+<li id="note-韭">中药的秦艽仍读<span lang="zh-Latn-CN-pinyin">jiāo</span>。<a href="#note-mark-韭" class="note-back"></a></li>
+<li id="note-橘">中药桔梗的桔仍读<span lang="zh-Latn-CN-pinyin">jié</span>。<a href="#note-mark-橘" class="note-back"></a></li>
+<li id="note-潦">潦草、潦倒的潦简作<span lang="zh-Hans-CN-x-erjian1">潦</span>，用作“雨水大”义读<span lang="zh-Latn-CN-pinyin">lào</span>时改用涝。<a href="#note-mark-潦" class="note-back"></a></li>
+<li id="note-停">伶仃的仃仍读<span lang="zh-Latn-CN-pinyin">dīng</span>。<a href="#note-mark-停" class="note-back"></a></li>
+<li id="note-遇">迂回的迂仍读<span lang="zh-Latn-CN-pinyin">yū</span>。<a href="#note-mark-遇" class="note-back"></a></li>
+<li id="note-嘴">咀嚼的咀仍读<span lang="zh-Latn-CN-pinyin">jǔ</span>。<a href="#note-mark-嘴" class="note-back"></a></li>
+<li id="note-刁">雕刻的雕简作<span lang="zh-Hans-CN-x-erjian2">刁</span>，老雕的雕简作<span lang="zh-Hans-CN-x-erjian2">雕</span>。<a href="#note-mark-刁" class="note-back"></a></li>
+<li id="note-吕">旅的〓旁容易写错。膂本作吕，象脊梁骨之形。<a href="#note-mark-吕" class="note-back"></a></li>
+<li id="note-渲">渲染的渲和宣合并简作<span lang="zh-Hans-CN-x-erjian2">渲</span>，以免同演—<span lang="zh-Hans-CN-x-erjian2">演</span>相混。<a href="#note-mark-渲" class="note-back"></a></li>
+<li id="note-澳">肥沃的沃仍读<span lang="zh-Latn-CN-pinyin">wò</span>。<a href="#note-mark-澳" class="note-back"></a></li>
+<li id="note-储">贮藏的贮原读<span lang="zh-Latn-CN-pinyin">zhù</span>，现在一般都读<span lang="zh-Latn-CN-pinyin">chǔ</span>，故与同义字储一并简作<span lang="zh-Hans-CN-x-erjian2">储</span>。<a href="#note-mark-储" class="note-back"></a></li>
+<li id="note-蝶"><span lang="zh-Hans-CN-x-erjian2">蝶</span>仿迭跌等字。<a href="#note-mark-蝶" class="note-back"></a></li>
+<li id="note-藕"><span lang="zh-Hans-CN-x-erjian2">藕</span>仿沤欧等字，区作声旁读<span lang="zh-Latn-CN-pinyin">ou</span>。<a href="#note-mark-藕" class="note-back"></a></li>
+<li id="note-臀"><span lang="zh-Hans-CN-x-erjian2">臀</span>仿尾屁等字，屯作声旁。<a href="#note-mark-臀" class="note-back"></a></li>
+<li id="note-嫌">嫌是贬义字，故女旁改用竖心旁，简作<span lang="zh-Hans-CN-x-erjian2">嫌</span>。<a href="#note-mark-嫌" class="note-back"></a></li>
+<li id="note-铡">元素的钆仍读<span lang="zh-Latn-CN-pinyin">gā</span>。<a href="#note-mark-铡" class="note-back"></a></li>
+<li id="note-费">弗许的弗仍读<span lang="zh-Latn-CN-pinyin">fú</span>。<a href="#note-mark-费" class="note-back"></a></li>
+<li id="note-没">没与设形近，“没有”“设有”易混，需要区别。古兵器的殳仍读<span lang="zh-Latn-CN-pinyin">shū</span>。<a href="#note-mark-没" class="note-back"></a></li>
+<li id="note-割">删刈、刈除的刈仍读<span lang="zh-Latn-CN-pinyin">yì</span>。<a href="#note-mark-割" class="note-back"></a></li>
+</ol>
+</section>
+<p class="edition">（编辑：<img src="../img/Zhou-Ruikang-logo.svg" alt="周睿康" class="symbol" />）</p>
+<section id="canjian">
+<h2>参　　见</h2>
+<ul class="see-also">
+<li><cite lang="en">BabelStone Fonts : BabelStone Erjian</cite>，<a href="https://www.babelstone.co.uk/Fonts/Erjian.html" class="url">https://www.babelstone.co.uk/Fonts/Erjian.html</a>。</li>
+</ul>
+</section>
+<nav>
+<p>话题：<a href="index.html#zhongguo-zhexue">文字的故事</a></p>
+<p>分类：<a href="index.html">H</a>124.2 简化字</p>
+</nav>
+</div>
+</main>
+<footer>
+<p><img src="../img/Zhou-Ruikang-logo.svg" alt="周睿康" class="symbol" />　2020年</p>
+</footer>
+</body>
+</html>

@@ -351,6 +351,6 @@ font-weight: bold;
 /*supplement*/
 
 @font-face {
-font-family: "BabelStone Han";
-src: local("BabelStone Han"), url("../font/BabelStoneHan.subset.woff2") format("woff2"), url("../font/BabelStoneHan.subset.woff") format("woff"), url("../font/BabelStoneHan.subset.ttf") format("truetype")/*, url("http://www.babelstone.co.uk/Fonts/WOFF/BabelStoneHan.woff2") format("woff2"), url("http://www.babelstone.co.uk/Fonts/WOFF/BabelStoneHan.woff") format("woff"), url("http://www.babelstone.co.uk/Fonts/Download/BabelStoneHan.ttf") format("truetype")*/;
+font-family: "biaozhunzi";
+src: local("BabelStone Han"), local("BabelStoneHan"), url("../font/BabelStoneHan.subset.woff2") format("woff2"), url("../font/BabelStoneHan.subset.woff") format("woff"), url("../font/BabelStoneHan.subset.ttf") format("truetype")/*, url("https://www.babelstone.co.uk/Fonts/WOFF/BabelStoneHan.woff2") format("woff2"), url("https://www.babelstone.co.uk/Fonts/WOFF/BabelStoneHan.woff") format("woff"), url("https://www.babelstone.co.uk/Fonts/Download/BabelStoneHan.ttf") format("truetype")*/;
 }
