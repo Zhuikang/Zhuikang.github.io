@@ -348,6 +348,11 @@ font-weight: bold;
 
 /*symbols*/
 
+@font-face {
+font-family: "icon";
+src: url("../font/icomoon.subset.woff2") format("woff2"), url("../font/icomoon.woff") format("woff"), url("../font/icomoon.ttf") format("truetype"), url("../font/icomoon.eot") format("embedded-opentype"), url("../font/icomoon.svg") format("svg");
+}
+
 /*supplement*/
 
 @font-face {
