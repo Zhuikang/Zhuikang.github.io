@@ -4,7 +4,7 @@
 @counter-style circled-decimal {/*see https://www.w3.org/TR/predefined-counter-styles/*/
 system: fixed 0;
 symbols: "⓪" "①" "②" "③" "④" "⑤" "⑥" "⑦" "⑧" "⑨" "⑩" "⑪" "⑫" "⑬" "⑭" "⑮" "⑯" "⑰" "⑱" "⑲" "⑳" "㉑" "㉒" "㉓" "㉔" "㉕" "㉖" "㉗" "㉘" "㉙" "㉚" "㉛" "㉜" "㉝" "㉞" "㉟" "㊱" "㊲" "㊳" "㊴" "㊵" "㊶" "㊷" "㊸" "㊹" "㊺" "㊻" "㊼" "㊽" "㊾" "㊿";
-suffix: "\00A0"/*"&nbsp;"*/;
+suffix: "　";
 }
 @counter-style bracketed-decimal {
 system: numeric;
@@ -146,7 +146,7 @@ padding-left: 2rem;
 padding-right: 2rem;
 margin-bottom: 0.5rem;
 }
-p.edition {
+.edition {
 font-family: "kaiti", "fangsongti", "songti", serif;
 text-align: right;
 margin-top: 1em;
@@ -169,13 +169,13 @@ list-style: none inside;
 ol {
 list-style-position: inside;
 }
-ol.note {
+.note > ol {
 list-style-type: circled-decimal;
 }
-ol.ref {
+.ref > ol {
 list-style-type: bracketed-decimal;
 }
-.note li:target, .ref li:target, a.note-mark:target, a.ref-mark:target {
+.note > ol > li:target, .ref > ol > li:target, a.note-mark:target, a.ref-mark:target {
 animation: highlight 2s;
 }
 dt {
@@ -215,10 +215,10 @@ padding-bottom: 0.25em;
 thead {
 border-bottom: 0.05em solid;
 }
-tbody > tr:first-child > td {
+tbody > tr:first-of-type > td {
 padding-top: 0.25em;
 }
-tbody > tr:last-child > td {
+tbody > tr:last-of-type > td {
 padding-bottom: 0.25em;
 }
 a {

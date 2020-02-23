@@ -61,10 +61,10 @@ border: 0.05em solid;
 th, td {
 border: 0.03em solid;
 }
-tbody > tr:first-child > td {
+tbody > tr:first-of-type > td {
 padding-top: inherit;
 }
-tbody > tr:last-child > td {
+tbody > tr:last-of-type > td {
 padding-bottom: inherit;
 }
 table {
@@ -74,7 +74,7 @@ td.no::before {
 counter-increment: no;
 content: counter(no);
 }
-td:nth-last-child(-n+3) {
+td:nth-last-of-type(-n+3) {
 text-align: justify;
 }
 </style>
@@ -82,7 +82,7 @@ text-align: justify;
 <body>
 <header>
 <nav><p><a href="index.html">H</a></p></nav>
-<p class="website-title"><a href="index.html">𦴶</a></p>
+<p class="website-title"><a href="../index.html">𦴶</a></p>
 </header>
 <main>
 <h1>简化字与繁体字的对应关系</h1>
@@ -325,12 +325,16 @@ text-align: justify;
 </tbody>
 </table>
 <div class="back">
-<p class="edition">（编辑：<img src="../img/Zhou-Ruikang-logo.svg" alt="周睿康" class="symbol" />）</p>
+<div class="edition">
+<p>（编辑：<img src="../img/Zhou-Ruikang-logo.svg" alt="周睿康" class="symbol" />）</p>
+</div>
+<div class="see-also">
 <h2>参　　见</h2>
-<ul class="see-also">
+<ul>
 <li>《<a href="tongyong-guifan-hanzi-biao.html">通用规范汉字表</a>》及其附件1《<a href="guifanzi-yu-fantizi-yitizi-duizhaobiao.html">规范字与繁体字、异体字对照表</a>》。</li>
 <li lang="zh-Hant">BYVoid：《現代漢語常用簡繁一對多字義辨析表》，韻典網，<a href="https://ytenx.org/byohlyuk/KienxPyan" class="url">https://ytenx.org/byohlyuk/Kienx<wbr />Pyan</a>。（该表系民间制订的规则，与各地现行规范均不同，其原则是“辨义字组能分则不合”。）</li>
 </ul>
+</div>
 <nav>
 <p>话题：<a href="index.html#zibiao">字表</a></p>
 <p>分类：<a href="index.html">H</a>124.1</p>
