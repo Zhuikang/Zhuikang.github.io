@@ -169,6 +169,9 @@ list-style: none inside;
 ol {
 list-style-position: inside;
 }
+li > ul, li > ol {
+padding-left: 2em;
+}
 .note > ol {
 list-style-type: circled-decimal;
 }
