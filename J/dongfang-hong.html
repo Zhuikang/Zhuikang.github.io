@@ -13,16 +13,29 @@
 font-family: "jianpu";
 src: local("Doulos SIL Cipher"), local("DoulosSILCipher"), url("../font/DoulosSILCipher-R.subset.woff2") format("woff2"), local("Doulos SIL Cipher"), url("../font/DoulosSILCipher-R.woff") format("woff"), url("../font/DoulosSILCipher-R.ttf") format("truetype");
 }
+@font-face {
+font-family: "fangsongti";
+src: local("Doulos SIL Cipher"), local("DoulosSILCipher"), url("../font/DoulosSILCipher-R.subset.woff2") format("woff2"), local("Doulos SIL Cipher"), url("../font/DoulosSILCipher-R.woff") format("woff"), url("../font/DoulosSILCipher-R.ttf") format("truetype");
+unicode-range: U+9;
+}
 .jianpu {
-font-family: "jianpu", "Doulos SIL Cipher";
+font-family: "jianpu", "Doulos SIL Cipher", "DoulosSILCipher";
 -moz-font-feature-settings: "slur" 2;
-line-height: 2;
 white-space: pre;
+}
+p.jianpu {
+line-height: 2;
 text-indent: 0;
-font-size: 1.33em;
 text-align: left;
-padding-left: 2rem;
-padding-right: 2rem;
+}
+.geci {
+display: inline-block;
+font-family: "fangsongti", "songti", serif;
+margin-left: -0.25em;
+}
+.zhuji {
+font-family: "songti", serif;
+font-size: 3.675mm/*五号*/;
 }
 iframe {
 width: 640px;
@@ -39,68 +52,95 @@ max-height: 100vh;
 </header>
 <main>
 <h1>东方红</h1>
-<p>《东方红》是毛&NoBreak;泽&NoBreak;东同志和中国共产党的颂歌。改编自陕北民歌，李有源作词。</p>
-<blockquote class="jianpu">5  𝅷5̲6̲𝅸 𝄀 2  ‒  𝄀 1  𝅷1̲6̲̣𝅸 𝄀 2  ‒  𝄀 5  5  𝄀 𝅷6̲1̲̇𝅸 6̲5̲ 𝄀
-1  𝅷1̲6̲̣𝅸 𝄀 2  ‒  𝄀 5  2  𝄀 1  𝅷7̲̣6̲̣𝅸 𝄀 5̣  5  𝄀 2  𝅷3̲2̲𝅸 𝄀
-1  𝅷1̲6̲̣𝅸 𝄀 2̲3̲ 2̲1̲ 𝄀 𝅷2̲1̲𝅸 𝅷7̲̣6̲̣𝅸 𝄀 𝅷5̣  ‒  𝄀 5̣𝅸  0 𝄂</blockquote>
+<div class="front">
+<div class="abstract">
+<p>编者按：《东方红》是毛&NoBreak;泽&NoBreak;东同志和中国共产党的颂歌。这首歌曲改编自陕北民歌，由李有源作词。本网页刊载了《东方红》简谱，收录了《东方红》演唱、演奏录音。</p>
+<p>《东方红》象征着革命的中国，曾用作北京广播电台（今中国国际广播电台）的调谐信号及开始曲，曾在中国发射的第一颗人造地球卫星上广播（见“<a href="#dongfang-hong-xinhao">《东方红》信号</a>”一节）。如今，在中国许多地方仍然可以听到<a href="#dongfang-hong-zhongsheng">《东方红》旋律的钟声</a>。</p>
+</div>
+</div>
+<figure style="max-width: 28rem; margin-left: auto; margin-right: auto;">
+<figcaption style="font-size: inherit;">东　方　红</figcaption>
+<p style="float: left; text-align: left;"><span class="jianpu">1=F</span>　<span class="jianpu" title="以四分音符为一拍，每小节有2拍"><math><mfrac><mn>2</mn> <mn>4</mn></mfrac></math></span></p>
+<p style="float: right; text-align: right; line-height: 1;"><small>陕北民歌<br />李有源词</small></p>
+<p class="jianpu" style="clear: both; tab-size: 2.25em;"><span class="zhuji">庄严　中速</span>
+5 	𝅷5̲6̲𝅸 𝄀	2 	‒  𝄀	1 	𝅷1̲6̲̣𝅸 𝄀	2 	‒  𝄀	5 	5  𝄀	𝅷6̲1̲̇𝅸	6̲5̲ 𝄀
+<span class="geci"><span style="margin-left: -1em;">⒈</span>东	方	红，		太	阳	升，		中	国	出	了个
+<span style="margin-left: -1em;">⒉</span>毛	主	席，		爱	人	民，		他	是	我	们的
+<span style="margin-left: -1em;">⒊</span>共	产	党，		像	太	阳，		照	到	哪	里</span>
+1 	𝅷1̲6̲̣𝅸 𝄀	2 	‒  𝄀	5 	2  𝄀	1 	𝅷7̲̣6̲̣𝅸 𝄀	5̣ 	5  𝄀	2 	𝅷3̲2̲𝅸 𝄀
+<span class="geci">毛	泽	东；		他	为	人	民	谋	幸	福，	呼儿
+带	路	人；		为	了	建	设	新	中	国，	呼儿
+哪	里	亮；		哪	里	有	了	共	产	党，	呼儿</span>
+1 	𝅷1̲6̲̣𝅸 𝄀	2̲3̲	2̲1̲ 𝄀	𝅷2̲1̲𝅸	𝅷7̲̣6̲̣𝅸 𝄀	𝅷5̣ &ensp; ‒ &ensp; 𝄀 5̣𝅸 &emsp; 0 &emsp; 𝄇
+<span class="geci">咳	呀，	他是	人民	大	救	星。
+咳	呀，	领导	我们	向	前	进。
+咳	呀，	哪里	人民	得	解	放。</span>
+<span class="zhuji">结束句</span>
+5 	2  𝄀	1 	𝅷7̲̣6̲̣𝅸 𝄀	5̣ 	5  𝄀	2 	3̲2̲ 𝄀	1 	𝅷1̲6̲̣𝅸 𝄀	2̲3̲	2̲1̲ 𝄀
+<span class="geci">哪	里	有	了	共	产	党，	呼儿	咳	呀，	哪里	人民</span>
+2̲̇1̲̇	7̲6̲ 𝄀	𝅷5 &ensp; ‒ &ensp; 𝄀 5𝅸 &emsp; 0 &emsp; 𝄂
+<span class="geci">得	解	放。</span></p>
+<div style="font-size: 3.675mm/*五号*/;">
+<p class="edition">（摘自《人民日报》1976年10月22日，第2版。）</p>
+</div>
+</figure>
 <figure>
 <audio controls="controls"><source src="audio/dongfang-hong.mp3" type="audio/mpeg" /><a href="audio/dongfang-hong.mp3">东方红（混声合唱）</a></audio>
-<figcaption>东方红（混声合唱）<sup><a href="#ref-hechang" id="ref-mark-hechang" class="ref-mark"></a></sup><br />选自音乐舞蹈史诗《东方红》　李焕之编曲　音乐舞蹈史诗《东方红》合唱队唱</figcaption>
+<figcaption>东方红（混声合唱）<br />选自音乐舞蹈史诗《东方红》　李焕之编曲<sup><a href="#note-hunsheng-hechang" id="note-mark-hunsheng-hechang" class="note-mark"></a></sup>　音乐舞蹈史诗《东方红》合唱队唱<br /><small>（资料来源：中国唱片集团有限公司，见《东方红》，学习强国，<a href="https://www.xuexi.cn/bd46ba0dcdb684ff73c3e055eb46072d/e43e220633a65f9b6d8b53712cba9caa.html" class="url">https://www.xuexi.cn/bd46ba0dcdb684ff73c3e055eb46072d/e43e220633a65f9b6d8b53712cba9caa.html</a>。）</small></figcaption>
 </figure>
 <figure>
 <audio controls="controls"><source src="audio/dongfang-hong-bianzhong.mp3" type="audio/mpeg" /><a href="audio/dongfang-hong-bianzhong.mp3">东方红（编钟演奏）</a></audio>
-<figcaption>东方红（编钟演奏）<sup><a href="#note-bianzhong" id="note-mark-bianzhong" class="note-mark"></a></sup></figcaption>
+<figcaption>东方红（编钟演奏）<br /><small>（资料来源待考）</small></figcaption>
 </figure>
 <figure>
 <audio controls="controls"><source src="audio/dongfang-hong-zenghouyi-bianzhong.mp3" type="audio/mpeg" /><a href="audio/dongfang-hong-zenghouyi-bianzhong.mp3">东方红（曾侯乙编钟演奏）</a></audio>
-<figcaption>东方红（曾侯乙编钟演奏）<sup><a href="#ref-zenghouyi-bianzhong" id="ref-mark-zenghouyi-bianzhong" class="ref-mark"></a></sup></figcaption>
+<figcaption>东方红（曾侯乙编钟演奏）<br /><small>（资料来源：《东周曾侯乙编钟》，百度百科，<a href="https://baike.baidu.com/item/东周曾侯乙编钟" class="url">https://baike.baidu.com/item/东周曾侯乙编钟</a>。）</small></figcaption>
 </figure>
-<h2>《东方红》信号</h2>
+<h2 id="dongfang-hong-xinhao">《东方红》信号</h2>
 <figure>
 <audio controls="controls"><source src="audio/dongfang-hong-beijing-guangbo-diantai.mp3" type="audio/mpeg" /><a href="audio/dongfang-hong-beijing-guangbo-diantai.mp3">北京广播电台调谐信号及开始曲（1967年）</a></audio>
-<figcaption>北京广播电台调谐信号及开始曲（1967年）<sup><a href="#ref-beijing-guangbo-diantai" id="ref-mark-beijing-guangbo-diantai" class="ref-mark"></a></sup></figcaption>
+<figcaption>北京广播电台调谐信号及开始曲（1967年）<br /><small>（资料来源：<span lang="en">David Kernick</span>：<cite lang="en">CHINA - China National Radio &amp; China Radio International</cite>，<span lang="en">Interval Signals Online</span>，<a href="http://www.intervalsignals.net/Countries/china-cnrcri.htm" class="url">http://www.interval<wbr />signals.net/Countries/china-cnr<wbr />cri.htm</a>。）</small></figcaption>
 </figure>
 <figure>
 <audio controls="controls"><source src="audio/dongfang-hong-dongfanghong-yihao.mp3" type="audio/mpeg" /><a href="audio/dongfang-hong-dongfanghong-yihao.mp3">“东方红一号”人造地球卫星播送的《东方红》乐曲</a></audio>
 <figcaption>“东方红一号”人造地球卫星播送的《东方红》乐曲<sup><a href="#note-dongfanghong-yihao" id="note-mark-dongfanghong-yihao" class="note-mark"></a></sup></figcaption>
 </figure>
-<h2>各地《东方红》钟声</h2>
+<h2 id="dongfang-hong-zhongsheng">《东方红》钟声</h2>
 <figure>
 <details>
+<summary>录像</summary>
 <iframe src="https://player.bilibili.com/player.html?aid=41155914&cid=72286464&page=1"></iframe>
 </details>
-<figcaption>北京站钟声<sup><a href="#ref-beijing" id="ref-mark-beijing" class="ref-mark"></a></sup></figcaption>
+<figcaption>北京站钟声<br /><small>（资料来源：东石同学：《北京站东方红报时钟声（2018-12-31）》，哔哩哔哩，2019年1月20日，<wbr /><a href="https://www.bilibili.com/video/av41155914/" class="url">https://www.bilibili.com/video/av41155914/</a>。）</small></figcaption>
 </figure>
 <figure>
 <details>
+<summary>录像</summary>
 <iframe src="https://v.qq.com/txp/iframe/player.html?vid=o0390kzb21g"></iframe>
 </details>
-<figcaption>上海海关大楼钟声<sup><a href="#ref-shanghai" id="ref-mark-shanghai" class="ref-mark"></a></sup></figcaption>
+<figcaption>上海海关大楼钟声<br /><small>（资料来源：廖信忠：《外滩钟声背后，藏着什么秘密》，廖信忠（微信公众号），2018年11月30日，<wbr /><a href="https://mp.weixin.qq.com/s/zB7utqZHC5QkKWc1rIBQxQ" class="url">https://mp.weixin.qq.com/s/zB7utqZHC5QkKWc1rIBQxQ</a>。）</small></figcaption>
 </figure>
 <figure>
 <details>
+<summary>录像</summary>
 <iframe src="https://player.bilibili.com/player.html?aid=8577962&cid=14123996&page=1"></iframe>
 </details>
-<figcaption>西安报话大楼钟声<sup><a href="#ref-xian" id="ref-mark-xian" class="ref-mark"></a></sup></figcaption>
+<figcaption>西安报话大楼钟声<br /><small>（资料来源：ArcherNoel：《西安报话大楼报时声（6点）》，哔哩哔哩，2017年2月12日，<wbr /><a href="https://www.bilibili.com/video/av8577962/" class="url">https://www.bilibili.com/video/av8577962/</a>。）</small></figcaption>
 </figure>
 <div class="back">
+<div class="edition">
+<p>（编辑：<img src="../img/Zhou-Ruikang-logo.svg" alt="周睿康" class="symbol" />）</p>
+</div>
+<div class="note">
 <h2>注　　释</h2>
-<ol class="note">
-<li id="note-bianzhong">出处待考。<a href="#note-mark-bianzhong" class="note-back"></a></li>
-<li id="note-dongfanghong-yihao">纪录片《宇宙高歌东方红——我国成功地发射第一颗人造地球卫星》中有这段录音。此外，<a href="http://www.dd1us.de/spacesounds%204c.html" lang="en">Homepage DD1US</a>收录了卫星播送的《东方红》乐曲和遥测讯号录音（由无线电爱好者录制）。<a href="#note-mark-dongfanghong-yihao" class="note-back"></a></li>
+<ol>
+<li id="note-hunsheng-hechang">李焕之编曲的混声合唱乐谱见音乐舞蹈史诗《东方红》导演团编：《音乐舞蹈史诗〈东方红〉歌曲集》，北京：人民音乐出版社，1977年，第1—4页。<a href="#note-mark-hunsheng-hechang" class="note-back"></a></li>
+<li id="note-dongfanghong-yihao">纪录片《宇宙高歌东方红——我国成功地发射第一颗人造地球卫星》中有这段录音。此外，<wbr /><a href="http://www.dd1us.de/spacesounds%204c.html" lang="en">Homepage DD1US</a>收录了卫星播送的《东方红》乐曲和遥测讯号录音（由无线电爱好者录制）。<a href="#note-mark-dongfanghong-yihao" class="note-back"></a></li>
 </ol>
-<h2>参 考 文 献</h2>
-<ol class="ref">
-<li id="ref-hechang">《东方红》，学习强国，<a href="https://www.xuexi.cn/bd46ba0dcdb684ff73c3e055eb46072d/e43e220633a65f9b6d8b53712cba9caa.html" class="url">https://www.xuexi.cn/bd46ba0dcdb684ff73c3e055eb46072d/e43e220633a65f9b6d8b53712cba9caa.html</a>。（来源：中国唱片集团有限公司。）<a href="#ref-mark-hechang" class="ref-back"></a></li>
-<li id="ref-zenghouyi-bianzhong">《东周曾侯乙编钟》，百度百科，<a href="https://baike.baidu.com/item/东周曾侯乙编钟" class="url">https://baike.baidu.com/item/东周曾侯乙编钟</a>。<a href="#ref-mark-zenghouyi-bianzhong" class="ref-back"></a></li>
-<li id="ref-beijing-guangbo-diantai"><span lang="en">David Kernick</span>：<cite lang="en">CHINA - China National Radio &amp; China Radio International</cite>，<span lang="en">Interval Signals Online</span>，<a href="http://www.intervalsignals.net/Countries/china-cnrcri.htm" class="url">http://www.interval<wbr />signals.net/Countries/china-cnr<wbr />cri.htm</a>。<a href="#ref-mark-beijing-guangbo-diantai" class="ref-back"></a></li>
-<li id="ref-beijing">东石同学：《北京站东方红报时钟声（2018-12-31）》，哔哩哔哩，2019年1月20日，<a href="https://www.bilibili.com/video/av41155914/" class="url">https://www.bilibili.com/video/av41155914/</a>。<a href="#ref-mark-beijing" class="ref-back"></a></li>
-<li id="ref-shanghai">廖信忠：《外滩钟声背后，藏着什么秘密》，廖信忠（微信公众号），2018年11月30日，<a href="https://mp.weixin.qq.com/s/zB7utqZHC5QkKWc1rIBQxQ" class="url">https://mp.weixin.qq.com/s/zB7utqZHC5QkKWc1rIBQxQ</a>。<a href="#ref-mark-shanghai" class="ref-back"></a></li>
-<li id="ref-xian">ArcherNoel：《西安报话大楼报时声（6点）》，哔哩哔哩，2017年2月12日，<a href="https://www.bilibili.com/video/av8577962/" class="url">https://www.bilibili.com/video/av8577962/</a>。<a href="#ref-mark-xian" class="ref-back"></a></li>
-</ol>
+</div>
 <nav>
 <p>话题：<a href="index.html#geming-gequ">革命歌曲</a></p>
-<p>分类：<a href="index.html">J</a></p>
+<p>分类：<a href="index.html">J</a>642.224.1　各地方民歌—陕西省</p>
 </nav>
 </div>
 </main>
