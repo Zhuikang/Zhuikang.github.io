@@ -26,6 +26,10 @@ font-family: "Latn-FR-b-orne";
 src: local("Ecriture B Orne Ligne"), local("EcritureB-RomainOrneLigne"), url("xiwen-zimu-shouxieti-fanben_font/EcritureB-Romain-Orne-Ligne.subset.woff2") format("woff2"), url("xiwen-zimu-shouxieti-fanben_font/EcritureB-Romain-Orne-Ligne.subset.woff") format("woff"), url("xiwen-zimu-shouxieti-fanben_font/EcritureB-Romain-Orne-Ligne.otf") format("opentype");
 }
 @font-face {
+font-family: "Latn-DE-grundschrift";
+src: local("Grundschrift"), url("xiwen-zimu-shouxieti-fanben_font/grundschrift-beta.woff2") format("woff2"), url("xiwen-zimu-shouxieti-fanben_font/grundschrift-beta.woff") format("woff"), url("xiwen-zimu-shouxieti-fanben_font/grundschrift-beta.ttf") format("truetype")/*, url("https://grundschulverband.de/wp-content/uploads/grundschrift-beta.ttf") format("truetype")*/;
+}
+@font-face {
 font-family: "Cyrl-rus";
 src: local("UKIJ Elipbe"), local("UKIJ Elipbe Bold"), local("UKIJElipbe-Bold"), url("xiwen-zimu-shouxieti-fanben_font/UKIJElipbe-b.subset.woff2") format("woff2"), url("xiwen-zimu-shouxieti-fanben_font/UKIJElipbe-b.subset.woff") format("woff"), url("xiwen-zimu-shouxieti-fanben_font/UKIJElipbe-b.subset.ttf") format("truetype")/*, url("http://www.ukij.org/fonts/fonts/UKIJElipbe-b.ttf") format("truetype")*/;
 }
@@ -43,7 +47,7 @@ background-color: white;
 <h1>西文字母手写体范本</h1>
 <div class="front">
 <div class="abstract">
-<p>编者按：本网页收集了拉丁字母、希腊字母和基里尔字母的现代手写体范本（还附有阿拉伯数字手写体范本），着重反映了同种文字在不同地域、不同语言中的书写习惯。“范本”的选择标准是：字形普通，适合日常书写；受到官方认可，进入基础教育，或者在民间广泛流传。</p>
+<p>编者按：本网页收集了拉丁字母、希腊字母和基里尔字母的现代手写体范本（还附有阿拉伯数字手写体范本），着重反映了同种文字在不同地域、不同语言中的书写习惯。编者选择“范本”的标准是：字形普通，不违背书法传统；适合日常书写，避免装饰性的特征；受到官方认可，进入基础教育，或者在民间广泛流传。</p>
 </div>
 <div class="table-of-contents">
 <h2>目　　录</h2>
@@ -65,7 +69,15 @@ background-color: white;
 		<li><a href="#Latn-FR-ronde">法式圆体</a></li>
 		</ol>
 	</li>
-	<li><a href="#Latn-DE">德国（资料暂缺）</a></li>
+	<li><a href="#Latn-DE">德国</a>
+		<ol>
+		<li><a href="#Latn-DE-la"><span lang="de">Lateinische Ausgangsschrift</span>（<span lang="de">LA</span>）</a></li>
+		<li><a href="#Latn-DE-sas"><span lang="de">Schulausgangsschrift</span>（<span lang="de">SAS</span>）</a></li>
+		<li><a href="#Latn-DE-va"><span lang="de">Vereinfachten Ausgangsschrift</span>（<span lang="de">VA</span>）</a></li>
+		<li><a href="#Latn-DE-grundschrift"><span lang="de">Grundschrift</span></a></li>
+		<li><a href="#Latn-DE-suetterlin"><span lang="de">Sütterlin</span>手写体</a></li>
+		</ol>
+	</li>
 	</ol>
 </li>
 <li><a href="#Grek">希腊字母</a>
@@ -142,14 +154,14 @@ abcdefghijklmnopqrstuvwxyz
 æœçàèùéâêîôûäëüÿñ
 0123456789€$£
 ,.:;…_/@(){}[]|-–—!?&*‹›«»'"‘’“”
-#°+−±=≠×<>≤≥⁄%‰</p>
-<figcaption>法国手写体A（大写字母不连写）<sup><a href="#note-Latn-FR-a" id="note-mark-Latn-FR-a" class="note-mark"></a></sup></figcaption>
+#°+−±=≠×&lt;&gt;≤≥⁄%‰</p>
+<figcaption>法国手写体A字样（大写字母不连写）<sup><a href="#note-Latn-FR-a" id="note-mark-Latn-FR-a" class="note-mark"></a></sup></figcaption>
 </figure>
 <figure>
 <p lang="fr" class="verse" style="font-family: 'Latn-FR-a-orne', 'Ecriture A Orne Ligne', 'EcritureA-RomainOrneLigne'; font-size: 297%; overflow: auto;">A B C D E F G H I J K L M N
 O P Q R S T U V W X Y Z
 Æ Œ Ç À È Ù É Â Ê Î Ô Û Ä Ë Ï Ü Ö Ÿ Ñ</p>
-<figcaption>法国大写字母手写体A（大写字母连写）<sup><a href="#note-Latn-FR-a-orne" id="note-mark-Latn-FR-a-orne" class="note-mark"></a></sup></figcaption>
+<figcaption>法国大写字母手写体A大写字母字样（大写字母连写）<sup><a href="#note-Latn-FR-a-orne" id="note-mark-Latn-FR-a-orne" class="note-mark"></a></sup></figcaption>
 </figure>
 </section>
 <section id="Latn-FR-b">
@@ -163,26 +175,83 @@ abcdefghijklmnopqrstuvwxyz
 æœçàèùéâêîôûäëüÿñ
 0123456789€$£
 ,.:;…_/@(){}[]|-–—!?&*‹›«»'"‘’“”
-#°+−±=≠×<>≤≥⁄%‰</p>
-<figcaption>法国手写体B（大写字母不连写）<sup><a href="#note-Latn-FR-b" id="note-mark-Latn-FR-b" class="note-mark"></a></sup></figcaption>
+#°+−±=≠×&lt;&gt;≤≥⁄%‰</p>
+<figcaption>法国手写体B字样（大写字母不连写）<sup><a href="#note-Latn-FR-b" id="note-mark-Latn-FR-b" class="note-mark"></a></sup></figcaption>
 </figure>
 <figure>
 <p lang="fr" class="verse" style="font-family: 'Latn-FR-b-orne', 'Ecriture B Orne Ligne', 'EcritureB-RomainOrneLigne'; font-size: 297%; overflow: auto;">A B C D E F G H I J K L M N
 O P Q R S T U V W X Y Z
 Æ Œ Ç À È Ù É Â Ê Î Ô Û Ä Ë Ï Ü Ö Ÿ Ñ</p>
-<figcaption>法国手写体B（大写字母连写）<sup><a href="#note-Latn-FR-b-orne" id="note-mark-Latn-FR-b-orne" class="note-mark"></a></sup></figcaption>
+<figcaption>法国手写体B大写字母字样（大写字母连写）<sup><a href="#note-Latn-FR-b-orne" id="note-mark-Latn-FR-b-orne" class="note-mark"></a></sup></figcaption>
 </figure>
 </section>
 <section id="Latn-FR-ronde">
 <h4>法式圆体</h4>
 <figure>
-<img src="xiwen-zimu-shouxieti-fanben_img/frcursive.svg" alt="法式圆体字样" style="width:100%;" />
+<img src="xiwen-zimu-shouxieti-fanben_img/frcursive.svg" alt="法式圆体字样" style="width: 100%;" />
 <figcaption>法式圆体字样<sup><a href="#note-Latn-FR-ronde" id="note-mark-Latn-FR-ronde" class="note-mark"></a></sup>　<a href="xiwen-zimu-shouxieti-fanben_img/frcursive.svg" class="icon" title="图片文件">🖻</a></figcaption>
 </figure>
 </section>
 </section>
 <section id="Latn-DE">
-<h3>德国（资料暂缺）</h3>
+<h3>德国</h3>
+<p>德语的书写传统与欧洲其他使用拉丁字母的语言有较大差异。历史上，德文曾长期使用<span lang="de">Fraktur</span>体（一种哥特体），并形成了德式行书（<span lang="de">deutschen Kurrentschrift</span>）。1915年后，<span lang="de">Sütterlin</span>手写体逐渐成为标准的德式行书。在德语中，用于学校教学的手写体范本被称为“<span lang="de">Ausgangsschrift</span>”。<span lang="de">Sütterlin</span>手写体就是一种典型的<span lang="de">Ausgangsschrift</span>。</p>
+<p>1941年，德国当局废除<span lang="de">Fraktur</span>体，改用<span lang="de">Antiqua</span>体（即其他使用拉丁字母的语言所常用的书体）。原有的德式行书（包括<span lang="de">Sütterlin</span>手写体）也停用，学校手写体教学改用<span lang="de">Deutsche Normalschrift</span>。</p>
+<p>第二次世界大战结束后，又出现了多种德文手写体范本：德意志联邦共和国1953年起使用的<span lang="de">Lateinische Ausgangsschrift</span>（<span lang="de">LA</span>）、德意志民主共和国1968年起使用的<span lang="de">Schulausgangsschrift</span>（<span lang="de">SAS</span>）、德意志联邦共和国1972年起使用的<span lang="de">Vereinfachten Ausgangsschrift</span>（<span lang="de">VA</span>）。以上几种均为圆体行书风格，和<span lang="de">Deutsche Normalschrift</span>类似，抛弃了德式行书的主要特征。</p>
+<p>2011年以来，德国一些地方采用<span lang="de">Grundschrift</span>作为手写体教学范本，其风格接近于直体楷书，字形与印刷体更为一致。</p>
+<p>德语维基百科<a href="https://de.wikipedia.org/wiki/Ausgangsschrift" lang="de">Ausgangsschrift</a>条目对德文手写体范本的沿革作了详细介绍。</p>
+<section id="Latn-DE-la">
+<h4><span lang="de">Lateinische Ausgangsschrift</span>（<span lang="de">LA</span>）</h4>
+<figure>
+<img src="xiwen-zimu-shouxieti-fanben_img/schulschriften-la.png" alt="Vereinfachten Ausgangsschrift字样" />
+<figcaption><span lang="de">Lateinische Ausgangsschrift</span>字样<sup><a href="#note-Latn-DE-la" id="note-mark-Latn-DE-la" class="note-mark"></a></sup>　<a href="xiwen-zimu-shouxieti-fanben_img/schulschriften-la.png" class="icon" title="图片文件">🖻</a></figcaption>
+</figure>
+</section>
+<section id="Latn-DE-sas">
+<h4><span lang="de">Schulausgangsschrift</span>（<span lang="de">SAS</span>）</h4>
+<figure>
+<img src="xiwen-zimu-shouxieti-fanben_img/schulausgangsschrift.png" alt="Schulausgangsschrift字样" style="max-width: 75%;" />
+<figcaption><span lang="de">Schulausgangsschrift</span>字样　<a href="xiwen-zimu-shouxieti-fanben_img/schulausgangsschrift.png" class="icon" title="图片文件">🖻</a><br /><small>（资料来源：<span lang="de">Elisabeth Kaestner</span>，<wbr /><span lang="de">Renate Tost</span>：<wbr /><cite lang="de">Schreibunterricht</cite><wbr />（<span lang="de">9. Auflage</span>），<wbr /><span lang="de">Berlin</span>：<wbr /><span lang="de">Volk und Wissen Volkseigener Verlag</span>，<wbr />1986年，第23页。）</small></figcaption>
+</figure>
+<p>参见<span lang="de">Elisabeth Kaestner</span>，<wbr /><span lang="de">Renate Tost</span>：<wbr /><cite lang="de">Schreibunterricht</cite><wbr />（<span lang="de">9. Auflage</span>），<wbr /><span lang="de">Berlin</span>：<wbr /><span lang="de">Volk und Wissen Volkseigener Verlag</span>，<wbr />1986年。</p>
+</section>
+<section id="Latn-DE-va">
+<h4><span lang="de">Vereinfachten Ausgangsschrift</span>（<span lang="de">VA</span>）</h4>
+<figure>
+<img src="xiwen-zimu-shouxieti-fanben_img/schulschriften-va.png" alt="Vereinfachten Ausgangsschrift字样" />
+<figcaption><span lang="de">Vereinfachten Ausgangsschrift</span>字样<sup><a href="#note-Latn-DE-va" id="note-mark-Latn-DE-va" class="note-mark"></a></sup>　<a href="xiwen-zimu-shouxieti-fanben_img/schulschriften-va.png" class="icon" title="图片文件">🖻</a></figcaption>
+</figure>
+<p>注意<span lang="de">s</span>，<span lang="de">ß</span>等字母与后面的字母连写时写法不同，例如：</p>
+<figure>
+<img src="xiwen-zimu-shouxieti-fanben_img/schulschriften-va-alternativ.png" alt="Vereinfachten Ausgangsschrift字样（s，ß与后面的字母连写）" />
+<figcaption><span lang="de">Vereinfachten Ausgangsschrift</span>字样（<span lang="de">s</span>，<span lang="de">ß</span>与后面的字母连写）<sup><a href="#note-Latn-DE-va-alternativ" id="note-mark-Latn-DE-va-alternativ" class="note-mark"></a></sup>　<a href="xiwen-zimu-shouxieti-fanben_img/schulschriften-va-alternativ.png" class="icon" title="图片文件">🖻</a></figcaption>
+</figure>
+<p>参见<span lang="de">Birgit Grasy</span>，<span lang="de">Birgitt Krippner</span>，<span lang="de">Silke Riegg</span><wbr />等：<wbr /><cite lang="de">Materialien zur Vereinfachten Ausgangsschrift</cite>，<wbr /><span lang="de">München</span>：<wbr /><span lang="de">Staatsinstitut für Schulqualität und Bildungsforschung</span>，<wbr />2006年，<wbr /><a href="http://www.isb.bayern.de/schulartspezifisches/materialien/materialien-zur-vereinfachten-ausgangsschrift/" class="url">http://www.isb.bayern.de/schulartspezifisches/materialien/materialien-<wbr />zur-<wbr />vereinfachten-<wbr />ausgangsschrift/</a>。</p>
+</section>
+<section id="Latn-DE-grundschrift">
+<h4><span lang="de">Grundschrift</span></h4>
+<figure>
+<p lang="de" class="verse" style="font-family: 'Latn-DE-grundschrift', 'Grundschrift'; font-size: 300%; overflow: auto;">A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z  Ä Ö Ü
+a b c d e f g h i j k l m n o
+p q r s t u v w x y z  ä ö ü  ß
+0 1 2 3 4 5 6 7 8 9</p>
+<figcaption><span lang="de">Grundschrift</span>字样<sup><a href="#note-Latn-DE-grundschrift" id="note-mark-Latn-DE-grundschrift" class="note-mark"></a></sup></figcaption>
+</figure>
+<p>参见德国<span lang="de">Grundschulverband</span>的<a href="https://grundschulverband.de/grundschrift/">Grundschrift</a>网站。</p>
+</section>
+<section id="Latn-DE-suetterlin">
+<h4><span lang="de">Sütterlin</span>手写体</h4>
+<figure>
+<img src="xiwen-zimu-shouxieti-fanben_img/schulschriften-su.png" alt="Sütterlin手写体字样" />
+<figcaption><span lang="de">Sütterlin</span>手写体字样<sup><a href="#note-Latn-DE-suetterlin" id="note-mark-Latn-DE-suetterlin" class="note-mark"></a></sup>　<a href="xiwen-zimu-shouxieti-fanben_img/schulschriften-su.png" class="icon" title="图片文件">🖻</a></figcaption>
+</figure>
+<p><span lang="de">Sütterlin</span>手写体还有另一种版本，称为“<span lang="de">Lateinische Sütterlinschrift</span>”，用来书写德语以外的语言。</p>
+<figure>
+<img src="xiwen-zimu-shouxieti-fanben_img/Sütterlin_,_lateinisches_Alphabet.jpg" alt="Lateinische Sütterlinschrift字样" style="max-width: 67%;" />
+<figcaption><span lang="de">Lateinische Sütterlinschrift</span>字样　<a href="xiwen-zimu-shouxieti-fanben_img/Sütterlin_,_lateinisches_Alphabet.jpg" class="icon" title="图片文件">🖻</a><br /><small>（资料来源：<span lang="de">Ludwig Sütterlin</span>：<wbr /><cite lang="de">Neuer Leitfaden für den Schreibunterricht</cite>，<wbr /><span lang="de">Berlin</span>，<wbr />1917年，第85页，见<span lang="de">Ludwig Sütterlin</span>：<wbr />File:Sütterlin , lateinisches Alphabet.jpg，<wbr />维基共享资源，2020年5月6日，<wbr /><a href="https://commons.wikimedia.org/wiki/File:Sütterlin_,_lateinisches_Alphabet.jpg" class="url">https://commons.wikimedia.org/wiki/File:Sütterlin_,_<wbr />lateinisches_<wbr />Alphabet.jpg</a>。）</small></figcaption>
+</figure>
+</section>
 </section>
 </section>
 <section id="Grek">
@@ -191,7 +260,7 @@ O P Q R S T U V W X Y Z
 <h3>［美国］<span lang="en">Michael A. Covington</span>的希腊字母写法</h3>
 <figure>
 <img src="xiwen-zimu-shouxieti-fanben_img/GreekChartLarge.jpg" alt="希腊字母写法" />
-<figcaption>希腊字母写法　<a href="xiwen-zimu-shouxieti-fanben_img/GreekChartLarge.jpg" class="icon" title="图片文件">🖻</a><br /><small>（资料来源：<span lang="en">Michael A. Covington</span>：<cite lang="en">A Few Notes about Fountain Pens</cite>，<span lang="en">Covington Innovations</span>，<span lang="en">November 23, 2009</span>，<wbr /><a href="http://www.covingtoninnovations.com/pens/" class="url">http://www.covington<wbr />innovations.com/pens/</a>。）</small></figcaption>
+<figcaption>希腊字母写法　<a href="xiwen-zimu-shouxieti-fanben_img/GreekChartLarge.jpg" class="icon" title="图片文件">🖻</a><br /><small>（资料来源：<span lang="en">Michael A. Covington</span>：<wbr /><cite lang="en">A Few Notes about Fountain Pens</cite>，<wbr /><span lang="en">Covington Innovations</span>，<wbr /><span lang="en">November 23, 2009</span>，<wbr /><a href="http://www.covingtoninnovations.com/pens/" class="url">http://www.covington<wbr />innovations.com/pens/</a>。）</small></figcaption>
 </figure>
 </section>
 </section>
@@ -213,12 +282,12 @@ O P Q R S T U V W X Y Z
 <details>
 <summary>备考　其他版本的俄文字母手写体</summary>
 <figure>
-<img src="xiwen-zimu-shouxieti-fanben_img/ABC.svg" alt="俄文字母写法" style="width:100%;" />
+<img src="xiwen-zimu-shouxieti-fanben_img/ABC.svg" alt="俄文字母写法" style="width: 100%;" />
 <figcaption>俄文字母写法<sup><a href="#note-Cyrl-rus-nekina" id="note-mark-Cyrl-rus-nekina" class="note-mark"></a></sup>　<a href="xiwen-zimu-shouxieti-fanben_img/ABC.svg" class="icon" title="图片文件">🖻</a><br /><small>（资料来源：<span lang="ru">Леонида Некина</span>：<cite lang="ru">Прописи с частой косой линейкой для первоклашек и дошкольников по русскому, украинскому и белорусскому языкам</cite>，<span lang="ru">Образовательный проект Леонида Некина</span>，<span lang="ru">10.08.2018</span>，<wbr /><a href="http://nekin.info/e24.htm" class="url">http://nekin.info/e24.htm</a>。）</small></figcaption>
 </figure>
 <figure>
-<img src="xiwen-zimu-shouxieti-fanben_img/Russian_Cursive_Cyrillic.svg" alt="俄文字母写法" style="width:100%;" />
-<figcaption>“教学用标准现代俄语西里尔字母草书”　<a href="xiwen-zimu-shouxieti-fanben_img/Russian_Cursive_Cyrillic.svg" class="icon" title="图片文件">🖻</a><br /><small>（资料来源：birdy geimfyglið：File:Russian Cursive Cyrillic.svg，维基共享资源，2008年10月9日，<wbr /><a href="https://commons.wikimedia.org/wiki/File:Russian_Cursive_Cyrillic.svg" class="url">https://commons.wikimedia.org/wiki/File:Russian_<wbr />Cursive_<wbr />Cyrillic.svg</a>.）</small></figcaption>
+<img src="xiwen-zimu-shouxieti-fanben_img/Russian_Cursive_Cyrillic.svg" alt="俄文字母写法" style="width: 100%;" />
+<figcaption>“教学用标准现代俄语西里尔字母草书”　<a href="xiwen-zimu-shouxieti-fanben_img/Russian_Cursive_Cyrillic.svg" class="icon" title="图片文件">🖻</a><br /><small>（资料来源：birdy geimfyglið：File:Russian Cursive Cyrillic.svg，维基共享资源，2008年10月9日，<wbr /><a href="https://commons.wikimedia.org/wiki/File:Russian_Cursive_Cyrillic.svg" class="url">https://commons.wikimedia.org/wiki/File:Russian_<wbr />Cursive_<wbr />Cyrillic.svg</a>。）</small></figcaption>
 </figure>
 </details>
 </section>
@@ -252,10 +321,15 @@ O P Q R S T U V W X Y Z
 <h2>注　　释</h2>
 <ol class="note">
 <li id="note-Latn-FR-a">这里使用了字体“<span lang="fr">Écriture A romain ligne</span>”，来自<a href="https://eduscol.education.fr/cid72979/polices-de-caracteres-cursives-pour-l-enseignement-de-l-ecriture.html">法国国民教育部（<span lang="fr">le ministère de l’éducation nationale</span>）</a>，采用CC BY-ND进行许可。<a href="#note-mark-Latn-FR-a" class="note-back"></a></li>
-<li id="note-Latn-FR-a">这里使用了字体“<span lang="fr">Écriture A romain orné ligne</span>”，来自<a href="https://eduscol.education.fr/cid72979/polices-de-caracteres-cursives-pour-l-enseignement-de-l-ecriture.html">法国国民教育部（<span lang="fr">le ministère de l’éducation nationale</span>）</a>，采用CC BY-ND进行许可。<a href="#note-mark-Latn-FR-a-orne" class="note-back"></a></li>
+<li id="note-Latn-FR-a-orne">这里使用了字体“<span lang="fr">Écriture A romain orné ligne</span>”，来自<a href="https://eduscol.education.fr/cid72979/polices-de-caracteres-cursives-pour-l-enseignement-de-l-ecriture.html">法国国民教育部（<span lang="fr">le ministère de l’éducation nationale</span>）</a>，采用CC BY-ND进行许可。<a href="#note-mark-Latn-FR-a-orne" class="note-back"></a></li>
 <li id="note-Latn-FR-b">这里使用了字体“<span lang="fr">Écriture B romain ligne</span>”，来自<a href="https://eduscol.education.fr/cid72979/polices-de-caracteres-cursives-pour-l-enseignement-de-l-ecriture.html">法国国民教育部（<span lang="fr">le ministère de l’éducation nationale</span>）</a>，采用CC BY-ND进行许可。<a href="#note-mark-Latn-FR-b" class="note-back"></a></li>
 <li id="note-Latn-FR-b-orne">这里使用了字体“<span lang="fr">Écriture B romain orné ligne</span>”，来自<a href="https://eduscol.education.fr/cid72979/polices-de-caracteres-cursives-pour-l-enseignement-de-l-ecriture.html">法国国民教育部（<span lang="fr">le ministère de l’éducation nationale</span>）</a>，采用CC BY-ND进行许可。<a href="#note-mark-Latn-FR-b-orne" class="note-back"></a></li>
 <li id="note-Latn-FR-ronde">这里使用的字体来自L<span style="text-transform: uppercase; font-size: 0.85em; vertical-align: 0.15em; margin-left: -0.36em; margin-right: -0.15em;">a</span>T<span style="text-transform: uppercase; vertical-align: -0.5ex; margin-left: -0.1667em; margin-right: -0.125em;">e</span>X包<a href="https://ctan.org/pkg/frcursive">frcursive</a>（采用<a href="https://ctan.org/license/lppl1.2" lang="en">LPPL 1.2</a>进行许可），其中大写字母的装饰笔画偏长一些。<a href="#note-mark-Latn-FR-ronde" class="note-back"></a></li>
+<li id="note-Latn-DE-la">这里使用的字体来自L<span style="text-transform: uppercase; font-size: 0.85em; vertical-align: 0.15em; margin-left: -0.36em; margin-right: -0.15em;">a</span>T<span style="text-transform: uppercase; vertical-align: -0.5ex; margin-left: -0.1667em; margin-right: -0.125em;">e</span>X包<a href="https://ctan.org/pkg/schulschriften">schulschriften</a>（采用<a href="https://ctan.org/license/lppl" lang="en">LPPL</a>进行许可）。<a href="#note-mark-Latn-DE-la" class="note-back"></a></li>
+<li id="note-Latn-DE-va">这里使用的字体来自L<span style="text-transform: uppercase; font-size: 0.85em; vertical-align: 0.15em; margin-left: -0.36em; margin-right: -0.15em;">a</span>T<span style="text-transform: uppercase; vertical-align: -0.5ex; margin-left: -0.1667em; margin-right: -0.125em;">e</span>X包<a href="https://ctan.org/pkg/schulschriften">schulschriften</a>（采用<a href="https://ctan.org/license/lppl" lang="en">LPPL</a>进行许可）。<a href="#note-mark-Latn-DE-va" class="note-back"></a></li>
+<li id="note-Latn-DE-va-alternativ">这里使用的字体来自L<span style="text-transform: uppercase; font-size: 0.85em; vertical-align: 0.15em; margin-left: -0.36em; margin-right: -0.15em;">a</span>T<span style="text-transform: uppercase; vertical-align: -0.5ex; margin-left: -0.1667em; margin-right: -0.125em;">e</span>X包<a href="https://ctan.org/pkg/schulschriften">schulschriften</a>（采用<a href="https://ctan.org/license/lppl" lang="en">LPPL</a>进行许可）。<a href="#note-mark-Latn-DE-va-alternativ" class="note-back"></a></li>
+<li id="note-Latn-DE-grundschrift">这里使用了字体“<span lang="de">Grundschrift</span>”，来自<a href="https://grundschulverband.de/downloads/" lang="de">Grundschulverband</a>，非商用许可。<a href="#note-mark-Latn-DE-grundschrift" class="note-back"></a></li>
+<li id="note-Latn-DE-suetterlin">这里使用的字体来自L<span style="text-transform: uppercase; font-size: 0.85em; vertical-align: 0.15em; margin-left: -0.36em; margin-right: -0.15em;">a</span>T<span style="text-transform: uppercase; vertical-align: -0.5ex; margin-left: -0.1667em; margin-right: -0.125em;">e</span>X包<a href="https://ctan.org/pkg/schulschriften">schulschriften</a>（采用<a href="https://ctan.org/license/lppl" lang="en">LPPL</a>进行许可）。<a href="#note-mark-Latn-DE-suetterlin" class="note-back"></a></li>
 <li id="note-Cyrl-rus">这里使用了字体“UKIJ Elipbe (Bold)”，来自<a href="http://www.ukij.org/fonts/" lang="ug">ئۇيغۇر كومپيۇتېر ئىلىمى جەمئىيىتى فونتلىرى</a>，采用<a href="https://www.gnu.org/licenses/lgpl.html" lang="en">GNU LGPL</a>和<a href="https://scripts.sil.org/OFL" lang="en">OFL</a>进行许可。<a href="#note-mark-Cyrl-rus" class="note-back"></a></li>
 <li id="note-Cyrl-rus-nekina">这份资料中俄文字母“<span lang="ru">б</span>”的写法似乎不够典型。<a href="#note-mark-Cyrl-rus-nekina" class="note-back"></a></li>
 </ol>
@@ -269,7 +343,7 @@ O P Q R S T U V W X Y Z
 </div>
 <nav>
 <p>话题：<a href="index.html#riyong-shufa">日用书法</a></p>
-<p>分类：<a href="index.html">J</a>29-64 书法、篆刻</p>
+<p>分类：<a href="index.html">J</a>29-64　书法、篆刻</p>
 </nav>
 </div>
 </main>
