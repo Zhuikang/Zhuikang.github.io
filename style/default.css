@@ -31,6 +31,10 @@ font-size: 4.2mm/*小四号*/;
 text-align: justify;
 hyphens: auto;
 }
+:lang(zh) {
+text-underline-position: auto left;
+text-decoration-skip: edges;
+}
 :lang(zh-Bopo) {
 font-feature-settings: "hist";/*for Source Han fonts*/
 }
@@ -65,7 +69,6 @@ main {
 margin: 0.5rem auto;
 text-indent: 2em;
 }
-
 main, article {
 counter-reset: note ref;
 }
@@ -268,9 +271,6 @@ code, samp, kbd, .url {
 font-family: "dengxianti", monospace;
 font-feature-settings: "hwid", "kern" 0;
 font-variant-ligatures: none;
-}
-u:lang(zh) {
-text-decoration-skip: edges;
 }
 hr {
 border: none;
