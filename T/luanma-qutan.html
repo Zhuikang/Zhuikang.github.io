@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>乱码趣谈</title>
+<meta name="author" content="白壁" />
+<!--<meta name="description" content="" />
+<meta name="keywords" content="" />-->
+<link rel="stylesheet" href="../style/default.css" />
+</head>
+<body>
+<header>
+<nav><p><a href="index.html">T</a></p></nav>
+<p class="website-title"><a href="../index.html">白壁资料室</a></p>
+</header>
+<main>
+<h1>乱码趣谈</h1>
+<p class="author-date">白壁　（2020年8月29日）</p>
+<div class="front">
+<div class="abstract">
+<p>编者按：乱码是什么？Õâ¾ÍÊÇÂÒÂë¡£乱码是怎么产生的？±¾ÎÄ¸æËßÄã¡£</p>
+</div>
+</div>
+<p>归纳起来，乱码主要有两种成因：一是文本编码、解码方式不匹配；二是非文本数据被当作文本解码。有一些字符串或数据（统称为“原文”）在特定场景中很常见，由其产生的乱码也颇为有名。这里列举一些常见乱码的产生过程（“编码方式”“解码方式”均用Python编码器名称表示<sup><a href="#note-bianma" id="note-mark-bianma" class="note-mark"></a></sup>）：</p>
+<table>
+<thead>
+<tr><th>原文</th><th>编码方式</th><th>解码方式</th><th>乱码</th></tr>
+</thead>
+<tbody>
+<tr><td><code>b&#39;\xef\xbb\xbf&#39;</code></td><td>&nbsp;</td><td><code>&#39;latin_1&#39;</code></td><td><code>&#39;ï»¿&#39;</code></td></tr>
+<tr><td><code>b&#39;\xef\xbb&#39;</code></td><td>&nbsp;</td><td><code>&#39;gb2312&#39;</code></td><td><code>&#39;锘&#39;</code></td></tr>
+<tr><td><code>b&#39;\xef\xbb&#39;</code></td><td>&nbsp;</td><td><code>&#39;big5&#39;</code></td><td><code>&#39;嚜&#39;</code></td></tr>
+<tr><td><code>b&#39;\xef\xbb&#39;</code></td><td>&nbsp;</td><td><code>&#39;cp949&#39;</code></td><td><code>&#39;癤&#39;</code></td></tr>
+<tr><td><code>&#39;�&#39;</code></td><td><code>&#39;utf_8&#39;</code></td><td><code>&#39;latin_1&#39;</code></td><td><code>&#39;ï¿½&#39;</code></td></tr>
+<tr><td><code>&#39;�&#39;</code></td><td><code>&#39;utf_8&#39;</code></td><td><code>&#39;cp437&#39;</code></td><td><code>&#39;∩┐╜&#39;</code></td></tr>
+<tr><td><code>&#39;��&#39;</code></td><td><code>&#39;utf_8&#39;</code></td><td><code>&#39;gb2312&#39;</code></td><td><code>&#39;锟斤拷&#39;</code></td></tr>
+<tr><td><code>&#39;��&#39;</code></td><td><code>&#39;utf_8&#39;</code></td><td><code>&#39;big5&#39;</code></td><td><code>&#39;嚙踝蕭&#39;</code></td></tr>
+<tr><td><code>&#39;��&#39;</code></td><td><code>&#39;utf_8&#39;</code></td><td><code>&#39;cp949&#39;</code></td><td><code>&#39;占쏙옙&#39;</code></td></tr>
+<tr><td><code>b&#39;\xcc&#39;</code></td><td>&nbsp;</td><td><code>&#39;latin_1&#39;</code></td><td><code>&#39;Ì&#39;</code></td></tr>
+<tr><td><code>b&#39;\xcc&#39;</code></td><td>&nbsp;</td><td><code>&#39;cp437&#39;</code></td><td><code>&#39;╠&#39;</code></td></tr>
+<tr><td><code>b&#39;\xcc\xcc&#39;</code></td><td>&nbsp;</td><td><code>&#39;gb2312&#39;</code></td><td><code>&#39;烫&#39;</code></td></tr>
+<tr><td><code>b&#39;\xcc\xcc&#39;</code></td><td>&nbsp;</td><td><code>&#39;big5&#39;</code></td><td><code>&#39;昍&#39;</code></td></tr>
+<tr><td><code>b&#39;\xcc&#39;</code></td><td>&nbsp;</td><td><code>&#39;cp932&#39;</code></td><td><code>&#39;ﾌ&#39;</code></td></tr>
+<tr><td><code>b&#39;\xcc\xcc&#39;</code></td><td>&nbsp;</td><td><code>&#39;cp949&#39;</code></td><td><code>&#39;儆&#39;</code></td></tr>
+<tr><td><code>b&#39;\xcd&#39;</code></td><td>&nbsp;</td><td><code>&#39;latin_1&#39;</code></td><td><code>&#39;Í&#39;</code></td></tr>
+<tr><td><code>b&#39;\xcd&#39;</code></td><td>&nbsp;</td><td><code>&#39;cp437&#39;</code></td><td><code>&#39;═&#39;</code></td></tr>
+<tr><td><code>b&#39;\xcd\xcd&#39;</code></td><td>&nbsp;</td><td><code>&#39;gb2312&#39;</code></td><td><code>&#39;屯&#39;</code></td></tr>
+<tr><td><code>b&#39;\xcd\xcd&#39;</code></td><td>&nbsp;</td><td><code>&#39;big5&#39;</code></td><td><code>&#39;迋&#39;</code></td></tr>
+<tr><td><code>b&#39;\xcd&#39;</code></td><td>&nbsp;</td><td><code>&#39;cp932&#39;</code></td><td><code>&#39;ﾍ&#39;</code></td></tr>
+<tr><td><code>b&#39;\xcd\xcd&#39;</code></td><td>&nbsp;</td><td><code>&#39;cp949&#39;</code></td><td><code>&#39;袴&#39;</code></td></tr>
+<tr><td><code>&#39;曹操&#39;</code></td><td><code>&#39;big5&#39;</code></td><td><code>&#39;gb2312&#39;</code></td><td><code>&#39;变巨&#39;</code></td></tr>
+<tr><td><code>&#39;주세요&#39;</code></td><td><code>&#39;cp949&#39;</code></td><td><code>&#39;gb2312&#39;</code></td><td><code>&#39;林技夸&#39;</code></td></tr>
+<tr><td><code>&#39;🐸&#39;</code></td><td><code>&#39;utf_8&#39;</code></td><td><code>&#39;gb18030&#39;</code></td><td><code>&#39;馃惛&#39;</code></td></tr>
+</tbody>
+</table>
+<p>所举乱码原文的来历：</p>
+<ul>
+<li><code>b&#39;\xef\xbb\xbf&#39;</code>：UTF-8字节顺序标记。</li>
+<li><code>&#39;�&#39;</code>：Unicode定义为“<span lang="en">replacement character used to replace an unknown or unrepresentable character</span>”；在字符集转换时，用于替代无法转换的字符。</li>
+<li><code>b&#39;\xcc&#39;</code>、<code>b&#39;\xcd&#39;</code>：分别是Visual Studio C/C++编译器在调试模式赋予未被初始化的栈内存、堆内存的初值。<sup><a href="#note-cc" id="note-mark-cc" class="note-mark"></a></sup></li>
+<li><code>&#39;曹操&#39;</code>、<code>&#39;주세요&#39;</code>、<code>&#39;🐸&#39;</code>等：都是自然语言中的梗。<sup><a href="#note-caocao" id="note-mark-caocao" class="note-mark"></a></sup></li>
+</ul>
+<p>有人将几句著名的乱码串成一首歪诗：<sup><a href="#note-shi" id="note-mark-shi" class="note-mark"></a></sup></p>
+<blockquote class="verse">
+<p>手持两把<code>锟斤拷</code>，
+口中疾呼<code>烫烫烫</code>。
+脚踏千朵<code>屯屯屯</code>，
+笑看万物<code>锘</code><code>锘</code><code>锘</code>。</p>
+</blockquote>
+<p>还有人整理了一张“乱码五十音图”，据说玩日本游戏时有用，有些玩家已经背了下来。<sup><a href="#note-bianma" id="note-mark-bianma" class="note-mark"></a></sup>该表中的乱码生成方式是<code>&#39;shift_jis&#39;</code>编码，<code>&#39;gbk&#39;</code>解码。</p>
+<figure>
+<img src="luanma-qutan_img/luanma-wushiyintu.jpg" alt="乱码五十音图" />
+<figcaption>乱码五十音图<br /><small>（资料来源：何明涛：如何评价Galgame玩家？——何明涛的回答，2014年7月15日，知乎，<wbr /><a href="https://www.zhihu.com/question/24488355/answer/27996405" class="url">https://www.zhihu.com/question/24488355/answer/27996405</a>。）</small></figcaption>
+</figure>
+<p>最后布置一道练习题：请解读“编者按”中的乱码。（提示：该乱码的生成方式是<code>&#39;gb2312&#39;</code>编码，<code>&#39;latin_1&#39;</code>解码。）</p>
+<div class="back">
+<div class="edition">
+<p>（编辑：白壁）</p>
+</div>
+<div class="note" id="zhushi">
+<h2>注　　释</h2>
+<ol>
+<li id="note-bianma">参见<a href="https://docs.python.org/3.7/library/codecs.html#standard-encodings" class="url">https://docs.python.org/3.7/library/codecs.html<wbr />#standard-<wbr />encodings</a>。<a href="#note-mark-bianma" class="note-back"></a></li>
+<li id="note-cc">参见红猴子：《&quot;烫烫烫屯屯屯&quot; 那些事》，知乎，2017年6月22日，<wbr /><a href="https://zhuanlan.zhihu.com/p/27253604" class="url">https://<wbr />zhuanlan.zhihu.com/p/27253604</a>。<a href="#note-mark-cc" class="note-back"></a></li>
+<li id="note-caocao">参见：思無邪SyiMyuZya：国外程序员也烫屯锟斤拷吗？——思無邪SyiMyuZya的回答，知乎，2019年7月20日，<wbr /><a href="https://www.zhihu.com/question/52684968/answer/131732036" class="url">https://www.zhihu.com/question/52684968/answer/131732036</a>；Louis Tong：《为什么青蛙“🐸”会变成“馃惛”？》，知乎，2017年8月11日，<wbr /><a href="https://zhuanlan.zhihu.com/p/28438898" class="url">https://zhuanlan.zhihu.com/p/28438898</a>。<a href="#note-mark-caocao" class="note-back"></a></li>
+<li id="note-shi">刘松泉：手持两把锟斤拷 口中疾呼烫烫烫 下联——刘松泉的回答，百度知道，2017年6月11日，<wbr /><a href="https://zhidao.baidu.com/question/2267040273698235148.html" class="url">https://zhidao.baidu.com/question/2267040273698235148.html</a>。<a href="#note-mark-shi" class="note-back"></a></li>
+<li id="note-luanma-wushiyintu">参见何明涛：如何评价Galgame玩家？——何明涛的回答，知乎，2014年7月15日，<wbr /><a href="https://www.zhihu.com/question/24488355/answer/27996405" class="url">https://www.zhihu.com/question/24488355/answer/27996405</a>。<a href="#note-mark-luanma-wushiyintu" class="note-back"></a></li>
+</ol>
+</div>
+<nav>
+<p>话题：<a href="index.html#zhongguo-zhexue">计算机</a></p>
+<p>分类：<a href="index.html">T</a>P391.1　文字信息处理</p>
+</nav>
+</div>
+</main>
+<footer>
+<p>白壁　2020年</p>
+</footer>
+</body>
+</html>
